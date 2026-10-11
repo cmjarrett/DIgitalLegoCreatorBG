@@ -2,15 +2,18 @@
  * A pack is a themed group of card sets (Dinosaurs, Space, ...). Every card set has exactly 4 models, and
  * the Brickyard for a game holds exactly the pieces those 4 models need.
  *
- * Pack files in packs/ call registerPack() with data made by tools/bricklink-pack-builder.js:
- *   registerPack({id, name, emoji, parts: {partKey: [description, category]}, sets: [{id, name, models: [{no, name, p}]}]})
- * where partKey is "<BrickLink part number>@<BrickLink color id>" ("@m" for a minifigure) and p is [[partKey, quantity], ...].
+ * The original game is in js/original.js; the themed 3D packs in packs/ call registerLDrawPack() below.
  */
 const PIECES = {};  // every piece the game knows about, by id
 const PACKS = [];   // {id, name, emoji, sets}
 const SETS = [];    // every card set from every pack: {id, packId, name, color, colors, models, pickCount}
 
 const MODEL_EMOJI = [
+  [/tie |starfighter|slave i|interceptor|arc-170|cruiser|destroyer/i, '⭐'], [/knight|monarch|jousting|horse/i, '🛡️'],
+  [/pirate|treasure/i, '🏴‍☠️'], [/chief|wheelgun|bandit/i, '🤠'], [/pumpkin/i, '🎃'], [/ghost/i, '👻'], [/\bbat\b/i, '🦇'],
+  [/wreath/i, '🎄'], [/cow/i, '🐄'], [/hog|pig/i, '🐷'], [/crocodile/i, '🐊'], [/scorpion/i, '🦂'], [/butterfly/i, '🦋'],
+  [/pteranodon|apatosaurus/i, '🦕'], [/tractor|digger|loader|dumper|shovel|tipper/i, '🚜'], [/jet-ski/i, '🚤'],
+  [/motorcycle/i, '🏍️'], [/builder/i, '👷'], [/satellite|up-link/i, '🛰️'], [/k-9|bot\b|robot/i, '🤖'], [/biplane/i, '🛩️'],
   [/shuttle|rocket|lander/i, '🚀'], [/ufo|saucer/i, '🛸'], [/astronaut|satellite/i, '👩‍🚀'], [/ambulance/i, '🚑'], [/police/i, '🚓'],
   [/fire/i, '🚒'], [/tow|tipper|truck/i, '🚚'], [/buggy|rover|atv|quad/i, '🚙'], [/van/i, '🚐'], [/gyro|whirler|helicopter/i, '🚁'],
   [/racer|racing|race car|dragster|sports car|car/i, '🏎️'], [/plane|aircraft|striker|jet|glider/i, '✈️'], [/eagle/i, '🦅'],
@@ -23,33 +26,7 @@ const MODEL_EMOJI = [
 ];
 const emojiFor = name => (MODEL_EMOJI.find(([re]) => re.test(name)) || [, '🧱'])[1];
 
-// Plain bricks, plates, tiles and slopes are drawn by the game; everything else (wheels, printed parts,
-// see-through parts, minifigures, ...) is a "special piece" shown with its BrickLink picture.
-function partFromBrickLink(key, [desc, category]) {
-  const [no, cid] = key.split('@');
-  if (cid === 'm') return {id: key, name: desc.split(' - ')[0], kind: 'special', img: `https://img.bricklink.com/ItemImage/MN/0/${no}.png`};
-  const color = BL_COLORS[cid];
-  const special = {id: key, name: desc, kind: 'special', color, img: `https://img.bricklink.com/ItemImage/PN/${cid}/${no}.png`};
-  if (!color || /Decorated|Modified/.test(category)) return special;
-  const rest = desc.slice(COLOR_NAME[color].length + 1);
-  const shapes = [
-    [/^(Brick|Plate|Tile) (\d+) x (\d+)(?: x \d+)?$/, m => ({shape: m[1].toLowerCase(), rows: +m[2], cols: +m[3]})],
-    [/^Plate (\d+) x (\d+) Corner$/, m => ({shape: 'corner', rows: +m[1], cols: +m[2]})],
-    [/^Slope (?:18|30|33|45|65|75) (\d+) x (\d+)(?: x [\d/]+)?$/, m => ({shape: 'slope', cols: +m[1], rows: +m[2]})],
-    [/^Slope, Inverted (?:33|45|75) (\d+) x (\d+)(?: x \d+)?(?: with Flat Bottom Pin.*)?$/, m => ({shape: 'hole', cols: +m[1], rows: +m[2]})],
-    [/^Slope, Curved (\d+) x (\d+)(?: x [\d/]+)?(?: No Studs)?$/, m => ({shape: 'curve', cols: +m[1], rows: +m[2]})],
-    [/^(?:Brick|Plate), Round (\d) x \1$/, m => ({shape: 'round', rows: +m[1], cols: +m[1]})],
-    [/^Brick, Round Corner 4 x 4 Full Brick$|^Brick, Round Corner 4 x 4$/, () => ({shape: 'quarter', rows: 4, cols: 4})],
-    [/^Wedge 3 x 2 (Left|Right)$/, m => ({shape: 'wedge' + m[1][0], rows: 2, cols: 3})],
-  ];
-  for (const [re, f] of shapes) {
-    const m = rest.match(re);
-    if (m) return {id: key, name: desc, kind: 'brick', color, ...f(m)};
-  }
-  return special;
-}
-
-// Shared by both kinds of pack: add one card set and work out its board colors and pick size.
+// Add one card set and work out its board colors and pick size.
 function addSet(pack, set) {
   const count = {};
   for (const m of set.models) for (const k in m.parts) if (PIECES[k].kind === 'brick') count[PIECES[k].color] = (count[PIECES[k].color] || 0) + m.parts[k];
@@ -65,20 +42,34 @@ function addSet(pack, set) {
   SETS.push(set);
 }
 
-function registerPack({id, name, emoji, parts, sets}) {
+/* 3D packs (packs/*.js made by tools/ldraw-pack.mjs). Pieces are LDraw parts: "<part file>@<LDraw color code>",
+ * or "fig:<sub-model>" for a whole minifigure. Their pictures are rendered by js/build3d.js when a game starts. */
+const SPECIAL_COLOR = {}; // transparent / metallic LDraw colors: those pieces are always special pieces
+function registerLDrawPack({id, name, emoji, colors, parts, sets}) {
+  for (const code in colors) {
+    const [cname, hex, special] = colors[code], key = `ld${code}`;
+    if (COL[key]) continue;
+    COL[key] = hex; DK[key] = darken(hex); COLOR_NAME[key] = cname; SPECIAL_COLOR[key] = !!special;
+  }
+  for (const key in parts) {
+    if (PIECES[key]) continue;
+    const [desc, code] = parts[key], color = `ld${code}`;
+    const fig = key.startsWith('fig:');
+    const clean = desc.replace(/^[~=_|]+/, '').replace(/\s+/g, ' ').trim();
+    const regular = !fig && !SPECIAL_COLOR[color] && /^(Brick|Plate|Tile|Slope|Wedge)\b/i.test(clean) && !/Pattern|Sticker/i.test(clean);
+    PIECES[key] = {id: key, kind: regular ? 'brick' : 'special', color, ldraw: true,
+      name: fig ? 'Minifigure' : `${COLOR_NAME[color] && code !== 16 ? COLOR_NAME[color] + ' ' : ''}${clean}`};
+  }
   const pack = {id, name, emoji, sets: []};
   PACKS.push(pack);
   for (const s of sets) {
     const models = s.models.map(m => {
       const counts = {};
-      for (const [k, q] of m.p) {
-        counts[k] = (counts[k] || 0) + q;
-        if (!PIECES[k]) PIECES[k] = partFromBrickLink(k, parts[k]);
-      }
-      return {name: m.name.toLowerCase(), emoji: emojiFor(m.name), parts: counts, no: m.no,
+      for (const [k, q] of m.p) counts[k] = (counts[k] || 0) + q;
+      return {name: m.name.toLowerCase(), emoji: emojiFor(m.name), parts: counts, no: m.no, file: m.file, figs: m.figs, ldraw: true,
         tag: m.no.replace(/-1$/, ''), img: `https://img.bricklink.com/ItemImage/SN/0/${m.no}.png`};
     });
-    addSet(pack, {id: s.id, name: s.name, models});
+    addSet(pack, {id: s.id, name: s.name, models, ldraw: true});
   }
 }
 

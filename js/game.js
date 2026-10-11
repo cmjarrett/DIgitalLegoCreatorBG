@@ -89,22 +89,120 @@ function progress(p) {
 }
 const isComplete = p => { const [a, b] = progress(p); return a === b; };
 
+// 3D card sets: collected pieces still have to be built onto the model, and the first finished model wins.
+const is3D = () => !!(G && setById(G.set).ldraw);
+const owned = (p, id) => Math.min(p.hand[id] || 0, modelOf(p).parts[id] || 0);
+const unplaced = (p, id) => owned(p, id) - ((p.placed || {})[id] || 0);
+const built = p => Object.values(p.placed || {}).reduce((a, b) => a + b, 0);
+const hasWon = p => is3D() ? built(p) === progress(p)[1] : isComplete(p);
+// Would taking one of these from q pull a piece off q's model (because q has no spare one in the tray)?
+const knocksOff = (q, id) => ((q.placed || {})[id] || 0) > Math.min((q.hand[id] || 0) - 1, modelOf(q).parts[id] || 0);
+
+function placePiece(pi, id) {
+  const p = G.players[pi];
+  if (!is3D() || G.winner || unplaced(p, id) <= 0) return;
+  p.placed[id] = (p.placed[id] || 0) + 1;
+  G.views[pi].place(id);
+  render();
+  if (hasWon(p)) win(p);
+}
+// Computer players snap one piece onto their model every so often, even during other players' turns.
+function cpuBuild(g) {
+  if (G !== g || G.winner) return clearInterval(g.timer);
+  G.players.forEach((p, pi) => {
+    if (!p.cpu) return;
+    const ids = Object.keys(p.hand).filter(id => unplaced(p, id) > 0);
+    if (ids.length) placePiece(pi, ids[Math.floor(Math.random() * ids.length)]);
+  });
+}
+
+const build3dReady = new Promise((resolve, reject) => {
+  if (window.Build3D) return resolve();
+  addEventListener('build3d-ready', resolve, {once: true});
+  setTimeout(() => reject(new Error('The 3D bricks did not load. Check the internet connection and reload.')), 30000);
+});
+function disposeViews() {
+  if (!G) return;
+  (G.views || []).forEach(v => v.dispose());
+  if (G.winView) G.winView.dispose();
+  if (G.timer) clearInterval(G.timer);
+}
+function setupCards3D() {
+  $('#players').innerHTML = G.players.map((p, pi) => `<div class="mcard m3d" id="pcard${pi}" style="--setc:${setById(G.set).color}">
+    <div class="mhead" id="phead${pi}"></div>
+    <div class="view3d" id="view${pi}"><span class="vhint">drag to spin · scroll or pinch to zoom</span></div>
+    <div class="tray" id="tray${pi}"></div>
+    <div class="extras" id="extras${pi}"></div>
+  </div>`).join('');
+  G.views = G.players.map((p, pi) => Build3D.createView($('#view' + pi), modelOf(p)));
+}
+function renderPlayers3D() {
+  const pd = G.pending;
+  G.players.forEach((p, pi) => {
+    const m = modelOf(p), [have, total] = progress(p), need = needOf(p);
+    $('#pcard' + pi).classList.toggle('active', pi === G.cur && !G.winner);
+    $('#phead' + pi).innerHTML = `<span class="mtitle">${m.tag} - ${m.name}</span> ${m.emoji}
+      <span class="dot" style="background:${p.color}"></span>${p.name}${p.cpu ? ' <small>(computer)</small>' : ''}
+      <span class="prog">built ${built(p)}/${total} · collected ${have}</span>`;
+    const ids = Object.keys(p.hand).filter(id => unplaced(p, id) > 0);
+    $('#tray' + pi).innerHTML = ids.length
+      ? `<span class="traylbl">${p.cpu ? 'Building…' : 'Tap a piece to build it:'}</span>` + ids.map(id =>
+        `<button class="tray-piece" data-owner="${pi}" data-piece="${id}" ${p.cpu ? 'disabled' : ''} title="${PIECES[id].name}">${icon(id)}${unplaced(p, id) > 1 ? `<b>×${unplaced(p, id)}</b>` : ''}</button>`).join('')
+      : `<span class="traylbl">${built(p) === total ? 'Finished! 🎉' : 'Collect pieces on the board to build your model.'}</span>`;
+    const extras = Object.keys(p.hand).filter(id => need[id] < 0);
+    $('#extras' + pi).innerHTML = extras.length ? `Holding someone else's: ${extras.map(id =>
+      `<span class="xpiece" title="${PIECES[id].name}">${icon(id)}${-need[id] > 1 ? `×${-need[id]}` : ''}</span>`).join('')}` : '';
+  });
+}
+// "Take a piece from another player" picker for 3D sets.
+function showTakeBox(opts) {
+  const by = {};
+  for (const o of opts) (by[o.owner] = by[o.owner] || []).push(o.id);
+  $('#takeList').innerHTML = Object.entries(by).map(([owner, ids]) => {
+    const q = G.players[owner];
+    return `<div class="takerow"><div class="who"><span class="dot" style="background:${q.color}"></span>${q.name}</div><div class="takepieces">${ids.map(id =>
+      `<button class="takepick" data-owner="${owner}" data-piece="${id}" title="${PIECES[id].name}">${icon(id)}${q.hand[id] > 1 ? `<b>×${q.hand[id]}</b>` : ''}${knocksOff(q, id) ? '<i>off the model!</i>' : ''}</button>`).join('')}</div></div>`;
+  }).join('');
+  $('#takeBox').hidden = false;
+}
+
 function log(msg) {
   G.log.unshift(msg);
   G.log = G.log.slice(0, 50);
   $('#log').innerHTML = G.log.map(m => `<li>${m}</li>`).join('');
 }
 
-function newGame(set, cfg) {
+async function newGame(set, cfg) {
+  disposeViews();
+  G = null;
+  $('#winBox').hidden = true;
+  const s = setById(set);
+  if (s.ldraw) {
+    $('#loadMsg').textContent = 'Unboxing the bricks…';
+    $('#loading').hidden = false;
+    try {
+      await build3dReady;
+      await Build3D.loadSet(s, (done, all) => $('#loadMsg').textContent = `Unboxing the bricks… ${done} of ${all} models`);
+    } catch (e) {
+      $('#loadMsg').textContent = e.message;
+      return;
+    }
+    $('#loading').hidden = true;
+  }
   G = {
-    set, players: cfg.map((c, i) => ({...c, color: PAWN_COLORS[i], pos: 0, hand: {}})),
-    supply: startSupply(setById(set)), cur: Math.floor(Math.random() * cfg.length), phase: 'roll',
+    set, players: cfg.map((c, i) => ({...c, color: PAWN_COLORS[i], pos: 0, hand: {}, placed: {}})),
+    supply: startSupply(s), cur: Math.floor(Math.random() * cfg.length), phase: 'roll',
     queue: [], pending: null, log: [], winner: null,
   };
   $('#log').innerHTML = '';
-  $('#winBox').hidden = true;
   buildBoard();
-  log(`New game with ${setById(set).name} cards. ${curP().name} has the most colorful clothes, so they go first!`);
+  if (s.ldraw) {
+    setupCards3D();
+    const g = G;
+    G.timer = setInterval(() => cpuBuild(g), 1500);
+  }
+  log(`New game with ${s.name} cards. ${curP().name} has the most colorful clothes, so they go first!`);
+  if (s.ldraw) log('Build your model any time, even on other turns: tap a piece under your model. The first finished model wins!');
   render();
   startTurn();
 }
@@ -148,7 +246,8 @@ function render() {
   });
   if (G.pending && G.pending.a.t === 'heli') G.pending.opts.forEach(i => $('#cell' + i).classList.add('target'));
   renderYard();
-  $('#players').innerHTML = G.players.map((p, pi) => modelCard(p, pi)).join('');
+  if (is3D()) renderPlayers3D();
+  else $('#players').innerHTML = G.players.map((p, pi) => modelCard(p, pi)).join('');
   const p = curP();
   $('#who').innerHTML = `<span class="dot" style="background:${p.color}"></span>Turn: ${p.name}`;
   $('#rollBtn').disabled = !(G.phase === 'roll' && !p.cpu && !G.winner);
@@ -249,14 +348,15 @@ async function processQueue() {
         G.pending = {a, opts, resolve: res};
         setPrompt(promptText(a), true);
         render();
+        if (a.t === 'take' && is3D()) showTakeBox(opts);
       });
     }
-    if (G !== g) return;
+    if (G !== g || G.winner) return;
     if (applyAction(a, p, choice) === 'moved') return landOn(p);
     render();
-    if (isComplete(p)) return win(p);
+    if (hasWon(p)) return win(p);
   }
-  if (G !== g) return;
+  if (G !== g || G.winner) return;
   setPrompt('', false);
   G.cur = (G.cur + 1) % G.players.length;
   startTurn();
@@ -270,8 +370,10 @@ function applyAction(a, p, choice) {
     log(`${p.name} took a ${PIECES[choice].name}.`);
   } else if (a.t === 'take') {
     const q = G.players[choice.owner];
+    const offModel = is3D() && knocksOff(q, choice.id);
     add(q.hand, choice.id, -1); add(p.hand, choice.id, 1);
-    log(`${p.name} took a ${PIECES[choice.id].name} from ${q.name}!`);
+    if (offModel) { q.placed[choice.id]--; G.views[choice.owner].unplace(choice.id); }
+    log(`${p.name} took a ${PIECES[choice.id].name} ${offModel ? `right off ${q.name}'s model` : `from ${q.name}`}!`);
   } else if (a.t === 'heli') {
     p.pos = choice;
     log(`${p.name} flew to <b>${spaceAt(choice).label}</b>.`);
@@ -283,6 +385,7 @@ function resolvePending(v) {
   const pd = G.pending;
   if (!pd) return;
   G.pending = null;
+  $('#takeBox').hidden = true;
   setPrompt('', false);
   pd.resolve(v);
 }
@@ -314,16 +417,28 @@ function spaceValue(p, i) {
 
 /* ================= Win ================= */
 function win(p) {
+  if (G.winner) return;
   G.winner = p;
   G.phase = 'over';
-  const m = modelOf(p);
+  if (G.pending) { G.pending = null; $('#takeBox').hidden = true; }
+  const m = modelOf(p), pi = G.players.indexOf(p);
   log(`🏆 ${p.name} built the ${m.name}!`);
   setPrompt(`${p.name} wins!`, false);
   render();
   $('#winTitle').textContent = `${p.name} built the ${m.name}! ${m.emoji}`;
-  $('#winModel').innerHTML = modelCard(p, G.players.indexOf(p), {full: true}) +
-    (m.no ? `<p><a href="https://www.bricklink.com/v2/catalog/catalogitem.page?S=${m.no}" target="_blank" rel="noopener">See the real set ${m.no} on BrickLink</a></p>` : '');
-  setTimeout(() => $('#winBox').hidden = false, 500);
+  const link = m.no ? `<p><a href="https://www.bricklink.com/v2/catalog/catalogitem.page?S=${m.no}" target="_blank" rel="noopener">See the real set ${m.no} on BrickLink</a></p>` : '';
+  if (is3D()) {
+    G.views[pi].celebrate();
+    $('#winModel').innerHTML = `<div class="view3d big" id="winView"></div>${link}`;
+    setTimeout(() => {
+      $('#winBox').hidden = false;
+      G.winView = Build3D.createView($('#winView'), m, {autoRotate: true});
+      G.winView.setPlaced(m.parts);
+    }, 1200);
+  } else {
+    $('#winModel').innerHTML = modelCard(p, pi, {full: true}) + link;
+    setTimeout(() => $('#winBox').hidden = false, 500);
+  }
 }
 
 
@@ -387,9 +502,14 @@ $('#newBtn').onclick = () => { renderSetup(); $('#setup').hidden = false; };
 $('#againBtn').onclick = () => { $('#winBox').hidden = true; renderSetup(); $('#setup').hidden = false; };
 $('#rulesBtn').onclick = () => $('#rules').hidden = false;
 $('#rulesClose').onclick = () => $('#rules').hidden = true;
+$('#takeSkip').onclick = () => { if (G && G.pending) resolvePending(null); };
 document.addEventListener('click', e => {
+  const tp = e.target.closest('.tray-piece');
+  if (tp && G) return placePiece(+tp.dataset.owner, tp.dataset.piece);
   if (!G || !G.pending) return;
   const pd = G.pending;
+  const pick = e.target.closest('.takepick');
+  if (pick && pd.a.t === 'take') return resolvePending({owner: +pick.dataset.owner, id: pick.dataset.piece});
   const sup = e.target.closest('.sup');
   if (sup && pd.a.t === 'pick' && pd.opts.includes(sup.dataset.piece)) return resolvePending(sup.dataset.piece);
   const slot = e.target.closest('.slot');
@@ -400,6 +520,13 @@ document.addEventListener('click', e => {
   const cell = e.target.closest('.cell');
   if (cell && pd.a.t === 'heli' && pd.opts.includes(+cell.dataset.cell)) return resolvePending(+cell.dataset.cell);
 });
+// Pointing at a tray piece lights up where it goes on the model.
+for (const [ev, on] of [['mouseover', true], ['focusin', true], ['mouseout', false], ['focusout', false]]) {
+  document.addEventListener(ev, e => {
+    const tp = e.target.closest && e.target.closest('.tray-piece');
+    if (tp && G && G.views) G.views[+tp.dataset.owner].hint(on ? tp.dataset.piece : null);
+  });
+}
 document.addEventListener('keydown', e => {
   if ((e.key === ' ' || e.key === 'Enter') && !$('#rollBtn').disabled && $('#setup').hidden && !['INPUT', 'SELECT', 'BUTTON'].includes(document.activeElement.tagName)) {
     e.preventDefault(); roll();

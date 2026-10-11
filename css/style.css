@@ -114,3 +114,27 @@ main{display:grid;grid-template-columns:minmax(0,720px) minmax(300px,1fr);gap:16
 .setpics{display:flex;gap:8px;margin-bottom:4px;min-height:20px}
 .setpics img{width:23%;max-width:110px;aspect-ratio:4/3;object-fit:contain;background:#f4f4f4;border-radius:6px}
 .setpics span{font-size:32px}
+
+/* ---------- 3D building ---------- */
+.m3d{display:flex;flex-direction:column}
+.view3d{position:relative;height:240px;margin:0 -8px;background:radial-gradient(ellipse at 50% 60%,#ffffff 0,#e4f1fb 70%,#cfe3f3 100%);touch-action:none;cursor:grab}
+.view3d canvas{display:block;width:100%;height:100%}
+.view3d.big{height:min(60vh,420px);margin:0;border-radius:10px}
+.vhint{position:absolute;right:8px;bottom:6px;font-size:11px;color:#6b7c8c;pointer-events:none}
+.tray{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:8px 0 2px;min-height:52px}
+.traylbl{font-size:13px;color:var(--muted);width:100%}
+.tray-piece,.takepick{position:relative;width:54px;height:54px;padding:3px;border:2px solid #d8d0c0;border-radius:10px;background:#fffbe9;transition:transform .12s}
+.tray-piece:not(:disabled):hover,.takepick:hover{transform:translateY(-3px) scale(1.06);border-color:var(--lego-red);background:#fff3a6}
+.tray-piece:disabled{cursor:default;opacity:.85}
+.tray-piece .pimg,.takepick .pimg,.xpiece .pimg{width:100%;height:100%}
+.tray-piece b,.takepick b{position:absolute;right:-6px;top:-8px;background:#fff;border:2px solid var(--line);border-radius:10px;font-size:11px;padding:0 4px}
+.takepick i{position:absolute;left:0;right:0;bottom:-4px;font-size:9px;font-style:normal;background:var(--lego-red);color:#fff;border-radius:6px}
+.xpiece{display:inline-flex;align-items:center;width:30px;height:30px;vertical-align:middle}
+.takerow{margin-bottom:10px}
+.takepieces{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.sup .pimg{width:3.4em;height:3.4em}
+.spinner{width:48px;height:48px;margin:6px auto;border:6px solid #eee;border-top-color:var(--lego-red);border-radius:50%;animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.mhead{flex-wrap:wrap;row-gap:2px}
+.mtitle,.mhead .prog{white-space:nowrap}
+@media (max-width:520px){.m3d .mhead .prog{width:100%;margin-left:0}.view3d{height:220px}}
