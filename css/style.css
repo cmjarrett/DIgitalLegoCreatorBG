@@ -138,3 +138,10 @@ main{display:grid;grid-template-columns:minmax(0,720px) minmax(300px,1fr);gap:16
 .mhead{flex-wrap:wrap;row-gap:2px}
 .mtitle,.mhead .prog{white-space:nowrap}
 @media (max-width:520px){.m3d .mhead .prog{width:100%;margin-left:0}.view3d{height:220px}}
+
+/* ---------- Simulation report (index.html?sim=1) ---------- */
+.simreport{max-width:1360px;margin:0 auto 24px;overflow-x:auto}
+.simtable{border-collapse:collapse;font-size:13px;width:100%}
+.simtable th,.simtable td{border-bottom:1px solid #ddd;padding:6px 8px;text-align:left;vertical-align:top}
+.simtable tr.bad td:first-child{color:var(--lego-red);font-weight:700}
+.simtable .hot{color:var(--lego-red);font-weight:700}

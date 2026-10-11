@@ -1,51 +1,676 @@
 {
   "packs": [
-    {"id": "space", "name": "Space", "emoji": "🚀", "sets": [
-      {"name": "Classic Space I", "models": [["885-1", "Space Scooter"], ["886-1", "Space Buggy"], ["6801-1", "Moon Buggy"], ["6821-1", "Shovel Buggy"]]},
-      {"name": "Classic Space II", "models": [["889-1", "Radar Truck"], ["6822-1", "Space Digger"], ["6805-1", "Astro Dasher"], ["1557-1", "Space Scooter"]]},
-      {"name": "Futuron & Blacktron", "models": [["6884-1", "Aero Module"], ["6848-1", "Strategic Pursuer"], ["1462-1", "Galactic Scout"], ["1887-1", "Scout Patrol Ship"]]},
-      {"name": "Space Police & M:Tron", "models": [["1916-1", "Starion Patrol"], ["6813-1", "Galactic Chief"], ["6852-1", "Sonar Security"], ["6811-1", "Pulsar Charger"]]},
-      {"name": "Ice Planet & Spyrius", "models": [["6814-1", "Ice Tunnelator"], ["1731-1", "Ice Planet Scooter"], ["1714-1", "Surveillance Scooter"], ["1478-1", "Satellite Up-Link"]]},
-      {"name": "Robots", "models": [["7221-1", "Robots"], ["7910-1", "Robot"], ["1969-1", "Mini Robot"], ["8399-1", "K-9 Bot"]]}
-    ]},
-    {"id": "star-wars", "name": "Star Wars Minis", "emoji": "⭐", "sets": [
-      {"name": "Mini Starfighters", "models": [["3219-1", "TIE Fighter"], ["6964-1", "Slave I"], ["6965-1", "TIE Interceptor"], ["6966-1", "Jedi Starfighter"]]},
-      {"name": "Mini Fleet", "models": [["8028-1", "TIE Fighter"], ["6967-1", "ARC-170"], ["30053-1", "Republic Attack Cruiser"], ["30056-1", "Star Destroyer"]]}
-    ]},
-    {"id": "dinosaurs", "name": "Dinosaurs & Creatures", "emoji": "🦖", "sets": [
-      {"name": "Dinosaurs", "models": [["7209-1", "Pteranodon"], ["7210-1", "Apatosaurus"], ["7219-1", "Dinosaur"], ["5920-1", "Dino Island Racer"]]},
-      {"name": "Creepy Crawlies", "models": [["7268-1", "Crab"], ["7269-1", "Scorpion"], ["30022-1", "Bee"], ["7607-1", "Butterfly"]]}
-    ]},
-    {"id": "jungle", "name": "Jungle & Safari", "emoji": "🌴", "sets": [
-      {"name": "Safari", "models": [["4903-1", "Lion"], ["4904-1", "Elephant"], ["4905-1", "Giraffe"], ["7270-1", "Bird"]]},
-      {"name": "Jungle Adventurers", "models": [["2541-1", "Adventurers Car"], ["2542-1", "Adventurers Plane"], ["6550-1", "Outback Racer"], ["30472-1", "Parrot"]]}
-    ]},
-    {"id": "cars", "name": "Cars", "emoji": "🏎️", "sets": [
-      {"name": "Tiny Turbos", "models": [["4947-1", "Yellow Racer"], ["4948-1", "Red Racer"], ["4949-1", "Blue Racer"], ["7800-1", "Off Road Racer"]]},
-      {"name": "Tiny Turbos II", "models": [["7452-1", "Lime Racer"], ["7453-1", "Yellow Racer"], ["7613-1", "Track Racer"], ["30036-1", "Buggy Racer"]]},
-      {"name": "Drome Racers", "models": [["4308-1", "Racing Car"], ["4309-1", "Blue Racer"], ["4310-1", "Orange Racer"], ["7802-1", "Black Racer"]]},
-      {"name": "Ferrari", "models": [["30190-1", "Ferrari 150° Italia"], ["30194-1", "458 Italia"], ["30192-1", "F40"], ["30191-1", "Ferrari Truck"]]},
-      {"name": "Classic Racers", "models": [["6609-1", "Race Car"], ["1528-1", "Dragster"], ["6503-1", "Sprint Racer"], ["1631-1", "Black Racer"]]}
-    ]},
-    {"id": "town", "name": "Town & Rescue", "emoji": "🚒", "sets": [
-      {"name": "Town Heroes (1978)", "models": [["621-1", "Police Car"], ["620-1", "Fire Car"], ["606-1", "Ambulance"], ["604-1", "Service Car"]]},
-      {"name": "Town Helpers (1981)", "models": [["6600-1", "Police Patrol"], ["6611-1", "Fire Chief's Car"], ["6607-1", "Service Truck"], ["6608-1", "Tractor"]]},
-      {"name": "Construction", "models": [["622-1", "Tipper Truck"], ["6630-1", "Bucket Loader"], ["6603-1", "Shovel Truck"], ["6507-1", "Mini Dumper"]]},
-      {"name": "City (2005–08)", "models": [["4914-1", "Fire Chief's Car"], ["4912-1", "Police Jet Ski"], ["5610-1", "Builder"], ["7235-1", "Police Motorcycle"]]}
-    ]},
-    {"id": "boats-planes", "name": "Boats & Planes", "emoji": "⛵", "sets": [
-      {"name": "Speedboats", "models": [["2882-1", "Speedboat"], ["6415-1", "Res-Q Jet-Ski"], ["4641-1", "Harbor Speed Boat"], ["6511-1", "Rescue Runabout"]]},
-      {"name": "Water Racers", "models": [["1632-1", "Motor Boat"], ["6508-1", "Wave Racer"], ["6517-1", "Water Jet"], ["7610-1", "Speedboat"]]},
-      {"name": "Up in the Sky", "models": [["613-1", "Biplane"], ["7808-1", "Yellow Airplane"], ["4906-1", "Helicopter"], ["7912-1", "Rescue Helicopter"]]},
-      {"name": "Creator 2001", "models": [["4016-1", "Racer"], ["4017-1", "Sea Helicopter"], ["4018-1", "Ship"], ["4019-1", "Aeroplane"]]}
-    ]},
-    {"id": "adventure", "name": "Knights & Pirates", "emoji": "🏰", "sets": [
-      {"name": "Knights", "models": [["6011-1", "Knight's Treasure"], ["6021-1", "Jousting Knights"], ["6022-1", "Horse Cart"], ["6034-1", "Monarch's Ghost"]]},
-      {"name": "Pirates & Wild West", "models": [["6235-1", "Buried Treasure"], ["1713-1", "Shipwrecked Pirate"], ["2845-1", "Indian Chief"], ["6790-1", "Bandit's Wheelgun"]]}
-    ]},
-    {"id": "fun", "name": "Animals & Halloween", "emoji": "🎃", "sets": [
-      {"name": "Fabuland Friends", "models": [["3704-1", "Marjorie Mouse"], ["3707-1", "Clover Cow"], ["3784-1", "Hugo Hog"], ["3721-1", "Clive Crocodile"]]},
-      {"name": "Halloween", "models": [["40012-1", "Pumpkin"], ["40013-1", "Ghost"], ["40014-1", "Bat"], ["6232-1", "Skeleton Crew"]]}
-    ]}
+    {
+      "id": "space",
+      "name": "Space",
+      "emoji": "🚀",
+      "sets": [
+        {
+          "name": "Classic Space I",
+          "models": [
+            [
+              "885-1",
+              "Space Scooter"
+            ],
+            [
+              "886-1",
+              "Space Buggy"
+            ],
+            [
+              "6801-1",
+              "Moon Buggy"
+            ],
+            [
+              "6821-1",
+              "Shovel Buggy"
+            ]
+          ]
+        },
+        {
+          "name": "Classic Space II",
+          "models": [
+            [
+              "889-1",
+              "Radar Truck"
+            ],
+            [
+              "6822-1",
+              "Space Digger"
+            ],
+            [
+              "6805-1",
+              "Astro Dasher"
+            ],
+            [
+              "1557-1",
+              "Space Scooter"
+            ]
+          ]
+        },
+        {
+          "name": "Futuron & Blacktron",
+          "models": [
+            [
+              "6884-1",
+              "Aero Module"
+            ],
+            [
+              "6848-1",
+              "Strategic Pursuer"
+            ],
+            [
+              "1462-1",
+              "Galactic Scout"
+            ],
+            [
+              "1887-1",
+              "Scout Patrol Ship"
+            ]
+          ]
+        },
+        {
+          "name": "Space Police & M:Tron",
+          "models": [
+            [
+              "1916-1",
+              "Starion Patrol"
+            ],
+            [
+              "6813-1",
+              "Galactic Chief"
+            ],
+            [
+              "6852-1",
+              "Sonar Security"
+            ],
+            [
+              "6811-1",
+              "Pulsar Charger"
+            ]
+          ]
+        },
+        {
+          "name": "Ice Planet & Spyrius",
+          "models": [
+            [
+              "6814-1",
+              "Ice Tunnelator"
+            ],
+            [
+              "1731-1",
+              "Ice Planet Scooter"
+            ],
+            [
+              "1714-1",
+              "Surveillance Scooter"
+            ],
+            [
+              "1478-1",
+              "Satellite Up-Link"
+            ]
+          ]
+        },
+        {
+          "name": "Robots",
+          "models": [
+            [
+              "7221-1",
+              "Robots"
+            ],
+            [
+              "7910-1",
+              "Robot"
+            ],
+            [
+              "1969-1",
+              "Mini Robot"
+            ],
+            [
+              "8399-1",
+              "K-9 Bot"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "star-wars",
+      "name": "Star Wars Minis",
+      "emoji": "⭐",
+      "sets": [
+        {
+          "name": "Mini Starfighters",
+          "models": [
+            [
+              "3219-1",
+              "TIE Fighter"
+            ],
+            [
+              "6964-1",
+              "Slave I"
+            ],
+            [
+              "6965-1",
+              "TIE Interceptor"
+            ],
+            [
+              "6966-1",
+              "Jedi Starfighter"
+            ]
+          ]
+        },
+        {
+          "name": "Mini Fleet",
+          "models": [
+            [
+              "8028-1",
+              "TIE Fighter"
+            ],
+            [
+              "6967-1",
+              "ARC-170"
+            ],
+            [
+              "30053-1",
+              "Republic Attack Cruiser"
+            ],
+            [
+              "30056-1",
+              "Star Destroyer"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dinosaurs",
+      "name": "Dinosaurs & Creatures",
+      "emoji": "🦖",
+      "sets": [
+        {
+          "name": "Dinosaurs",
+          "models": [
+            [
+              "7209-1",
+              "Pteranodon"
+            ],
+            [
+              "7210-1",
+              "Apatosaurus"
+            ],
+            [
+              "7219-1",
+              "Dinosaur"
+            ],
+            [
+              "5920-1",
+              "Dino Island Racer"
+            ]
+          ]
+        },
+        {
+          "name": "Creepy Crawlies",
+          "models": [
+            [
+              "7268-1",
+              "Crab"
+            ],
+            [
+              "7269-1",
+              "Scorpion"
+            ],
+            [
+              "30022-1",
+              "Bee"
+            ],
+            [
+              "7607-1",
+              "Butterfly"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jungle",
+      "name": "Jungle & Safari",
+      "emoji": "🌴",
+      "sets": [
+        {
+          "name": "Safari",
+          "models": [
+            [
+              "4903-1",
+              "Lion"
+            ],
+            [
+              "4904-1",
+              "Elephant"
+            ],
+            [
+              "4905-1",
+              "Giraffe"
+            ],
+            [
+              "7270-1",
+              "Bird"
+            ]
+          ]
+        },
+        {
+          "name": "Jungle Adventurers",
+          "models": [
+            [
+              "2541-1",
+              "Adventurers Car"
+            ],
+            [
+              "2542-1",
+              "Adventurers Plane"
+            ],
+            [
+              "6550-1",
+              "Outback Racer"
+            ],
+            [
+              "30472-1",
+              "Parrot"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cars",
+      "name": "Cars",
+      "emoji": "🏎️",
+      "sets": [
+        {
+          "name": "Tiny Turbos",
+          "models": [
+            [
+              "4947-1",
+              "Yellow Racer"
+            ],
+            [
+              "4948-1",
+              "Red Racer"
+            ],
+            [
+              "4949-1",
+              "Blue Racer"
+            ],
+            [
+              "7800-1",
+              "Off Road Racer"
+            ]
+          ]
+        },
+        {
+          "name": "Tiny Turbos II",
+          "models": [
+            [
+              "7452-1",
+              "Lime Racer"
+            ],
+            [
+              "7453-1",
+              "Yellow Racer"
+            ],
+            [
+              "7613-1",
+              "Track Racer"
+            ],
+            [
+              "30036-1",
+              "Buggy Racer"
+            ]
+          ]
+        },
+        {
+          "name": "Drome Racers",
+          "models": [
+            [
+              "4308-1",
+              "Racing Car"
+            ],
+            [
+              "4309-1",
+              "Blue Racer"
+            ],
+            [
+              "4310-1",
+              "Orange Racer"
+            ],
+            [
+              "7802-1",
+              "Black Racer"
+            ]
+          ]
+        },
+        {
+          "name": "Ferrari",
+          "models": [
+            [
+              "30190-1",
+              "Ferrari 150° Italia"
+            ],
+            [
+              "30194-1",
+              "458 Italia"
+            ],
+            [
+              "30192-1",
+              "F40"
+            ],
+            [
+              "30191-1",
+              "Ferrari Truck"
+            ]
+          ]
+        },
+        {
+          "name": "Classic Racers",
+          "models": [
+            [
+              "6609-1",
+              "Race Car"
+            ],
+            [
+              "1528-1",
+              "Dragster"
+            ],
+            [
+              "6503-1",
+              "Sprint Racer"
+            ],
+            [
+              "1631-1",
+              "Black Racer"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "town",
+      "name": "Town & Rescue",
+      "emoji": "🚒",
+      "sets": [
+        {
+          "name": "Town Heroes (1978)",
+          "models": [
+            [
+              "621-1",
+              "Police Car"
+            ],
+            [
+              "620-1",
+              "Fire Car"
+            ],
+            [
+              "606-1",
+              "Ambulance"
+            ],
+            [
+              "604-1",
+              "Service Car"
+            ]
+          ]
+        },
+        {
+          "name": "Town Helpers (1981)",
+          "models": [
+            [
+              "6600-1",
+              "Police Patrol"
+            ],
+            [
+              "6602-1",
+              "Fire Chief's Car"
+            ],
+            [
+              "6607-1",
+              "Service Truck"
+            ],
+            [
+              "6608-1",
+              "Tractor"
+            ]
+          ]
+        },
+        {
+          "name": "Construction",
+          "models": [
+            [
+              "622-1",
+              "Tipper Truck"
+            ],
+            [
+              "6630-1",
+              "Bucket Loader"
+            ],
+            [
+              "6603-1",
+              "Shovel Truck"
+            ],
+            [
+              "6507-1",
+              "Mini Dumper"
+            ]
+          ]
+        },
+        {
+          "name": "City (2005–08)",
+          "models": [
+            [
+              "4914-1",
+              "Fire Chief's Car"
+            ],
+            [
+              "4991-1",
+              "Police Helicopter"
+            ],
+            [
+              "5610-1",
+              "Builder"
+            ],
+            [
+              "7235-1",
+              "Police Motorcycle"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "boats-planes",
+      "name": "Boats & Planes",
+      "emoji": "⛵",
+      "sets": [
+        {
+          "name": "Speedboats",
+          "models": [
+            [
+              "2882-1",
+              "Speedboat"
+            ],
+            [
+              "7610-1",
+              "Creator Speedboat"
+            ],
+            [
+              "6517-1",
+              "Water Jet"
+            ],
+            [
+              "4912-1",
+              "Police Jet Ski"
+            ]
+          ]
+        },
+        {
+          "name": "Big Boats",
+          "models": [
+            [
+              "1632-1",
+              "Motor Boat"
+            ],
+            [
+              "6508-1",
+              "Wave Racer"
+            ],
+            [
+              "4641-1",
+              "Harbor Speed Boat"
+            ],
+            [
+              "6511-1",
+              "Rescue Runabout"
+            ]
+          ]
+        },
+        {
+          "name": "Up in the Sky",
+          "models": [
+            [
+              "613-1",
+              "Biplane"
+            ],
+            [
+              "7912-1",
+              "Rescue Helicopter"
+            ],
+            [
+              "7222-1",
+              "Red Helicopter"
+            ],
+            [
+              "7609-1",
+              "Creator Helicopter"
+            ]
+          ]
+        },
+        {
+          "name": "Creator 2001",
+          "models": [
+            [
+              "4016-1",
+              "Racer"
+            ],
+            [
+              "4017-1",
+              "Sea Helicopter"
+            ],
+            [
+              "4018-1",
+              "Ship"
+            ],
+            [
+              "4019-1",
+              "Aeroplane"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adventure",
+      "name": "Knights & Pirates",
+      "emoji": "🏰",
+      "sets": [
+        {
+          "name": "Knights",
+          "models": [
+            [
+              "6011-1",
+              "Knight's Treasure"
+            ],
+            [
+              "6021-1",
+              "Jousting Knights"
+            ],
+            [
+              "6022-1",
+              "Horse Cart"
+            ],
+            [
+              "6034-1",
+              "Monarch's Ghost"
+            ]
+          ]
+        },
+        {
+          "name": "Pirates & Wild West",
+          "models": [
+            [
+              "6235-1",
+              "Buried Treasure"
+            ],
+            [
+              "1713-1",
+              "Shipwrecked Pirate"
+            ],
+            [
+              "2845-1",
+              "Indian Chief"
+            ],
+            [
+              "6790-1",
+              "Bandit's Wheelgun"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fun",
+      "name": "Animals & Halloween",
+      "emoji": "🎃",
+      "sets": [
+        {
+          "name": "Fabuland Friends",
+          "models": [
+            [
+              "3704-1",
+              "Marjorie Mouse"
+            ],
+            [
+              "3707-1",
+              "Clover Cow"
+            ],
+            [
+              "3784-1",
+              "Hugo Hog"
+            ],
+            [
+              "3721-1",
+              "Clive Crocodile"
+            ]
+          ]
+        },
+        {
+          "name": "Halloween",
+          "models": [
+            [
+              "40012-1",
+              "Pumpkin"
+            ],
+            [
+              "40013-1",
+              "Ghost"
+            ],
+            [
+              "40014-1",
+              "Bat"
+            ],
+            [
+              "6232-1",
+              "Skeleton Crew"
+            ]
+          ]
+        }
+      ]
+    }
   ]
 }

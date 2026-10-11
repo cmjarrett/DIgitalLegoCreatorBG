@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Creator: Race to Build It</title>
-<link rel="stylesheet" href="css/style.css?v=4">
+<link rel="stylesheet" href="css/style.css?v=6">
 </head>
 <body>
 <header>
@@ -59,6 +59,8 @@
       <li>Besides the original game, the themed packs (Space, Dinosaurs, Cars, Knights, ...) are real small LEGO sets in 3D. Their color spaces use that set's most common brick colors, and sets with big models give out more pieces on each Pick space.</li>
       <li><b>Building (3D packs):</b> pieces you collect wait in the tray under your model. Tap one any time, even on someone else's turn, and it snaps into place. Drag the model to spin it. The first player to <b>finish building</b> their model wins, so start building early!</li>
       <li>If someone takes a piece you have already built and you have no spare, it comes off your model.</li>
+      <li><b>Head start:</b> models in a card set aren't all the same size, so players with bigger (or harder) models start with some of their pieces already in the tray. Everyone then has about the same amount left to collect. This only happens once, at the start: pieces taken from you later are not replaced.</li>
+      <li><b>3D packs:</b> the plain "Pick Brick" spaces become "Pick Piece" spaces, so you can take any piece you need there, special pieces included.</li>
       <li>Roll the die and move <b>clockwise</b>. Follow the directions on the space.</li>
       <li><b>Pick 1 (color) Brick</b>: take one regular brick of that color from the Brickyard.</li>
       <li><b>Pick 1 Brick</b>: take any one regular brick. Colors without their own space (like gray or black) can only come from here or from another player.</li>
@@ -95,27 +97,28 @@
   </div>
 </div>
 
-<script src="js/colors.js?v=4"></script>
-<script src="js/art.js?v=4"></script>
-<script src="js/packs.js?v=4"></script>
-<script src="js/original.js?v=4"></script>
+<script src="js/colors.js?v=6"></script>
+<script src="js/art.js?v=6"></script>
+<script src="js/packs.js?v=6"></script>
+<script src="js/original.js?v=6"></script>
 <!-- Themed 3D packs (made by tools/ldraw-pack.mjs): add a line here for each file in packs/ -->
-<script src="packs/space.js?v=4"></script>
-<script src="packs/star-wars.js?v=4"></script>
-<script src="packs/dinosaurs.js?v=4"></script>
-<script src="packs/jungle.js?v=4"></script>
-<script src="packs/cars.js?v=4"></script>
-<script src="packs/town.js?v=4"></script>
-<script src="packs/boats-planes.js?v=4"></script>
-<script src="packs/adventure.js?v=4"></script>
-<script src="packs/fun.js?v=4"></script>
-<script src="js/game.js?v=4"></script>
+<script src="packs/space.js?v=6"></script>
+<script src="packs/star-wars.js?v=6"></script>
+<script src="packs/dinosaurs.js?v=6"></script>
+<script src="packs/jungle.js?v=6"></script>
+<script src="packs/cars.js?v=6"></script>
+<script src="packs/town.js?v=6"></script>
+<script src="packs/boats-planes.js?v=6"></script>
+<script src="packs/adventure.js?v=6"></script>
+<script src="packs/fun.js?v=6"></script>
+<script src="js/game.js?v=6"></script>
+<script src="js/sim.js?v=6"></script>
 <script type="importmap">
 {"imports": {
   "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
   "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
 }}
 </script>
-<script type="module" src="js/build3d.js?v=4"></script>
+<script type="module" src="js/build3d.js?v=6"></script>
 </body>
 </html>

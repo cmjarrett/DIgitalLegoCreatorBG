@@ -5,6 +5,8 @@ const SPACES = {
   brick:   {label: 'Pick 1 Brick', icon: 'any', act: [{t: 'pick', f: 'brick'}]},
   brick2:  {label: 'Pick 2 Bricks', icon: 'two', act: [{t: 'pick', f: 'brick'}, {t: 'pick', f: 'brick'}]},
   special: {label: 'Pick 1 Special Piece', icon: 'wheel', act: [{t: 'pick', f: 'special'}]},
+  piece:   {label: 'Pick 1 Piece', icon: 'any', act: [{t: 'pick', f: 'piece'}]},
+  piece2:  {label: 'Pick 2 Pieces', icon: 'two', act: [{t: 'pick', f: 'piece'}, {t: 'pick', f: 'piece'}]},
   take1:   {label: 'Take 1 Brick from Another', icon: '✋', act: [{t: 'take'}], cls: 'take'},
   take2:   {label: 'Take 2 Bricks from Another', icon: '✋✋', act: [{t: 'take'}, {t: 'take'}], cls: 'corner take'},
 };
@@ -13,9 +15,16 @@ const TRACK = ['start','brick','c0','brick2','special','brick','c1',
                'take2','c2','special','take1','c3','brick2','c4',
                'heli','c0','brick','special','take1','c2','c1',
                'heli','c3','brick2','c4','take1','special','brick'];
+// House rules that keep the 3D card sets fair and not too long, found with the simulator (js/sim.js).
+// Either can be switched off for testing: index.html?headstart=0&flexpick=0
+const URL_RULES = new URLSearchParams(location.search);
+const RULES = {headStart: URL_RULES.get('headstart') !== '0', flexPick: URL_RULES.get('flexpick') !== '0'};
+
 function spaceAt(i) {
   const key = TRACK[i], slot = /^c(\d)$/.exec(key), set = G && setById(G.set);
   let sp = SPACES[key];
+  // 3D models have many special pieces (wheels, printed parts, minifigures), so the plain "Pick Brick" spaces take any piece.
+  if (set && set.ldraw && RULES.flexPick && (key === 'brick' || key === 'brick2')) sp = SPACES[key === 'brick' ? 'piece' : 'piece2'];
   if (slot) {
     const color = set && set.colors[+slot[1]];
     sp = color ? {label: `Pick 1 ${COLOR_NAME[color]} Brick`, icon: color, act: [{t: 'pick', f: color}]} : SPACES.brick;
@@ -27,7 +36,7 @@ function spaceAt(i) {
   return {...sp, act: sp.act.flatMap(a => Array(k).fill(a)),
     label: sp.label.replace(/Pick \d+ (.*?)(?:s?)$/, (_, what) => `Pick ${n} ${what}s`)};
 }
-const filterLabel = f => f === 'brick' ? '1 brick' : f === 'special' ? '1 special piece' : `1 ${COLOR_NAME[f].toLowerCase()} brick`;
+const filterLabel = f => f === 'brick' ? '1 brick' : f === 'piece' ? '1 piece' : f === 'special' ? '1 special piece' : `1 ${COLOR_NAME[f].toLowerCase()} brick`;
 const PAWN_COLORS = ['#d01012', '#0b5ed7', '#00852b', '#7b2cbf'];
 
 
@@ -71,7 +80,12 @@ function renderYard() {
 
 /* ================= Game state ================= */
 let G = null;
-const sleep = ms => new Promise(r => setTimeout(r, ms));
+// index.html?sim=1 plays computer-only games as fast as it can (js/sim.js runs them): no waiting, no drawing.
+const SIM = new URLSearchParams(location.search).has('sim');
+const SIM_TURN_CAP = 400;
+const sleep = ms => SIM ? Promise.resolve() : new Promise(r => setTimeout(r, ms));
+// Hand control back to the browser between simulated turns, without the 4 ms minimum a timer would add.
+const nextTask = () => new Promise(r => { const ch = new MessageChannel(); ch.port1.onmessage = () => r(); ch.port2.postMessage(0); });
 const curP = () => G.players[G.cur];
 const modelOf = p => setById(G.set).models[p.model];
 
@@ -87,6 +101,8 @@ function progress(p) {
   for (const id in parts) have += Math.min(parts[id], p.hand[id] || 0);
   return [have, total];
 }
+// Pieces still to collect: head starts make "collected so far" a poor measure of who is winning.
+const piecesLeft = p => { const [have, total] = progress(p); return total - have; };
 const isComplete = p => { const [a, b] = progress(p); return a === b; };
 
 // 3D card sets: collected pieces still have to be built onto the model, and the first finished model wins.
@@ -102,7 +118,7 @@ function placePiece(pi, id) {
   const p = G.players[pi];
   if (!is3D() || G.winner || unplaced(p, id) <= 0) return;
   p.placed[id] = (p.placed[id] || 0) + 1;
-  G.views[pi].place(id);
+  if (G.views) G.views[pi].place(id);
   render();
   if (hasWon(p)) win(p);
 }
@@ -169,7 +185,36 @@ function showTakeBox(opts) {
 function log(msg) {
   G.log.unshift(msg);
   G.log = G.log.slice(0, 50);
-  $('#log').innerHTML = G.log.map(m => `<li>${m}</li>`).join('');
+  if (!SIM) $('#log').innerHTML = G.log.map(m => `<li>${m}</li>`).join('');
+}
+
+// Head start (a house rule): applied once when the game starts, never topped up later, so pieces stolen from a
+// player with a head start are simply gone (a known downside).
+// Models in a card set differ in size, and special pieces are harder to get than bricks (fewer
+// spaces give them). Players with harder models start with some of their pieces, so everyone has about the
+// same amount left to collect. A special piece counts double, unless flexible picks make them as easy as bricks.
+function headStart() {
+  const SPECIAL_WEIGHT = setById(G.set).ldraw && RULES.flexPick ? 1 : 2;
+  const work = p => {
+    const ids = [];
+    for (const id in modelOf(p).parts) for (let k = 0; k < modelOf(p).parts[id]; k++) ids.push(id);
+    return ids;
+  };
+  const score = ids => ids.reduce((a, id) => a + (PIECES[id].kind === 'special' ? SPECIAL_WEIGHT : 1), 0);
+  const target = Math.min(...G.players.map(p => score(work(p))));
+  for (const p of G.players) {
+    const ids = work(p).sort(() => Math.random() - .5);
+    let left = score(ids), given = 0;
+    // Hand out special pieces first (they are the scarce ones), then bricks, until this player's work matches the easiest model.
+    for (const kind of ['special', 'brick']) {
+      for (const id of ids) {
+        const w = kind === 'special' ? SPECIAL_WEIGHT : 1;
+        if (PIECES[id].kind !== kind || left - w < target || !G.supply[id]) continue;
+        G.supply[id]--; p.hand[id] = (p.hand[id] || 0) + 1; left -= w; given++;
+      }
+    }
+    if (given) log(`Head start for ${p.name}: ${given} piece${given > 1 ? 's' : ''} for a bigger model.`);
+  }
 }
 
 async function newGame(set, cfg) {
@@ -177,7 +222,7 @@ async function newGame(set, cfg) {
   G = null;
   $('#winBox').hidden = true;
   const s = setById(set);
-  if (s.ldraw) {
+  if (s.ldraw && !SIM) {
     $('#loadMsg').textContent = 'Unboxing the bricks…';
     $('#loading').hidden = false;
     try {
@@ -193,15 +238,17 @@ async function newGame(set, cfg) {
     set, players: cfg.map((c, i) => ({...c, color: PAWN_COLORS[i], pos: 0, hand: {}, placed: {}})),
     supply: startSupply(s), cur: Math.floor(Math.random() * cfg.length), phase: 'roll',
     queue: [], pending: null, log: [], winner: null,
+    turns: 0, stats: {turnsLost: 0, takes: 0, knockOffs: 0},
   };
   $('#log').innerHTML = '';
   buildBoard();
-  if (s.ldraw) {
+  if (s.ldraw && !SIM) {
     setupCards3D();
     const g = G;
-    G.timer = setInterval(() => cpuBuild(g), 1500);
+    G.timer = setInterval(() => cpuBuild(g), 1000);
   }
-  log(`New game with ${s.name} cards. ${curP().name} has the most colorful clothes, so they go first!`);
+  log(`New game with ${s.name} cards. First up: ${curP().name} (most colorful clothes)!`);
+  if (RULES.headStart) headStart();
   if (s.ldraw) log('Build your model any time, even on other turns: tap a piece under your model. The first finished model wins!');
   render();
   startTurn();
@@ -236,7 +283,7 @@ function modelCard(p, pi, opts = {}) {
 }
 
 function render() {
-  if (!G) return;
+  if (!G || SIM) return;
   document.querySelectorAll('.cell').forEach(c => { c.querySelector('.pawns').innerHTML = ''; c.classList.remove('hot', 'multi', 'target'); });
   G.players.forEach((p, i) => {
     const cell = $('#cell' + p.pos);
@@ -265,7 +312,17 @@ function startTurn() {
   G.phase = 'roll';
   setPrompt(p.cpu ? `${p.name} is rolling…` : 'Roll the die to move.', false);
   render();
+  if (SIM) return simTurn();
   if (p.cpu) { const g = G; setTimeout(() => { if (G === g) roll(); }, 800); }
+}
+// One simulated turn. A real turn takes about 4 seconds and computer players place a piece every second, so 4 here.
+function simTurn() {
+  const g = G;
+  G.turns++;
+  if (is3D()) for (let k = 0; k < 4; k++) cpuBuild(g);
+  if (G.winner) return;
+  if (G.turns > SIM_TURN_CAP) { G.phase = 'over'; G.winner = {stuck: true}; return G.onEnd && G.onEnd('stuck'); }
+  nextTask().then(() => { if (G === g) roll(); });
 }
 
 async function roll() {
@@ -299,11 +356,13 @@ function landOn(p) {
   G.queue = sp.act.map(a => ({...a}));
   G.phase = 'acting';
   G.gotSomething = false;
+  G.lostTurn = false;
   processQueue();
 }
 
 function matches(id, f) {
   const P = PIECES[id];
+  if (f === 'piece') return true;
   if (f === 'special') return P.kind === 'special';
   if (f === 'brick') return P.kind === 'brick';
   return P.kind === 'brick' && P.color === f;
@@ -333,7 +392,7 @@ async function processQueue() {
     const a = G.queue.shift();
     const opts = options(a, p);
     if (!opts.length) {
-      if (a.t === 'pick' && !G.gotSomething) log(`${p.name} doesn't need anything here and loses the turn.`);
+      if (a.t === 'pick' && !G.gotSomething && !G.lostTurn) { G.lostTurn = true; log(`${p.name} doesn't need anything here and loses the turn.`); G.stats.turnsLost++; }
       else if (a.t === 'take') log(`Nobody has any pieces to take yet.`);
       await sleep(500);
       continue;
@@ -372,7 +431,8 @@ function applyAction(a, p, choice) {
     const q = G.players[choice.owner];
     const offModel = is3D() && knocksOff(q, choice.id);
     add(q.hand, choice.id, -1); add(p.hand, choice.id, 1);
-    if (offModel) { q.placed[choice.id]--; G.views[choice.owner].unplace(choice.id); }
+    G.stats.takes++;
+    if (offModel) { q.placed[choice.id]--; G.stats.knockOffs++; if (G.views) G.views[choice.owner].unplace(choice.id); }
     log(`${p.name} took a ${PIECES[choice.id].name} ${offModel ? `right off ${q.name}'s model` : `from ${q.name}`}!`);
   } else if (a.t === 'heli') {
     p.pos = choice;
@@ -399,7 +459,7 @@ function cpuChoose(a, p, opts) {
   if (a.t === 'pick') return best(opts, id => 10 - G.supply[id]); // grab the scarcest piece first
   if (a.t === 'take') {
     // Reclaim pieces we need first; otherwise slow down whoever is closest to winning.
-    return best(opts, o => (need[o.id] > 0 ? 100 : 0) + progress(G.players[o.owner])[0] * 3
+    return best(opts, o => (need[o.id] > 0 ? 100 : 0) + (60 - piecesLeft(G.players[o.owner])) * 3
       + (needOf(G.players[o.owner])[o.id] >= 0 ? 10 : 0));
   }
   if (a.t === 'heli') return best(opts, i => spaceValue(p, i));
@@ -423,6 +483,7 @@ function win(p) {
   if (G.pending) { G.pending = null; $('#takeBox').hidden = true; }
   const m = modelOf(p), pi = G.players.indexOf(p);
   log(`🏆 ${p.name} built the ${m.name}!`);
+  if (SIM) return G.onEnd && G.onEnd('win');
   setPrompt(`${p.name} wins!`, false);
   render();
   $('#winTitle').textContent = `${p.name} built the ${m.name}! ${m.emoji}`;

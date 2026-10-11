@@ -54,6 +54,13 @@ const trimLib = text => text.split(/\r?\n/).filter((l, i) => {
   return /^0\s+(!LDRAW_ORG|BFC|!CATEGORY|Name:|Author:|!LICENSE)/.test(t);
 }).join('\n');
 const descOf = text => (text.split(/\r?\n/).find(l => l.trim()) || '0 ?').trim().replace(/^0\s+/, '');
+// A library part's title, following "~Moved to <part>" redirects to the real part's title.
+function partDesc(ref, hops = 0) {
+  const f = findLibFile(ref);
+  if (!f) return ref;
+  const d = descOf(f.text), moved = d.match(/^~Moved to (\S+)/i);
+  return moved && hops < 4 ? partDesc(moved[1].toLowerCase().replace(/\.dat$/, '') + '.dat', hops + 1) : d;
+}
 
 /* ---------- Colors (LDConfig.ldr) ---------- */
 const COLORS = {};
@@ -121,7 +128,7 @@ function buildModel(setNo) {
       } else {
         addLib(ref);
         const f = findLibFile(ref);
-        addPiece(`${ref}@${color}`, f ? descOf(f.text) : ref, color);
+        addPiece(`${ref}@${color}`, partDesc(ref), color);
       }
     }
   };
