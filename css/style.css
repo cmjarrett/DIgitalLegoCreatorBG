@@ -1,0 +1,116 @@
+:root{
+  --bg:#f4ecdc; --ink:#1d1d1d; --panel:#fff; --muted:#6b6255;
+  --lego-red:#d01012; --lego-yellow:#ffd500; --lego-blue:#0b5ed7; --lego-green:#00852b;
+  --line:#1d1d1d;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Trebuchet MS","Segoe UI",system-ui,sans-serif}
+button{font:inherit;color:inherit;cursor:pointer}
+header{display:flex;align-items:center;gap:12px;padding:10px 16px;background:var(--lego-red);color:#fff;border-bottom:4px solid var(--line);flex-wrap:wrap}
+.logo{background:var(--lego-yellow);color:var(--lego-red);font-weight:900;font-size:22px;padding:2px 12px;border:3px solid #fff;border-radius:6px;box-shadow:0 0 0 2px var(--line);letter-spacing:.5px}
+.tag{font-weight:700;font-size:15px}
+header .sp{flex:1}
+.hbtn{background:#fff;color:var(--ink);border:2px solid var(--line);border-radius:6px;padding:5px 10px;font-weight:700}
+main{display:grid;grid-template-columns:minmax(0,720px) minmax(300px,1fr);gap:16px;padding:16px;max-width:1360px;margin:0 auto;align-items:start}
+@media (max-width:920px){main{grid-template-columns:1fr}.side{display:contents}.controls{order:-1;position:sticky;top:0;z-index:5}}
+
+/* ---------- Board ---------- */
+.board{aspect-ratio:1;display:grid;grid-template:repeat(8,1fr)/repeat(8,1fr);gap:3px;padding:6px;background:var(--line);border:7px solid var(--lego-yellow);outline:3px solid var(--line);border-radius:6px;width:100%}
+.cell{background:#fff;border-radius:3px;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:4% 2px 2px;text-align:center;overflow:hidden;font-size:clamp(6.5px,1.25vw,11px);line-height:1.05;font-weight:700;border:0}
+.cell.corner{background:var(--lego-yellow)}
+.cell.heli{background:#bfe3ff}
+.cell.take{background:#ffe1c2}
+.cell.start{background:#6cc04a}
+.cell .si{height:38%;width:100%;display:flex;align-items:center;justify-content:center;gap:2px;font-size:2.2em;line-height:1}
+.cell .si svg{height:80%;width:auto!important;max-width:45%}
+.cell .sl{margin-top:2px}
+.cell.hot{box-shadow:inset 0 0 0 3px var(--lego-red)}
+.cell.target{cursor:pointer;animation:glow 1s infinite}
+.cell.target:hover{background:#fff3a6}
+@keyframes glow{50%{box-shadow:inset 0 0 0 4px #ff9f1c}}
+.pawns{position:absolute;left:0;right:0;bottom:2px;display:flex;justify-content:center;gap:1px;pointer-events:none}
+.pawn{width:30%;max-width:22px;aspect-ratio:1;border-radius:50%;background:#ffd500;border:3px solid;border-top-width:6px;box-shadow:0 1px 0 #0006;position:relative}
+.pawn::after{content:"";position:absolute;left:22%;right:22%;top:45%;height:20%;border-bottom:2px solid #000;border-radius:0 0 50% 50%}
+.cell.multi .pawn{width:23%;border-width:2px;border-top-width:4px}
+
+.center{grid-area:2/2/8/8;container-type:inline-size;border-radius:4px;overflow:hidden;position:relative;
+  background:radial-gradient(circle,#ffffff22 1.6px,transparent 2px) 0 0/14px 14px,var(--lego-blue)}
+.yard{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2.6cqw;padding:3cqw;font-size:2.6cqw}
+.yard-title{background:var(--lego-red);color:#fff;font-weight:900;letter-spacing:.3em;padding:.2em 1.2em;border-radius:2em;font-size:2.1em;border:.15em solid #fff}
+.tiles{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:.9em 1.1em}
+.specials{background:var(--lego-yellow);border:.35em solid var(--lego-red);border-radius:2em;padding:.7em 1.2em 1em;display:flex;flex-direction:column;align-items:center;gap:.5em}
+.specials .lbl{color:var(--lego-red);font-weight:900;font-size:1.3em;letter-spacing:.15em}
+.sup{position:relative;background:none;border:0;padding:0;line-height:0;border-radius:4px;transition:transform .12s}
+.sup svg{display:block;filter:drop-shadow(0 .2em 0 #0006)}
+.sup .cnt{position:absolute;right:-.9em;top:-.9em;background:#fff;color:var(--ink);border:.15em solid var(--line);border-radius:1em;font-size:1.15em;font-weight:800;min-width:1.6em;padding:0 .25em;line-height:1.35;text-align:center}
+.sup.empty{opacity:.18}
+.sup.eligible{animation:pulse 1s infinite;z-index:2}
+.sup.eligible:hover{transform:scale(1.15)}
+@keyframes pulse{50%{filter:drop-shadow(0 0 .5em #fff) drop-shadow(0 0 .25em #fff)}}
+
+/* ---------- Side ---------- */
+.side{display:flex;flex-direction:column;gap:12px}
+.card{background:var(--panel);border:3px solid var(--line);border-radius:10px;padding:10px 12px}
+.controls{display:flex;flex-direction:column;gap:8px}
+.turnrow{display:flex;align-items:center;gap:12px}
+.die{width:54px;height:54px;flex:none;background:#fff;border:3px solid var(--line);border-radius:10px;display:grid;grid-template:repeat(3,1fr)/repeat(3,1fr);padding:6px;box-shadow:0 3px 0 var(--line)}
+.die i{border-radius:50%;margin:2px}
+.die i.on{background:var(--lego-red)}
+.die.rolling{animation:shake .12s infinite}
+@keyframes shake{25%{transform:rotate(-8deg)}75%{transform:rotate(8deg)}}
+.who{font-weight:800;font-size:18px;display:flex;align-items:center;gap:8px}
+.dot{width:14px;height:14px;border-radius:50%;border:2px solid var(--line);flex:none}
+.prompt{font-size:15px;min-height:1.3em}
+.btnrow{display:flex;gap:8px;flex-wrap:wrap}
+.big{background:var(--lego-yellow);border:3px solid var(--line);border-radius:8px;padding:8px 18px;font-weight:900;font-size:16px;box-shadow:0 3px 0 var(--line)}
+.big:active{transform:translateY(2px);box-shadow:0 1px 0 var(--line)}
+.big:disabled{opacity:.4;cursor:default}
+.ghost{background:#fff;border:2px solid var(--line);border-radius:8px;padding:6px 14px;font-weight:700}
+.ghost[hidden]{display:none}
+
+.mcard{border:5px solid var(--setc,#d01012);border-radius:10px;background:#fff;padding:0 8px 8px;position:relative}
+.mcard.active{box-shadow:0 0 0 3px var(--line),0 0 0 7px #ff9f1c}
+.mhead{display:flex;align-items:center;gap:8px;margin:0 -8px 6px;padding:4px 8px;font-weight:800}
+.mtitle{background:var(--lego-yellow);border:2px solid var(--line);border-radius:0 0 10px 0;padding:1px 10px;font-style:italic;margin-left:-8px;margin-top:-1px}
+.mhead .prog{margin-left:auto;font-size:13px;color:var(--muted)}
+.slots{display:flex;flex-wrap:wrap;gap:7px 9px;align-items:center;background:#e4f3fd;border-radius:6px;padding:8px;font-size:9px;min-height:40px}
+.slots.sp{background:#fde9d2}
+.piecerow{display:flex;flex-wrap:wrap;gap:6px;align-items:stretch}
+.piecerow .slots{flex:1 1 40%}
+.piecerow .slots.sp{flex:0 1 auto}
+.mpic{width:96px;height:auto;align-self:center;object-fit:contain;flex:none}
+@media (max-width:520px){.mpic{width:64px}}
+.pimg{width:2.8em;height:2.8em;object-fit:contain;display:block}
+.slot .pimg{width:3.2em;height:3.2em}
+.win .mpic{width:180px}
+.slot{background:none;border:0;padding:0;line-height:0;border-radius:3px}
+.slot svg{display:block}
+.slot.miss{opacity:.3;filter:grayscale(.6)}
+.slot.eligible{animation:pulse 1s infinite;outline:2px dashed var(--lego-red);outline-offset:2px}
+.extras{margin-top:6px;font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.extras .slots{background:#eee;padding:4px 6px;min-height:0}
+.log{font-size:13px;max-height:180px;overflow:auto;margin:0;padding-left:18px}
+.log li{margin:2px 0}
+.log li:first-child{font-weight:700}
+
+/* ---------- Overlays ---------- */
+.overlay{position:fixed;inset:0;background:#0009;display:flex;align-items:center;justify-content:center;padding:16px;z-index:20}
+.overlay[hidden]{display:none}
+.modal{background:#fff;border:4px solid var(--line);border-radius:14px;padding:18px 20px;max-width:600px;width:100%;max-height:92vh;overflow:auto}
+.modal h2{margin:0 0 10px}
+.prow{display:grid;grid-template-columns:18px 1fr auto auto auto;gap:6px;align-items:center;margin-bottom:8px}
+.prow input,.prow select,.setsel select{font:inherit;padding:5px;border:2px solid #bbb;border-radius:6px;min-width:0}
+.prow .x{background:none;border:0;font-size:18px;color:var(--muted)}
+@media (max-width:520px){.prow{grid-template-columns:18px 1fr auto}}
+.setsel{display:flex;gap:8px;align-items:center;margin-bottom:12px;font-weight:700}
+.rules li{margin:4px 0}
+.win .mcard{text-align:left}
+.win .slots{font-size:9px}
+.win .slot{animation:drop .5s both cubic-bezier(.3,1.5,.6,1)}
+@keyframes drop{from{transform:translateY(-60px);opacity:0}}
+.setsel label{min-width:70px}
+.setsel select{flex:1;min-width:0}
+.setinfo{font-size:13px;color:var(--muted);margin:-4px 0 12px}
+.setpics{display:flex;gap:8px;margin-bottom:4px;min-height:20px}
+.setpics img{width:23%;max-width:110px;aspect-ratio:4/3;object-fit:contain;background:#f4f4f4;border-radius:6px}
+.setpics span{font-size:32px}

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Creator: Race to Build It</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="logo">creator</div>
+  <div class="tag">The Race to Build It</div>
+  <div class="sp"></div>
+  <button class="hbtn" id="rulesBtn">How to play</button>
+  <button class="hbtn" id="newBtn">New game</button>
+</header>
+
+<main>
+  <div class="board" id="board"></div>
+  <div class="side">
+    <div class="card controls">
+      <div class="turnrow">
+        <div class="die" id="die"></div>
+        <div>
+          <div class="who" id="who"></div>
+          <div class="prompt" id="prompt"></div>
+        </div>
+      </div>
+      <div class="btnrow">
+        <button class="big" id="rollBtn">Roll</button>
+        <button class="ghost" id="skipBtn" hidden>Skip</button>
+      </div>
+    </div>
+    <div id="players" class="side"></div>
+    <div class="card"><strong>Game log</strong><ol class="log" id="log" reversed></ol></div>
+  </div>
+</main>
+
+<div class="overlay" id="setup">
+  <div class="modal">
+    <h2>New game</h2>
+    <p style="margin-top:0">Pick a themed pack and a card set. Everyone builds a different model from that set. 2–4 players, human or computer.</p>
+    <div class="setsel"><label for="packPick">Pack</label><select id="packPick"></select></div>
+    <div class="setsel"><label for="setPick">Card set</label><select id="setPick"></select></div>
+    <div class="setinfo" id="setInfo"></div>
+    <div id="setupRows"></div>
+    <div class="btnrow" style="margin:10px 0 14px">
+      <button class="ghost" id="addP">+ Add player</button>
+    </div>
+    <button class="big" id="startBtn">Start building!</button>
+  </div>
+</div>
+
+<div class="overlay" id="rules" hidden>
+  <div class="modal">
+    <h2>How to play</h2>
+    <ul class="rules">
+      <li>All players use cards from the same <b>card set</b>, and each player gets a different model. Together the 4 models in a set make up the whole Brickyard.</li>
+      <li>Besides the original game, the themed packs (Dinosaurs, Space, Jungle, Cars, ...) are made from real small LEGO sets. Their color spaces use that set's most common brick colors, and sets with big models give out more pieces on each Pick space.</li>
+      <li>Roll the die and move <b>clockwise</b>. Follow the directions on the space.</li>
+      <li><b>Pick 1 (color) Brick</b>: take one regular brick of that color from the Brickyard.</li>
+      <li><b>Pick 1 Brick</b>: take any one regular brick. Colors without their own space (like gray or black) can only come from here or from another player.</li>
+      <li><b>Pick 2 Bricks</b>: take two regular bricks of any color.</li>
+      <li><b>Pick 1 Special Piece</b>: take one piece from the inner circle.</li>
+      <li><b>Take 1 Brick from Another</b>: take a regular brick or special piece from any other player.</li>
+      <li><b>Take 2 Bricks from Another</b>: take two pieces, from one player or from two different players.</li>
+      <li><b>Helicopter</b> spaces (START is one too): move to any other space and follow its directions.</li>
+      <li>You can only take pieces your model needs. If the space offers nothing you need, you lose that turn.</li>
+      <li>The first player to complete their model wins!</li>
+    </ul>
+    <button class="big" id="rulesClose">Got it</button>
+  </div>
+</div>
+
+<div class="overlay" id="winBox" hidden>
+  <div class="modal win" style="text-align:center">
+    <h2 id="winTitle"></h2>
+    <div id="winModel"></div>
+    <button class="big" id="againBtn" style="margin-top:12px">Play again</button>
+  </div>
+</div>
+
+<script src="js/colors.js"></script>
+<script src="js/art.js"></script>
+<script src="js/packs.js"></script>
+<script src="js/original.js"></script>
+<!-- Themed packs: add a line here for each file in packs/ -->
+<script src="packs/dinosaurs.js"></script>
+<script src="packs/space.js"></script>
+<script src="packs/jungle.js"></script>
+<script src="packs/cars.js"></script>
+<script src="packs/sky.js"></script>
+<script src="packs/ocean.js"></script>
+<script src="packs/animals.js"></script>
+<script src="packs/holiday.js"></script>
+<script src="packs/classic-vehicles.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
