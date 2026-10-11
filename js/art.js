@@ -7,6 +7,7 @@ const stud = (x, y, f, d) => `<circle cx="${x}" cy="${y}" r="3.1" fill="${f}" st
 function icon(id) {
   const p = PIECES[id];
   if (p.img) return `<img class="pimg" src="${p.img}" alt="${p.name}" title="${p.name}" loading="lazy" onerror="pieceImgFail(this)">`;
+  if (p.ldraw) return svgBox(0, 0, 28, 28, `<rect x="1" y="1" width="26" height="26" rx="4" fill="${COL[p.color] || '#ccc'}" stroke="#555"/>`, p.name);
   if (p.kind === 'special') return specialIcon(id);
   const W = p.cols * C, H = p.rows * C, f = COL[p.color], d = DK[p.color];
   const studs = (cols, rows = [...Array(p.rows).keys()], ff = f, dd = d) =>

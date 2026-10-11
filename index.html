@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Creator: Race to Build It</title>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=4">
 </head>
 <body>
 <header>
@@ -56,7 +56,9 @@
     <h2>How to play</h2>
     <ul class="rules">
       <li>All players use cards from the same <b>card set</b>, and each player gets a different model. Together the 4 models in a set make up the whole Brickyard.</li>
-      <li>Besides the original game, the themed packs (Dinosaurs, Space, Jungle, Cars, ...) are made from real small LEGO sets. Their color spaces use that set's most common brick colors, and sets with big models give out more pieces on each Pick space.</li>
+      <li>Besides the original game, the themed packs (Space, Dinosaurs, Cars, Knights, ...) are real small LEGO sets in 3D. Their color spaces use that set's most common brick colors, and sets with big models give out more pieces on each Pick space.</li>
+      <li><b>Building (3D packs):</b> pieces you collect wait in the tray under your model. Tap one any time, even on someone else's turn, and it snaps into place. Drag the model to spin it. The first player to <b>finish building</b> their model wins, so start building early!</li>
+      <li>If someone takes a piece you have already built and you have no spare, it comes off your model.</li>
       <li>Roll the die and move <b>clockwise</b>. Follow the directions on the space.</li>
       <li><b>Pick 1 (color) Brick</b>: take one regular brick of that color from the Brickyard.</li>
       <li><b>Pick 1 Brick</b>: take any one regular brick. Colors without their own space (like gray or black) can only come from here or from another player.</li>
@@ -66,9 +68,22 @@
       <li><b>Take 2 Bricks from Another</b>: take two pieces, from one player or from two different players.</li>
       <li><b>Helicopter</b> spaces (START is one too): move to any other space and follow its directions.</li>
       <li>You can only take pieces your model needs. If the space offers nothing you need, you lose that turn.</li>
-      <li>The first player to complete their model wins!</li>
+      <li>The first player to complete their model wins! (Original game: collecting every piece is enough.)</li>
     </ul>
     <button class="big" id="rulesClose">Got it</button>
+  </div>
+</div>
+
+<div class="overlay" id="loading" hidden>
+  <div class="modal" style="text-align:center"><div class="spinner"></div><p id="loadMsg">Unboxing the bricks…</p></div>
+</div>
+
+<div class="overlay" id="takeBox" hidden>
+  <div class="modal">
+    <h2>Take a piece!</h2>
+    <p style="margin-top:0">Pick a piece from another player. If they don't have a spare, it comes right off their model.</p>
+    <div id="takeList"></div>
+    <button class="ghost" id="takeSkip" style="margin-top:10px">Skip</button>
   </div>
 </div>
 
@@ -80,20 +95,27 @@
   </div>
 </div>
 
-<script src="js/colors.js"></script>
-<script src="js/art.js"></script>
-<script src="js/packs.js"></script>
-<script src="js/original.js"></script>
-<!-- Themed packs: add a line here for each file in packs/ -->
-<script src="packs/dinosaurs.js"></script>
-<script src="packs/space.js"></script>
-<script src="packs/jungle.js"></script>
-<script src="packs/cars.js"></script>
-<script src="packs/sky.js"></script>
-<script src="packs/ocean.js"></script>
-<script src="packs/animals.js"></script>
-<script src="packs/holiday.js"></script>
-<script src="packs/classic-vehicles.js"></script>
-<script src="js/game.js"></script>
+<script src="js/colors.js?v=4"></script>
+<script src="js/art.js?v=4"></script>
+<script src="js/packs.js?v=4"></script>
+<script src="js/original.js?v=4"></script>
+<!-- Themed 3D packs (made by tools/ldraw-pack.mjs): add a line here for each file in packs/ -->
+<script src="packs/space.js?v=4"></script>
+<script src="packs/star-wars.js?v=4"></script>
+<script src="packs/dinosaurs.js?v=4"></script>
+<script src="packs/jungle.js?v=4"></script>
+<script src="packs/cars.js?v=4"></script>
+<script src="packs/town.js?v=4"></script>
+<script src="packs/boats-planes.js?v=4"></script>
+<script src="packs/adventure.js?v=4"></script>
+<script src="packs/fun.js?v=4"></script>
+<script src="js/game.js?v=4"></script>
+<script type="importmap">
+{"imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+}}
+</script>
+<script type="module" src="js/build3d.js?v=4"></script>
 </body>
 </html>
