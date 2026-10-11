@@ -18,6 +18,9 @@ In the themed packs, every player's card shows their model in 3D as a see-throug
 - Drag the model to spin it; scroll or pinch to zoom.
 - The first player to **finish building** wins, so build as you go! Computer players build too.
 - If someone takes a piece you've already built and you have no spare, it comes right off your model.
+- **Head start:** players with bigger or harder models start with some of their pieces in the tray, so everyone
+  has about the same amount left to collect. It happens once, at the start; pieces taken later are not replaced.
+- In the 3D packs the plain "Pick Brick" spaces are "Pick Piece" spaces: take any piece you need there.
 
 ## Packs
 
@@ -30,7 +33,7 @@ In the themed packs, every player's card shows their model in 3D as a see-throug
 | 🌴 Jungle & Safari | Safari, Jungle Adventurers |
 | 🏎️ Cars | Tiny Turbos I & II, Drome Racers, Ferrari, Classic Racers |
 | 🚒 Town & Rescue | Town Heroes (1978), Town Helpers (1981), Construction, City (2005–08) |
-| ⛵ Boats & Planes | Speedboats, Water Racers, Up in the Sky, Creator 2001 |
+| ⛵ Boats & Planes | Speedboats, Big Boats, Up in the Sky, Creator 2001 |
 | 🏰 Knights & Pirates | Knights, Pirates & Wild West |
 | 🎃 Animals & Halloween | Fabuland Friends, Halloween |
 
@@ -49,6 +52,19 @@ python tools/serve.py
 ```
 
 then open <http://localhost:8123>. It needs an internet connection the first time to load three.js from a CDN.
+
+## Testing with the simulator
+
+Add `?sim=1` to the address and computer players play every card set many times, as fast as possible, then the
+page shows a report: game length, how often each model wins, and any game that crashed, hung or hit the 400-turn
+cap. Options: `&games=100` (use 100 for a fair verdict on balance), `&players=2..4`, `&sets=space,cars/ferrari`
+(packs or card sets), and `&headstart=0` / `&flexpick=0` to switch off the house rules for comparison.
+
+```text
+http://localhost:8123/?sim=1&games=100
+```
+
+A card set passes when every game finishes and no model wins more than 40% of 4-player games.
 
 ## Making packs
 
@@ -79,6 +95,7 @@ js/art.js              drawing the original pieces, board icons and the die
 js/packs.js            pack and card-set registry
 js/original.js         the original game's pieces and 20 model cards
 js/game.js             board, turns, rules, building, computer players, setup screen
+js/sim.js              simulation runner (index.html?sim=1)
 js/build3d.js          3D models, piece pictures and build views (three.js)
 packs/*.js             themed packs (generated)
 models/*.mpd           packed 3D models (generated)
