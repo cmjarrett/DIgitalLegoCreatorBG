@@ -1,5 +1,7 @@
 # Creator: The Race to Build It (digital)
 
+**▶ Play it now: https://cmjarrett.github.io/DIgitalLegoCreatorBG/**
+
 A fan-made digital version of the 1999 board game **LEGO Creator: The Race to Build It**
 ([BoardGameGeek](https://boardgamegeek.com/boardgame/7400/lego-creator)), plus themed packs built from real small LEGO sets.
 
