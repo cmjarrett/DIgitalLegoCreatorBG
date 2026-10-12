@@ -130,6 +130,69 @@
               "K-9 Bot"
             ]
           ]
+        },
+        {
+          "name": "Classic Space III",
+          "models": [
+            [
+              "891-1",
+              "Two Seater Scooter"
+            ],
+            [
+              "6841-1",
+              "Mineral Detector"
+            ],
+            [
+              "6827-1",
+              "Strata Scooter"
+            ],
+            [
+              "6842-1",
+              "Shuttle Craft"
+            ]
+          ]
+        },
+        {
+          "name": "Futuron & Blacktron II",
+          "models": [
+            [
+              "1974-4",
+              "Star Quest"
+            ],
+            [
+              "6810-1",
+              "Laser Ranger"
+            ],
+            [
+              "6832-1",
+              "Super Nova II"
+            ],
+            [
+              "1875-1",
+              "Meteor Monitor"
+            ]
+          ]
+        },
+        {
+          "name": "Ice & Rock Explorers",
+          "models": [
+            [
+              "6983-1",
+              "Ice Station Odyssey"
+            ],
+            [
+              "1704-1",
+              "Satellite Plough"
+            ],
+            [
+              "6834-1",
+              "Celestial Sled"
+            ],
+            [
+              "6844-1",
+              "Sismobile"
+            ]
+          ]
         }
       ]
     },
@@ -177,6 +240,27 @@
             [
               "30056-1",
               "Star Destroyer"
+            ]
+          ]
+        },
+        {
+          "name": "Mini Fleet II",
+          "models": [
+            [
+              "30055-1",
+              "Vulture Droid"
+            ],
+            [
+              "8033-1",
+              "Grievous Starfighter"
+            ],
+            [
+              "30052-1",
+              "AAT"
+            ],
+            [
+              "30054-1",
+              "AT-ST"
             ]
           ]
         }
@@ -389,6 +473,48 @@
               "Black Racer"
             ]
           ]
+        },
+        {
+          "name": "Tiny Turbos III",
+          "models": [
+            [
+              "7611-1",
+              "Police Car"
+            ],
+            [
+              "7612-1",
+              "Muscle Car"
+            ],
+            [
+              "30034-1",
+              "Racing Tow Truck"
+            ],
+            [
+              "30033-1",
+              "Racing Truck"
+            ]
+          ]
+        },
+        {
+          "name": "Ferrari Classics",
+          "models": [
+            [
+              "40190-1",
+              "F138"
+            ],
+            [
+              "40191-1",
+              "F12berlinetta"
+            ],
+            [
+              "40192-1",
+              "250 GTO"
+            ],
+            [
+              "40193-1",
+              "512 S"
+            ]
+          ]
         }
       ]
     },
@@ -472,12 +598,96 @@
               "Police Helicopter"
             ],
             [
-              "5610-1",
-              "Builder"
+              "7736-1",
+              "Coast Guard Quad Bike"
             ],
             [
-              "7235-1",
-              "Police Motorcycle"
+              "7246-1",
+              "Mini Digger"
+            ]
+          ]
+        },
+        {
+          "name": "Emergency (1980s)",
+          "models": [
+            [
+              "6623-1",
+              "Police Car"
+            ],
+            [
+              "6629-1",
+              "Ambulance"
+            ],
+            [
+              "6626-1",
+              "Rescue Helicopter"
+            ],
+            [
+              "6612-1",
+              "Fire Chief's Car"
+            ]
+          ]
+        },
+        {
+          "name": "Work Trucks",
+          "models": [
+            [
+              "6527-1",
+              "Tipper Truck"
+            ],
+            [
+              "6535-1",
+              "Dumper"
+            ],
+            [
+              "6628-1",
+              "Shell Tow Truck"
+            ],
+            [
+              "6624-1",
+              "Delivery Van"
+            ]
+          ]
+        },
+        {
+          "name": "Road Trip",
+          "models": [
+            [
+              "6501-1",
+              "Sport Convertible"
+            ],
+            [
+              "6601-1",
+              "Ice Cream Cart"
+            ],
+            [
+              "6529-1",
+              "Ultra Light"
+            ],
+            [
+              "6506-1",
+              "Precinct Cruiser"
+            ]
+          ]
+        },
+        {
+          "name": "Speedway",
+          "models": [
+            [
+              "6530-1",
+              "Sport Coupe"
+            ],
+            [
+              "6534-1",
+              "Beach Bandit"
+            ],
+            [
+              "6604-1",
+              "Formula-I Racer"
+            ],
+            [
+              "1477-1",
+              "Race Car No. 3"
             ]
           ]
         }
@@ -550,27 +760,6 @@
               "Creator Helicopter"
             ]
           ]
-        },
-        {
-          "name": "Creator 2001",
-          "models": [
-            [
-              "4016-1",
-              "Racer"
-            ],
-            [
-              "4017-1",
-              "Sea Helicopter"
-            ],
-            [
-              "4018-1",
-              "Ship"
-            ],
-            [
-              "4019-1",
-              "Aeroplane"
-            ]
-          ]
         }
       ]
     },
@@ -620,13 +809,153 @@
               "Bandit's Wheelgun"
             ]
           ]
+        },
+        {
+          "name": "Forestmen & Falcons",
+          "models": [
+            [
+              "6035-1",
+              "Castle Guard"
+            ],
+            [
+              "1974-3",
+              "Smuggler's Hayride"
+            ],
+            [
+              "1680-1",
+              "Hay Cart"
+            ],
+            [
+              "6010-1",
+              "Supply Wagon"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "fun",
-      "name": "Animals & Halloween",
+      "name": "Halloween",
       "emoji": "🎃",
+      "sets": [
+        {
+          "name": "Halloween",
+          "models": [
+            [
+              "40012-1",
+              "Pumpkin"
+            ],
+            [
+              "40013-1",
+              "Ghost"
+            ],
+            [
+              "40014-1",
+              "Bat"
+            ],
+            [
+              "6232-1",
+              "Skeleton Crew"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "racers",
+      "name": "Racers",
+      "emoji": "🏁",
+      "sets": [
+        {
+          "name": "Power Racers",
+          "models": [
+            [
+              "8644-1",
+              "Street Maniac"
+            ],
+            [
+              "8657-1",
+              "ATR 4"
+            ],
+            [
+              "8642-1",
+              "Monster Crusher"
+            ],
+            [
+              "8643-1",
+              "Power Cruiser"
+            ]
+          ]
+        },
+        {
+          "name": "Speed Racers",
+          "models": [
+            [
+              "8663-1",
+              "Fat Trax"
+            ],
+            [
+              "8661-1",
+              "Carbon Star"
+            ],
+            [
+              "8130-1",
+              "Terrain Crusher"
+            ],
+            [
+              "8132-1",
+              "Night Driver"
+            ]
+          ]
+        },
+        {
+          "name": "Turbo Racers",
+          "models": [
+            [
+              "8149-1",
+              "Midnight Streak"
+            ],
+            [
+              "8148-1",
+              "EZ-Roadster"
+            ],
+            [
+              "8195-1",
+              "Turbo Tow"
+            ],
+            [
+              "8120-1",
+              "Rally Sprinter"
+            ]
+          ]
+        },
+        {
+          "name": "Street Racers",
+          "models": [
+            [
+              "8192-1",
+              "Lime Racer"
+            ],
+            [
+              "8304-1",
+              "Smokin' Slickster"
+            ],
+            [
+              "8301-1",
+              "Urban Enforcer"
+            ],
+            [
+              "8194-1",
+              "Nitro Muscle"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fabuland",
+      "name": "Fabuland",
+      "emoji": "🐰",
       "sets": [
         {
           "name": "Fabuland Friends",
@@ -650,23 +979,135 @@
           ]
         },
         {
-          "name": "Halloween",
+          "name": "Fabuland Friends II",
           "models": [
             [
-              "40012-1",
-              "Pumpkin"
+              "3708-1",
+              "Rufus Rabbit"
             ],
             [
-              "40013-1",
-              "Ghost"
+              "3602-1",
+              "Bianca Lamb"
             ],
             [
-              "40014-1",
-              "Bat"
+              "3782-1",
+              "Patrick Parrot"
             ],
             [
-              "6232-1",
-              "Skeleton Crew"
+              "3791-1",
+              "William Walrus"
+            ]
+          ]
+        },
+        {
+          "name": "Fabuland Town",
+          "models": [
+            [
+              "3624-1",
+              "Flower Car"
+            ],
+            [
+              "3641-1",
+              "Car & Camper"
+            ],
+            [
+              "3637-1",
+              "Painter's Truck"
+            ],
+            [
+              "3644-1",
+              "Mayor's Car"
+            ]
+          ]
+        },
+        {
+          "name": "Fabuland Homes",
+          "models": [
+            [
+              "3660-1",
+              "Fisherman's Cottage"
+            ],
+            [
+              "3659-1",
+              "Play Ground"
+            ],
+            [
+              "3798-1",
+              "Hanna's Garden"
+            ],
+            [
+              "3654-1",
+              "Country Cottage"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "creator",
+      "name": "Creator",
+      "emoji": "🧱",
+      "sets": [
+        {
+          "name": "Creator 2001",
+          "models": [
+            [
+              "4016-1",
+              "Racer"
+            ],
+            [
+              "4017-1",
+              "Sea Helicopter"
+            ],
+            [
+              "4018-1",
+              "Ship"
+            ],
+            [
+              "4019-1",
+              "Aeroplane"
+            ]
+          ]
+        },
+        {
+          "name": "Creator Vehicles",
+          "models": [
+            [
+              "7603-1",
+              "Dump Truck"
+            ],
+            [
+              "7808-1",
+              "Yellow Airplane"
+            ],
+            [
+              "7803-1",
+              "Jeep"
+            ],
+            [
+              "30283-1",
+              "Off-Road"
+            ]
+          ]
+        },
+        {
+          "name": "Creator Builders",
+          "models": [
+            [
+              "7601-1",
+              "Go-Kart"
+            ],
+            [
+              "7875-1",
+              "Backhoe"
+            ],
+            [
+              "7602-1",
+              "Big Jeep"
+            ],
+            [
+              "7911-1",
+              "Ship"
             ]
           ]
         }

@@ -510,7 +510,7 @@ let setup = [
   {name: 'Computer', cpu: true, model: 1},
 ];
 function renderSetup() {
-  $('#packPick').innerHTML = PACKS.map(p => `<option value="${p.id}" ${p.id === setupPack ? 'selected' : ''}>${p.emoji} ${p.name} (${p.sets.length} card sets)</option>`).join('');
+  $('#packPick').innerHTML = PACKS.map(p => `<option value="${p.id}" ${p.id === setupPack ? 'selected' : ''}>${p.emoji} ${p.name} (${p.sets.length} card set${p.sets.length > 1 ? 's' : ''})</option>`).join('');
   const pack = PACKS.find(p => p.id === setupPack);
   $('#setPick').innerHTML = pack.sets.map(s =>
     `<option value="${s.id}" ${s.id === setupSet ? 'selected' : ''}>${s.name}: ${s.models.map(m => m.name).join(', ')}</option>`).join('');

@@ -1,0 +1,2414 @@
+0 FILE 6626 - main.ldr
+0 main
+0 Name: 6626 - main.ldr
+0 Author: Victor Di Rienzo [tatubias]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 6626 - Rescue Helicopter.ldr
+
+0 FILE 6626 - rescue helicopter.ldr
+0 Rescue Helicopter
+0 Name: 6626 - Rescue Helicopter.ldr
+0 Author: Victor Di Rienzo [tatubias]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+1 15 0 0 0 0 0 1 0 1 0 -1 0 0 3795.dat
+1 15 30 0 0 0 0 1 0 1 0 -1 0 0 3666.dat
+0 STEP
+1 4 0 8 -30 1 0 0 0 1 0 0 0 1 3660.dat
+1 4 0 8 30 -1 0 0 0 1 0 0 0 -1 3660.dat
+1 4 30 8 30 -1 0 0 0 1 0 0 0 -1 3665a.dat
+1 4 30 8 -30 1 0 0 0 1 0 0 0 1 3665a.dat
+1 4 10 8 0 1 0 0 0 1 0 0 0 1 3002.dat
+0 STEP
+1 7 40 32 -10 0 0 -1 0 1 0 1 0 0 3021.dat
+1 7 -20 32 -10 0 0 -1 0 1 0 1 0 0 3021.dat
+1 7 50 40 -20 0 0 -1 0 1 0 1 0 0 3460.dat
+1 7 -30 40 -20 0 0 -1 0 1 0 1 0 0 3460.dat
+1 7 10 40 0 1 0 0 0 1 0 0 0 1 3021.dat
+0 STEP
+1 47 10 -24 -50 1 0 0 0 1 0 0 0 1 3622.dat
+1 47 30 -24 -20 0 0 1 0 1 0 -1 0 0 3004.dat
+1 47 -10 -24 -20 0 0 1 0 1 0 -1 0 0 3004.dat
+1 15 -10 -24 30 0 0 1 0 1 0 -1 0 0 3622.dat
+1 15 10 -8 100 0 0 1 0 1 0 -1 0 0 3460.dat
+1 15 10 -16 40 0 0 1 0 1 0 -1 0 0 3023.dat
+1 15 10 -24 100 0 0 1 0 1 0 -1 0 0 3460.dat
+1 15 10 -16 170 0 0 1 0 1 0 -1 0 0 3623.dat
+1 47 10 -48 -30 1 0 0 0 1 0 0 0 1 3038.dat
+1 47 10 -48 -10 1 0 0 0 1 0 0 0 1 3622.dat
+1 15 30 -24 30 0 0 1 0 1 0 -1 0 0 3622.dat
+1 15 10 -48 10 1 0 0 0 1 0 0 0 1 3622.dat
+1 15 10 -48 30 -1 0 0 0 1 0 0 0 -1 3038.dat
+1 15 0 -24 200 1 0 0 0 1 0 0 0 1 3481.dat
+1 15 10 -56 0 1 0 0 0 1 0 0 0 1 3462.dat
+0 STEP
+1 7 10 -56 0 0.866 0 -0.5 0 1 0 0.5 0 0.866 3461.dat
+1 15 10 -48 210 1 0 0 0 1 0 0 0 1 3005.dat
+0 STEP
+1 7 0 -25.072 204 1 0 0 0 0.866 -0.5 0 0.5 0.866 3480.dat
+1 7 87.942 -84 45 0.866 0 -0.5 0 1 0 0.5 0 0.866 3460.dat
+1 7 -67.942 -84 -45 0.866 0 -0.5 0 1 0 0.5 0 0.866 3460.dat
+1 7 55 -84 -77.942 0.5 0 0.866 0 1 0 -0.866 0 0.5 3460.dat
+1 7 -35 -84 77.942 0.5 0 0.866 0 1 0 -0.866 0 0.5 3460.dat
+1 15 10 -48 190 1 0 0 0 1 0 0 0 1 3040b.dat
+1 15 10 -72 210 1 0 0 0 1 0 0 0 1 3040b.dat
+
+0 FILE 3795.dat
+0 Plate  2 x  6
+0 Name: 3795.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Part UPDATE 2025-09
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 40 4 0 1 0 0 0 -1 0 0 0 1 stud4.dat
+1 16 20 4 0 1 0 0 0 -1 0 0 0 1 stud4.dat
+1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud4.dat
+1 16 -20 4 0 1 0 0 0 -1 0 0 0 1 stud4.dat
+1 16 -40 4 0 1 0 0 0 -1 0 0 0 1 stud4.dat
+0 BFC INVERTNEXT
+1 16 0 8 0 56 0 0 0 -4 0 0 0 16 box5.dat
+4 16 60 8 20 56 8 16 -56 8 16 -60 8 20
+4 16 -60 8 -20 -56 8 -16 56 8 -16 60 8 -20
+4 16 60 8 -20 56 8 -16 56 8 16 60 8 20
+4 16 -60 8 20 -56 8 16 -56 8 -16 -60 8 -20
+1 16 0 8 0 60 0 0 0 -8 0 0 0 20 box5.dat
+1 16 50 0 10 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 30 0 10 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 10 0 10 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 -10 0 10 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 -30 0 10 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 -50 0 10 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 50 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 30 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 10 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 -10 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 -30 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 -50 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
+
+0 FILE stud4.dat
+0 Stud Tube Open
+0 Name: stud4.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2009-02
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 -4 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
+1 16 0 -4 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
+1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
+1 16 0 0 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
+0 BFC INVERTNEXT
+1 16 0 -4 0 6 0 0 0 4 0 0 0 6 4-4cyli.dat
+1 16 0 -4 0 8 0 0 0 4 0 0 0 8 4-4cyli.dat
+1 16 0 -4 0 2 0 0 0 1 0 0 0 2 4-4ring3.dat
+
+0 FILE 4-4edge.dat
+0 Circle 1.0
+0 Name: 4-4edge.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2017-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+2 24 1 0 0 0.9239 0 0.3827
+2 24 0.9239 0 0.3827 0.7071 0 0.7071
+2 24 0.7071 0 0.7071 0.3827 0 0.9239
+2 24 0.3827 0 0.9239 0 0 1
+2 24 0 0 1 -0.3827 0 0.9239
+2 24 -0.3827 0 0.9239 -0.7071 0 0.7071
+2 24 -0.7071 0 0.7071 -0.9239 0 0.3827
+2 24 -0.9239 0 0.3827 -1 0 -0
+2 24 -1 0 -0 -0.9239 0 -0.3827
+2 24 -0.9239 0 -0.3827 -0.7071 0 -0.7071
+2 24 -0.7071 0 -0.7071 -0.3827 0 -0.9239
+2 24 -0.3827 0 -0.9239 0 0 -1
+2 24 0 0 -1 0.3827 0 -0.9239
+2 24 0.3827 0 -0.9239 0.7071 0 -0.7071
+2 24 0.7071 0 -0.7071 0.9239 0 -0.3827
+2 24 0.9239 0 -0.3827 1 0 0
+
+0 FILE 4-4cyli.dat
+0 Cylinder 1.0
+0 Name: 4-4cyli.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2005-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+4 16 1 1 0 0.9239 1 0.3827 0.9239 0 0.3827 1 0 0
+5 24 1 0 0 1 1 0 0.9239 0 0.3827 0.9239 0 -0.3827
+4 16 0.9239 1 0.3827 0.7071 1 0.7071 0.7071 0 0.7071 0.9239 0 0.3827
+5 24 0.9239 0 0.3827 0.9239 1 0.3827 0.7071 0 0.7071 1 0 0
+4 16 0.7071 1 0.7071 0.3827 1 0.9239 0.3827 0 0.9239 0.7071 0 0.7071
+5 24 0.7071 0 0.7071 0.7071 1 0.7071 0.3827 0 0.9239 0.9239 0 0.3827
+4 16 0.3827 1 0.9239 0 1 1 0 0 1 0.3827 0 0.9239
+5 24 0.3827 0 0.9239 0.3827 1 0.9239 0 0 1 0.7071 0 0.7071
+4 16 0 1 1 -0.3827 1 0.9239 -0.3827 0 0.9239 0 0 1
+5 24 0 0 1 0 1 1 -0.3827 0 0.9239 0.3827 0 0.9239
+4 16 -0.3827 1 0.9239 -0.7071 1 0.7071 -0.7071 0 0.7071 -0.3827 0 0.9239
+5 24 -0.3827 0 0.9239 -0.3827 1 0.9239 -0.7071 0 0.7071 0 0 1
+4 16 -0.7071 1 0.7071 -0.9239 1 0.3827 -0.9239 0 0.3827 -0.7071 0 0.7071
+5 24 -0.7071 0 0.7071 -0.7071 1 0.7071 -0.9239 0 0.3827 -0.3827 0 0.9239
+4 16 -0.9239 1 0.3827 -1 1 0 -1 0 0 -0.9239 0 0.3827
+5 24 -0.9239 0 0.3827 -0.9239 1 0.3827 -1 0 0 -0.7071 0 0.7071
+4 16 -1 1 0 -0.9239 1 -0.3827 -0.9239 0 -0.3827 -1 0 0
+5 24 -1 0 0 -1 1 0 -0.9239 0 -0.3827 -0.9239 0 0.3827
+4 16 -0.9239 1 -0.3827 -0.7071 1 -0.7071 -0.7071 0 -0.7071 -0.9239 0 -0.3827
+5 24 -0.9239 0 -0.3827 -0.9239 1 -0.3827 -0.7071 0 -0.7071 -1 0 0
+4 16 -0.7071 1 -0.7071 -0.3827 1 -0.9239 -0.3827 0 -0.9239 -0.7071 0 -0.7071
+5 24 -0.7071 0 -0.7071 -0.7071 1 -0.7071 -0.3827 0 -0.9239 -0.9239 0 -0.3827
+4 16 -0.3827 1 -0.9239 0 1 -1 0 0 -1 -0.3827 0 -0.9239
+5 24 -0.3827 0 -0.9239 -0.3827 1 -0.9239 0 0 -1 -0.7071 0 -0.7071
+4 16 0 1 -1 0.3827 1 -0.9239 0.3827 0 -0.9239 0 0 -1
+5 24 0 0 -1 0 1 -1 0.3827 0 -0.9239 -0.3827 0 -0.9239
+4 16 0.3827 1 -0.9239 0.7071 1 -0.7071 0.7071 0 -0.7071 0.3827 0 -0.9239
+5 24 0.3827 0 -0.9239 0.3827 1 -0.9239 0.7071 0 -0.7071 0 0 -1
+4 16 0.7071 1 -0.7071 0.9239 1 -0.3827 0.9239 0 -0.3827 0.7071 0 -0.7071
+5 24 0.7071 0 -0.7071 0.7071 1 -0.7071 0.9239 0 -0.3827 0.3827 0 -0.9239
+4 16 0.9239 1 -0.3827 1 1 0 1 0 0 0.9239 0 -0.3827
+5 24 0.9239 0 -0.3827 0.9239 1 -0.3827 1 0 0 0.7071 0 -0.7071
+
+0 FILE 4-4ring3.dat
+0 Ring  3 x 1.0
+0 Name: 4-4ring3.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2009-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+4 16 -1.5308 0 3.6956 -1.1481 0 2.7717 0 0 3 0 0 4
+4 16 -2.8284 0 2.8284 -2.1213 0 2.1213 -1.1481 0 2.7717 -1.5308 0 3.6956
+4 16 -3.6956 0 1.5308 -2.7717 0 1.1481 -2.1213 0 2.1213 -2.8284 0 2.8284
+4 16 -4 0 0 -3 0 0 -2.7717 0 1.1481 -3.6956 0 1.5308
+4 16 -3.6956 0 -1.5308 -2.7717 0 -1.1481 -3 0 0 -4 0 0
+4 16 -2.8284 0 -2.8284 -2.1213 0 -2.1213 -2.7717 0 -1.1481 -3.6956 0 -1.5308
+4 16 -1.5308 0 -3.6956 -1.1481 0 -2.7717 -2.1213 0 -2.1213 -2.8284 0 -2.8284
+4 16 0 0 -4 0 0 -3 -1.1481 0 -2.7717 -1.5308 0 -3.6956
+4 16 1.5308 0 -3.6956 1.1481 0 -2.7717 0 0 -3 0 0 -4
+4 16 2.8284 0 -2.8284 2.1213 0 -2.1213 1.1481 0 -2.7717 1.5308 0 -3.6956
+4 16 3.6956 0 -1.5308 2.7717 0 -1.1481 2.1213 0 -2.1213 2.8284 0 -2.8284
+4 16 4 0 0 3 0 0 2.7717 0 -1.1481 3.6956 0 -1.5308
+4 16 3.6956 0 1.5308 2.7717 0 1.1481 3 0 0 4 0 0
+4 16 2.8284 0 2.8284 2.1213 0 2.1213 2.7717 0 1.1481 3.6956 0 1.5308
+4 16 1.5308 0 3.6956 1.1481 0 2.7717 2.1213 0 2.1213 2.8284 0 2.8284
+4 16 0 0 4 0 0 3 1.1481 0 2.7717 1.5308 0 3.6956
+
+0 FILE box5.dat
+0 Box with 5 Faces and All Edges
+0 Name: box5.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2012-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+2 24 1 1 1 -1 1 1
+2 24 -1 1 1 -1 1 -1
+2 24 -1 1 -1 1 1 -1
+2 24 1 1 -1 1 1 1
+2 24 1 0 1 -1 0 1
+2 24 -1 0 1 -1 0 -1
+2 24 -1 0 -1 1 0 -1
+2 24 1 0 -1 1 0 1
+2 24 1 0 1 1 1 1
+2 24 -1 0 1 -1 1 1
+2 24 1 0 -1 1 1 -1
+2 24 -1 0 -1 -1 1 -1
+4 16 -1 1 1 1 1 1 1 1 -1 -1 1 -1
+4 16 -1 1 1 -1 0 1 1 0 1 1 1 1
+4 16 -1 1 -1 -1 0 -1 -1 0 1 -1 1 1
+4 16 1 1 -1 1 0 -1 -1 0 -1 -1 1 -1
+4 16 1 1 1 1 0 1 1 0 -1 1 1 -1
+
+0 FILE stud.dat
+0 Stud
+0 Name: stud.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2012-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
+1 16 0 -4 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
+1 16 0 0 0 6 0 0 0 -4 0 0 0 6 4-4cyli.dat
+1 16 0 -4 0 6 0 0 0 1 0 0 0 6 4-4disc.dat
+
+0 FILE 4-4disc.dat
+0 Disc 1.0
+0 Name: 4-4disc.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2002-02
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+3 16 0 0 0 1 0 0 0.9239 0 0.3827
+3 16 0 0 0 0.9239 0 0.3827 0.7071 0 0.7071
+3 16 0 0 0 0.7071 0 0.7071 0.3827 0 0.9239
+3 16 0 0 0 0.3827 0 0.9239 0 0 1
+3 16 0 0 0 0 0 1 -0.3827 0 0.9239
+3 16 0 0 0 -0.3827 0 0.9239 -0.7071 0 0.7071
+3 16 0 0 0 -0.7071 0 0.7071 -0.9239 0 0.3827
+3 16 0 0 0 -0.9239 0 0.3827 -1 0 -0
+3 16 0 0 0 -1 0 -0 -0.9239 0 -0.3827
+3 16 0 0 0 -0.9239 0 -0.3827 -0.7071 0 -0.7071
+3 16 0 0 0 -0.7071 0 -0.7071 -0.3827 0 -0.9239
+3 16 0 0 0 -0.3827 0 -0.9239 0 0 -1
+3 16 0 0 0 0 0 -1 0.3827 0 -0.9239
+3 16 0 0 0 0.3827 0 -0.9239 0.7071 0 -0.7071
+3 16 0 0 0 0.7071 0 -0.7071 0.9239 0 -0.3827
+3 16 0 0 0 0.9239 0 -0.3827 1 0 0
+
+0 FILE 3666.dat
+0 Plate  1 x  6
+0 Name: 3666.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Part UPDATE 2023-02
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3666s01.dat
+4 16 -60 8 -10 60 8 -10 60 0 -10 -60 0 -10
+
+0 FILE parts/s/3666s01.dat
+0 ~Plate  1 x  6 without Front Face
+0 Name: s\3666s01.dat
+0 Author: Massimo Maso [Sirio]
+0 !LDRAW_ORG Subpart UPDATE 2023-02
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stug3-1x5.dat
+0 BFC INVERTNEXT
+1 16 0 8 0 56 0 0 0 -4 0 0 0 6 box5.dat
+4 16 60 8 10 56 8 6 -56 8 6 -60 8 10
+4 16 -60 8 10 -56 8 6 -56 8 -6 -60 8 -10
+4 16 -60 8 -10 -56 8 -6 56 8 -6 60 8 -10
+4 16 60 8 -10 56 8 -6 56 8 6 60 8 10
+1 16 0 8 0 60 0 0 0 -8 0 0 0 10 box4t.dat
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug-1x6.dat
+
+0 FILE stug3-1x5.dat
+0 Stud Tube Solid Group  1 x  5
+0 Name: stug3-1x5.dat
+0 Author: Steffen [Steffen]
+0 !LDRAW_ORG Primitive UPDATE 2013-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 -40 0 0 1 0 0 0 1 0 0 0 1 stud3.dat
+1 16 -20 0 0 1 0 0 0 1 0 0 0 1 stud3.dat
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud3.dat
+1 16 20 0 0 1 0 0 0 1 0 0 0 1 stud3.dat
+1 16 40 0 0 1 0 0 0 1 0 0 0 1 stud3.dat
+
+0 FILE stud3.dat
+0 Stud Tube Solid
+0 Name: stud3.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2012-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 -4 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
+1 16 0 0 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
+1 16 0 -4 0 4 0 0 0 1 0 0 0 4 4-4disc.dat
+1 16 0 -4 0 4 0 0 0 4 0 0 0 4 4-4cyli.dat
+
+0 FILE box4t.dat
+0 Box with 4 Adjacent Faces and All Edges
+0 Name: box4t.dat
+0 Author: Tore Eriksson [Tore_Eriksson]
+0 !LDRAW_ORG Primitive UPDATE 2003-02
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+2 24 1 1 1 -1 1 1
+2 24 -1 1 1 -1 1 -1
+2 24 -1 1 -1 1 1 -1
+2 24 1 1 -1 1 1 1
+2 24 1 0 1 -1 0 1
+2 24 -1 0 1 -1 0 -1
+2 24 -1 0 -1 1 0 -1
+2 24 1 0 -1 1 0 1
+2 24 1 0 1 1 1 1
+2 24 -1 0 1 -1 1 1
+2 24 1 0 -1 1 1 -1
+2 24 -1 0 -1 -1 1 -1
+4 16 1 1 1 1 1 -1 -1 1 -1 -1 1 1
+4 16 1 1 1 -1 1 1 -1 0 1 1 0 1
+4 16 -1 1 1 -1 1 -1 -1 0 -1 -1 0 1
+4 16 1 1 -1 1 1 1 1 0 1 1 0 -1
+
+0 FILE stug-1x6.dat
+0 Stud Group  1 x  6
+0 Name: stug-1x6.dat
+0 Author: Steffen [Steffen]
+0 !LDRAW_ORG Primitive UPDATE 2011-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 -50 0 0 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 -30 0 0 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 -10 0 0 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 10 0 0 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 30 0 0 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 50 0 0 1 0 0 0 1 0 0 0 1 stud.dat
+
+0 FILE 3660.dat
+0 ~Moved to 3660a
+0 Name: 3660.dat
+0 Author: [PTadmin]
+0 !LDRAW_ORG Part UPDATE 2022-04
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 3660a.dat
+
+0 FILE 3660a.dat
+0 ~Slope Brick 45  2 x  2 Inverted without Inner Stopper Ring (Obsolete)
+0 Name: 3660a.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Part UPDATE 2025-03
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+0 !CATEGORY Obsolete
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3660as01.dat
+4 16 20 24 -10 20 4 -30 -20 4 -30 -20 24 -10
+
+0 FILE parts/s/3660as01.dat
+0 ~Slope Brick 45  2 x  2 Inverted without Inner Stopper Ring without Front Face
+0 Name: s\3660as01.dat
+0 Author: Orion Pobursky [OrionP]
+0 !LDRAW_ORG Subpart UPDATE 2022-04
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 4 0 1 0 0 0 -5 0 0 0 1 stud3.dat
+0 BFC INVERTNEXT
+1 16 0 24 0 16 0 0 0 -20 0 0 0 6 box5.dat
+4 16 16 24 6 -16 24 6 -20 24 10 20 24 10
+4 16 -16 24 6 -16 24 -6 -20 24 -10 -20 24 10
+4 16 -16 24 -6 16 24 -6 20 24 -10 -20 24 -10
+4 16 16 24 -6 16 24 6 20 24 10 20 24 -10
+1 16 0 24 0 20 0 0 0 -1 0 0 0 -10 recte3.dat
+2 24 20 4 -30 20 24 -10
+2 24 -20 4 -30 -20 24 -10
+2 24 20 0 -30 20 0 10
+2 24 -20 0 -30 -20 0 10
+2 24 -18 0 -10 -18 0 -26
+2 24 18 0 -26 18 0 -10
+0 BFC INVERTNEXT
+1 16 0 10 -18 18 0 0 0 2 -8 0 0 -8 box2-5.dat
+4 16 20 4 -30 20 24 -10 20 24 10 20 0 10
+3 16 20 4 -30 20 0 10 20 0 -30
+1 16 0 12 10 20 0 0 0 0 12 0 -1 0 rect.dat
+4 16 -20 4 -30 -20 0 10 -20 24 10 -20 24 -10
+3 16 -20 4 -30 -20 0 -30 -20 0 10
+1 16 0 2 -30 20 0 0 0 0 2 0 1 0 rect.dat
+4 16 18 0 -10 18 20 -10 18 4 -26 18 0 -26
+4 16 -18 0 -10 -18 0 -26 -18 4 -26 -18 20 -10
+1 16 0 10 -10 18 0 0 0 0 -10 0 1 0 rect3.dat
+4 16 18 0 -10 20 0 10 -20 0 10 -18 0 -10
+4 16 -18 0 -10 -20 0 10 -20 0 -30 -18 0 -26
+4 16 -18 0 -26 -20 0 -30 20 0 -30 18 0 -26
+4 16 18 0 -26 20 0 -30 20 0 10 18 0 -10
+1 16 10 0 0 0 0 1 0 1 0 -1 0 0 stud.dat
+1 16 10 4 -20 1 0 0 0 2 0 0 0 1 stud2a.dat
+1 16 10 4 -20 0 0 1 0 6 0 -1 0 0 stud2s.dat
+1 16 -10 0 0 0 0 1 0 1 0 -1 0 0 stud.dat
+1 16 -10 4 -20 1 0 0 0 2 0 0 0 1 stud2a.dat
+1 16 -10 4 -20 0 0 1 0 6 0 -1 0 0 stud2s.dat
+
+0 FILE recte3.dat
+0 Rectangle Empty with 3 Edges
+0 Name: recte3.dat
+0 Author: Steffen [Steffen]
+0 !LDRAW_ORG Primitive UPDATE 2011-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+2 24 1 0 1 -1 0 1
+2 24 -1 0 1 -1 0 -1
+2 24 1 0 -1 1 0 1
+
+0 FILE box2-5.dat
+0 Box with 2 Faces without 5 Edges
+0 Name: box2-5.dat
+0 Author: Steffen [Steffen]
+0 !LDRAW_ORG Primitive UPDATE 2003-03
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+2 24 1 1 1 -1 1 1
+2 24 1 1 -1 -1 1 -1
+2 24 1 -1 1 -1 -1 1
+2 24 -1 -1 1 -1 1 1
+2 24 1 -1 1 1 1 1
+2 24 -1 1 -1 -1 1 1
+2 24 1 1 -1 1 1 1
+4 16 1 1 1 1 1 -1 -1 1 -1 -1 1 1
+4 16 1 1 1 -1 1 1 -1 -1 1 1 -1 1
+
+0 FILE rect.dat
+0 Rectangle
+0 Name: rect.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2010-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+2 24 1 0 1 -1 0 1
+2 24 -1 0 1 -1 0 -1
+2 24 -1 0 -1 1 0 -1
+2 24 1 0 -1 1 0 1
+4 16 -1 0 1 -1 0 -1 1 0 -1 1 0 1
+
+0 FILE rect3.dat
+0 Rectangle with 3 Edges
+0 Name: rect3.dat
+0 Author: Mark Kennedy [mkennedy]
+0 !LDRAW_ORG Primitive UPDATE 2010-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+2 24 1 0 1 -1 0 1
+2 24 1 0 1 1 0 -1
+2 24 -1 0 1 -1 0 -1
+4 16 -1 0 1 -1 0 -1 1 0 -1 1 0 1
+
+0 FILE stud2a.dat
+0 Stud Open without Base Edges
+0 Name: stud2a.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2009-02
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 -4 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
+1 16 0 -4 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
+0 BFC INVERTNEXT
+1 16 0 -4 0 4 0 0 0 4 0 0 0 4 4-4cyli.dat
+1 16 0 -4 0 6 0 0 0 4 0 0 0 6 4-4cyli.dat
+1 16 0 -4 0 2 0 0 0 1 0 0 0 2 4-4ring2.dat
+
+0 FILE 4-4ring2.dat
+0 Ring  2 x 1.0
+0 Name: 4-4ring2.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2009-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+4 16 -1.1481 0 2.7717 -0.7654 0 1.8478 0 0 2 0 0 3
+4 16 -2.1213 0 2.1213 -1.4142 0 1.4142 -0.7654 0 1.8478 -1.1481 0 2.7717
+4 16 -2.7717 0 1.1481 -1.8478 0 0.7654 -1.4142 0 1.4142 -2.1213 0 2.1213
+4 16 -3 0 0 -2 0 0 -1.8478 0 0.7654 -2.7717 0 1.1481
+4 16 -2.7717 0 -1.1481 -1.8478 0 -0.7654 -2 0 0 -3 0 0
+4 16 -2.1213 0 -2.1213 -1.4142 0 -1.4142 -1.8478 0 -0.7654 -2.7717 0 -1.1481
+4 16 -1.1481 0 -2.7717 -0.7654 0 -1.8478 -1.4142 0 -1.4142 -2.1213 0 -2.1213
+4 16 0 0 -3 0 0 -2 -0.7654 0 -1.8478 -1.1481 0 -2.7717
+4 16 1.1481 0 -2.7717 0.7654 0 -1.8478 0 0 -2 0 0 -3
+4 16 2.1213 0 -2.1213 1.4142 0 -1.4142 0.7654 0 -1.8478 1.1481 0 -2.7717
+4 16 2.7717 0 -1.1481 1.8478 0 -0.7654 1.4142 0 -1.4142 2.1213 0 -2.1213
+4 16 3 0 0 2 0 0 1.8478 0 -0.7654 2.7717 0 -1.1481
+4 16 2.7717 0 1.1481 1.8478 0 0.7654 2 0 0 3 0 0
+4 16 2.1213 0 2.1213 1.4142 0 1.4142 1.8478 0 0.7654 2.7717 0 1.1481
+4 16 1.1481 0 2.7717 0.7654 0 1.8478 1.4142 0 1.4142 2.1213 0 2.1213
+4 16 0 0 3 0 0 2 0.7654 0 1.8478 1.1481 0 2.7717
+
+0 FILE stud2s.dat
+0 Stud Tube Open Sliced
+0 Name: stud2s.dat
+0 Author: Willy Tschager [Holly-Wood]
+0 !LDRAW_ORG Primitive UPDATE 2024-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 1 0 4 0 0 -0.667 1 0 0 0 4 4-4edge.dat
+1 16 0 1 0 6 0 0 -1 1 0 0 0 6 4-4edge.dat
+0 BFC INVERTNEXT
+1 16 0 0 0 4 0 0 0 0.333 0 0 0 4 4-4cyli.dat
+0 BFC INVERTNEXT
+1 16 0 0.333 0 4 0 0 0 0.667 0 0 0 4 4-4cyls.dat
+1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4cyls.dat
+
+0 FILE 4-4cyls.dat
+0 Cylinder Sloped 1.0
+0 Name: 4-4cyls.dat
+0 Author: Donald Sutter [technog]
+0 !LDRAW_ORG Primitive UPDATE 2012-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+3 16 0.9239 0.0761 0.3827 0.9239 0 0.3827 1 0 0
+5 24 0.9239 0 0.3827 0.9239 0.0761 0.3827 0.7071 0 0.7071 1 0 0
+4 16 0.9239 0.0761 0.3827 0.7071 0.2929 0.7071 0.7071 0 0.7071 0.9239 0 0.3827
+5 24 0.7071 0 0.7071 0.7071 0.2929 0.7071 0.3827 0 0.9239 0.9239 0 0.3827
+4 16 0.7071 0.2929 0.7071 0.3827 0.6173 0.9239 0.3827 0 0.9239 0.7071 0 0.7071
+5 24 0.3827 0 0.9239 0.3827 0.6173 0.9239 0 0 1 0.7071 0 0.7071
+4 16 0.3827 0.6173 0.9239 0 1 1 0 0 1 0.3827 0 0.9239
+5 24 0 0 1 0 1 1 -0.3827 0 0.9239 0.3827 0 0.9239
+4 16 0 1 1 -0.3827 1.3827 0.9239 -0.3827 0 0.9239 0 0 1
+5 24 -0.3827 0 0.9239 -0.3827 1.3827 0.9239 -0.7071 0 0.7071 0 0 1
+4 16 -0.3827 1.3827 0.9239 -0.7071 1.7071 0.7071 -0.7071 0 0.7071 -0.3827 0 0.9239
+5 24 -0.7071 0 0.7071 -0.7071 1.7071 0.7071 -0.9239 0 0.3827 -0.3827 0 0.9239
+4 16 -0.7071 1.7071 0.7071 -0.9239 1.9239 0.3827 -0.9239 0 0.3827 -0.7071 0 0.7071
+5 24 -0.9239 0 0.3827 -0.9239 1.9239 0.3827 -1 0 0 -0.7071 0 0.7071
+4 16 -0.9239 1.9239 0.3827 -1 2 0 -1 0 0 -0.9239 0 0.3827
+5 24 -1 0 0 -1 2 0 -0.9239 0 -0.3827 -0.9239 0 0.3827
+4 16 -1 2 0 -0.9239 1.9239 -0.3827 -0.9239 0 -0.3827 -1 0 0
+5 24 -0.9239 0 -0.3827 -0.9239 1.9239 -0.3827 -1 0 0 -0.7071 0 -0.7071
+4 16 -0.9239 1.9239 -0.3827 -0.7071 1.7071 -0.7071 -0.7071 0 -0.7071 -0.9239 0 -0.3827
+5 24 -0.7071 0 -0.7071 -0.7071 1.7071 -0.7071 -0.9239 0 -0.3827 -0.3827 0 -0.9239
+4 16 -0.7071 1.7071 -0.7071 -0.3827 1.3827 -0.9239 -0.3827 0 -0.9239 -0.7071 0 -0.7071
+5 24 -0.3827 0 -0.9239 -0.3827 1.3827 -0.9239 -0.7071 0 -0.7071 0 0 -1
+4 16 -0.3827 1.3827 -0.9239 0 1 -1 0 0 -1 -0.3827 0 -0.9239
+5 24 0 0 -1 0 1 -1 -0.3827 0 -0.9239 0.3827 0 -0.9239
+4 16 0 1 -1 0.3827 0.6173 -0.9239 0.3827 0 -0.9239 0 0 -1
+5 24 0.3827 0 -0.9239 0.3827 0.6173 -0.9239 0 0 -1 0.7071 0 -0.7071
+4 16 0.3827 0.6173 -0.9239 0.7071 0.2929 -0.7071 0.7071 0 -0.7071 0.3827 0 -0.9239
+5 24 0.7071 0 -0.7071 0.7071 0.2929 -0.7071 0.3827 0 -0.9239 0.9239 0 -0.3827
+4 16 0.7071 0.2929 -0.7071 0.9239 0.0761 -0.3827 0.9239 0 -0.3827 0.7071 0 -0.7071
+5 24 0.9239 0 -0.3827 0.9239 0.0761 -0.3827 0.7071 0 -0.7071 1 0 0
+3 16 0.9239 0 -0.3827 0.9239 0.0761 -0.3827 1 0 0
+
+0 FILE 3665a.dat
+0 Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 Name: 3665a.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Part UPDATE 2018-02
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3665as01.dat
+4 16 10 24 -10 10 4 -30 -10 4 -30 -10 24 -10
+
+0 FILE parts/s/3665as01.dat
+0 ~Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring and Front Face
+0 Name: s\3665as01.dat
+0 Author: Michael Heidemann [mikeheide]
+0 !LDRAW_ORG Subpart UPDATE 2025-09
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+0 BFC INVERTNEXT
+1 16 0 24 0 6 0 0 0 -20 0 0 0 6 box5.dat
+4 16 10 24 10 6 24 6 -6 24 6 -10 24 10
+4 16 -10 24 10 -6 24 6 -6 24 -6 -10 24 -10
+4 16 -10 24 -10 -6 24 -6 6 24 -6 10 24 -10
+4 16 10 24 -10 6 24 -6 6 24 6 10 24 10
+2 24 10 24 -10 10 24 10
+2 24 10 24 -10 -10 24 -10
+2 24 -10 24 -10 -10 24 10
+2 24 10 4 -30 10 24 -10
+2 24 -10 4 -30 -10 24 -10
+2 24 10 0 -30 10 0 10
+2 24 -10 0 -30 -10 0 10
+2 24 -8 0 -10 -8 0 -26
+2 24 8 0 -26 8 0 -10
+0 BFC INVERTNEXT
+1 16 0 10 -18 8 0 0 0 2 -8 0 0 -8 box2-5.dat
+4 16 10 0 10 10 4 -30 10 24 -10 10 24 10
+3 16 10 0 -30 10 4 -30 10 0 10
+1 16 0 12 10 10 0 0 0 0 12 0 -1 0 rect.dat
+4 16 -10 24 -10 -10 4 -30 -10 0 10 -10 24 10
+3 16 -10 0 10 -10 4 -30 -10 0 -30
+1 16 0 2 -30 10 0 0 0 0 2 0 1 0 rect.dat
+4 16 8 0 -26 8 0 -10 8 20 -10 8 4 -26
+4 16 -8 20 -10 -8 0 -10 -8 0 -26 -8 4 -26
+1 16 0 10 -10 8 0 0 0 0 -10 0 1 0 rect3.dat
+4 16 -8 0 -10 8 0 -10 10 0 10 -10 0 10
+4 16 -8 0 -26 -8 0 -10 -10 0 10 -10 0 -30
+4 16 8 0 -26 -8 0 -26 -10 0 -30 10 0 -30
+4 16 8 0 -10 8 0 -26 10 0 -30 10 0 10
+1 16 0 0 0 0 0 1 0 1 0 -1 0 0 stud.dat
+1 16 0 4 -20 1 0 0 0 2 0 0 0 1 stud2a.dat
+1 16 0 4 -20 0 0 1 0 6 0 -1 0 0 stud2s.dat
+
+0 FILE 3002.dat
+0 Brick  2 x  3
+0 Name: 3002.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Part UPDATE 2003-03
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3002s01.dat
+4 16 -30 0 -20 -30 24 -20 30 24 -20 30 0 -20
+
+0 FILE parts/s/3002s01.dat
+0 ~Brick  2 x  3 without Front Face
+0 Name: s\3002s01.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Subpart UPDATE 2003-03
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 10 4 0 1 0 0 0 -5 0 0 0 1 stud4.dat
+1 16 -10 4 0 1 0 0 0 -5 0 0 0 1 stud4.dat
+0 BFC INVERTNEXT
+1 16 0 24 0 26 0 0 0 -20 0 0 0 16 box5.dat
+4 16 30 24 20 26 24 16 -26 24 16 -30 24 20
+4 16 -30 24 20 -26 24 16 -26 24 -16 -30 24 -20
+4 16 -30 24 -20 -26 24 -16 26 24 -16 30 24 -20
+4 16 30 24 -20 26 24 -16 26 24 16 30 24 20
+2 24 30 0 20 -30 0 20
+2 24 -30 0 20 -30 0 -20
+2 24 -30 0 -20 30 0 -20
+2 24 30 0 -20 30 0 20
+2 24 30 24 20 -30 24 20
+2 24 -30 24 20 -30 24 -20
+2 24 -30 24 -20 30 24 -20
+2 24 30 24 -20 30 24 20
+2 24 30 24 20 30 0 20
+2 24 -30 24 20 -30 0 20
+2 24 30 24 -20 30 0 -20
+2 24 -30 24 -20 -30 0 -20
+4 16 -30 0 -20 30 0 -20 30 0 20 -30 0 20
+4 16 30 0 20 30 24 20 -30 24 20 -30 0 20
+4 16 -30 0 20 -30 24 20 -30 24 -20 -30 0 -20
+4 16 30 0 -20 30 24 -20 30 24 20 30 0 20
+1 16 20 0 10 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 0 0 10 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 -20 0 10 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 20 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 0 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 -20 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
+
+0 FILE 3021.dat
+0 Plate  2 x  3
+0 Name: 3021.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Part UPDATE 2002-03
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 10 4 0 1 0 0 0 -1 0 0 0 1 stud4.dat
+1 16 -10 4 0 1 0 0 0 -1 0 0 0 1 stud4.dat
+0 BFC INVERTNEXT
+1 16 0 8 0 26 0 0 0 -4 0 0 0 16 box5.dat
+4 16 30 8 20 26 8 16 -26 8 16 -30 8 20
+4 16 -30 8 -20 -26 8 -16 26 8 -16 30 8 -20
+4 16 30 8 -20 26 8 -16 26 8 16 30 8 20
+4 16 -30 8 20 -26 8 16 -26 8 -16 -30 8 -20
+1 16 0 8 0 30 0 0 0 -8 0 0 0 20 box5.dat
+1 16 20 0 10 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 0 0 10 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 -20 0 10 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 20 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 0 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 -20 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
+
+0 FILE 3460.dat
+0 Plate  1 x  8
+0 Name: 3460.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Part UPDATE 2024-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3460s01.dat
+4 16 -80 0 -10 -80 8 -10 80 8 -10 80 0 -10
+
+0 FILE parts/s/3460s01.dat
+0 ~Plate  1 x  8 without Front Face
+0 Name: s\3460s01.dat
+0 Author: Massimo Maso [Sirio]
+0 !LDRAW_ORG Subpart UPDATE 2024-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stug3-1x7.dat
+0 BFC INVERTNEXT
+1 16 0 8 0 76 0 0 0 -4 0 0 0 6 box5.dat
+4 16 80 8 10 76 8 6 -76 8 6 -80 8 10
+4 16 -80 8 10 -76 8 6 -76 8 -6 -80 8 -10
+4 16 -80 8 -10 -76 8 -6 76 8 -6 80 8 -10
+4 16 80 8 -10 76 8 -6 76 8 6 80 8 10
+1 16 0 8 0 80 0 0 0 -8 0 0 0 10 box4t.dat
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug-1x8.dat
+
+0 FILE stug3-1x7.dat
+0 Stud Tube Solid Group  1 x  7
+0 Name: stug3-1x7.dat
+0 Author: Steffen [Steffen]
+0 !LDRAW_ORG Primitive UPDATE 2012-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 -60 0 0 1 0 0 0 1 0 0 0 1 stud3.dat
+1 16 -40 0 0 1 0 0 0 1 0 0 0 1 stud3.dat
+1 16 -20 0 0 1 0 0 0 1 0 0 0 1 stud3.dat
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud3.dat
+1 16 20 0 0 1 0 0 0 1 0 0 0 1 stud3.dat
+1 16 40 0 0 1 0 0 0 1 0 0 0 1 stud3.dat
+1 16 60 0 0 1 0 0 0 1 0 0 0 1 stud3.dat
+
+0 FILE stug-1x8.dat
+0 Stud Group  1 x  8
+0 Name: stug-1x8.dat
+0 Author: Steffen [Steffen]
+0 !LDRAW_ORG Primitive UPDATE 2011-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 -70 0 0 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 -50 0 0 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 -30 0 0 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 -10 0 0 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 10 0 0 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 30 0 0 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 50 0 0 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 70 0 0 1 0 0 0 1 0 0 0 1 stud.dat
+
+0 FILE 3622.dat
+0 Brick  1 x  3
+0 Name: 3622.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Part UPDATE 2004-02
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3622s01.dat
+4 16 30 0 -10 -30 0 -10 -30 24 -10 30 24 -10
+
+0 FILE parts/s/3622s01.dat
+0 ~Brick  1 x  3 without Front Face
+0 Name: s\3622s01.dat
+0 Author: Takeshi Takahashi [RainbowDolphin]
+0 !LDRAW_ORG Subpart UPDATE 2024-05
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug-1x3.dat
+1 16 0 4 0 1 0 0 0 -5 0 0 0 1 stug3-1x2.dat
+1 16 0 24 0 30 0 0 0 -24 0 0 0 10 box4t.dat
+0 BFC INVERTNEXT
+1 16 0 24 0 26 0 0 0 -20 0 0 0 6 box5.dat
+4 16 30 24 10 26 24 6 -26 24 6 -30 24 10
+4 16 -30 24 10 -26 24 6 -26 24 -6 -30 24 -10
+4 16 -30 24 -10 -26 24 -6 26 24 -6 30 24 -10
+4 16 30 24 -10 26 24 -6 26 24 6 30 24 10
+
+0 FILE stug-1x3.dat
+0 Stud Group  1 x  3
+0 Name: stug-1x3.dat
+0 Author: Steffen [Steffen]
+0 !LDRAW_ORG Primitive UPDATE 2012-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 -20 0 0 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 20 0 0 1 0 0 0 1 0 0 0 1 stud.dat
+
+0 FILE stug3-1x2.dat
+0 Stud Tube Solid Group  1 x  2
+0 Name: stug3-1x2.dat
+0 Author: Steffen [Steffen]
+0 !LDRAW_ORG Primitive UPDATE 2013-02
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 -10 0 0 1 0 0 0 1 0 0 0 1 stud3.dat
+1 16 10 0 0 1 0 0 0 1 0 0 0 1 stud3.dat
+
+0 FILE 3004.dat
+0 Brick  1 x  2
+0 Name: 3004.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Part UPDATE 2022-05
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3004s01.dat
+4 16 -20 24 -10 20 24 -10 20 0 -10 -20 0 -10
+
+0 FILE parts/s/3004s01.dat
+0 ~Brick  1 x  2 without Front Face
+0 Name: s\3004s01.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Subpart UPDATE 2003-03
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 4 0 1 0 0 0 -5 0 0 0 1 stud3.dat
+0 BFC INVERTNEXT
+1 16 0 24 0 16 0 0 0 -20 0 0 0 6 box5.dat
+4 16 20 24 10 16 24 6 -16 24 6 -20 24 10
+4 16 -20 24 10 -16 24 6 -16 24 -6 -20 24 -10
+4 16 -20 24 -10 -16 24 -6 16 24 -6 20 24 -10
+4 16 20 24 -10 16 24 -6 16 24 6 20 24 10
+1 16 0 24 0 20 0 0 0 -24 0 0 0 10 box4t.dat
+1 16 10 0 0 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 -10 0 0 1 0 0 0 1 0 0 0 1 stud.dat
+
+0 FILE 3023.dat
+0 ~Moved to 3023b
+0 Name: 3023.dat
+0 Author: Orion Pobursky [OrionP]
+0 !LDRAW_ORG Part UPDATE 2024-07
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 3023b.dat
+
+0 FILE 3023b.dat
+0 Plate  1 x  2
+0 Name: 3023b.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Part UPDATE 2023-03
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3023bs01.dat
+4 16 -20 0 -10 -20 8 -10 20 8 -10 20 0 -10
+
+0 FILE parts/s/3023bs01.dat
+0 ~Plate  1 x  2 without Front Face
+0 Name: s\3023bs01.dat
+0 Author: Massimo Maso [Sirio]
+0 !LDRAW_ORG Subpart UPDATE 2023-03
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
+0 BFC INVERTNEXT
+1 16 0 8 0 16 0 0 0 -4 0 0 0 6 box5.dat
+1 16 0 8 0 20 0 0 0 -8 0 0 0 10 box4t.dat
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug-1x2.dat
+4 16 20 8 10 16 8 6 -16 8 6 -20 8 10
+4 16 -20 8 10 -16 8 6 -16 8 -6 -20 8 -10
+4 16 -20 8 -10 -16 8 -6 16 8 -6 20 8 -10
+4 16 20 8 -10 16 8 -6 16 8 6 20 8 10
+
+0 FILE stug-1x2.dat
+0 Stud Group  1 x  2
+0 Name: stug-1x2.dat
+0 Author: Steffen [Steffen]
+0 !LDRAW_ORG Primitive UPDATE 2011-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 -10 0 0 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 10 0 0 1 0 0 0 1 0 0 0 1 stud.dat
+
+0 FILE 3623.dat
+0 Plate  1 x  3
+0 Name: 3623.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Part UPDATE 2017-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3623s01.dat
+4 16 -30 8 -10 30 8 -10 30 0 -10 -30 0 -10
+
+0 FILE parts/s/3623s01.dat
+0 ~Plate  1 x  3 without Front Face
+0 Name: s\3623s01.dat
+0 Author: Massimo Maso [Sirio]
+0 !LDRAW_ORG Subpart UPDATE 2017-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 10 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
+1 16 -10 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
+0 BFC INVERTNEXT
+1 16 0 8 0 26 0 0 0 -4 0 0 0 6 box5.dat
+4 16 30 8 10 26 8 6 -26 8 6 -30 8 10
+4 16 -30 8 10 -26 8 6 -26 8 -6 -30 8 -10
+4 16 -30 8 -10 -26 8 -6 26 8 -6 30 8 -10
+4 16 30 8 -10 26 8 -6 26 8 6 30 8 10
+1 16 0 8 0 30 0 0 0 -8 0 0 0 10 box4t.dat
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug-1x3.dat
+
+0 FILE 3038.dat
+0 Slope Brick 45  2 x  3
+0 Name: 3038.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Part UPDATE 2022-05
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3038s01.dat
+4 16 30 20 -30 30 0 -10 -30 0 -10 -30 20 -30
+
+0 FILE parts/s/3038s01.dat
+0 ~Slope Brick 45  2 x  3 without Front Face
+0 Name: s\3038s01.dat
+0 Author: Mark Chittenden [mdublade]
+0 !LDRAW_ORG Subpart UPDATE 2011-01
+0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 10 20 -10 1 0 0 0 -1 0 0 0 1 stud4a.dat
+1 16 10 4 -10 6 0 0 0 1 0 0 0 6 2-4edge.dat
+1 16 10 4 -10 6 0 0 0 1 6 0 0 -6 2-4edge.dat
+1 16 10 4 -10 8 0 0 0 1 0 0 0 8 2-4edge.dat
+1 16 10 4 -10 8 0 0 0 1 8 0 0 -8 2-4edge.dat
+0 BFC INVERTNEXT
+1 16 10 10 -10 0 0 6 0 -6 0 -6 0 0 1-4cyls.dat
+0 BFC INVERTNEXT
+1 16 10 10 -10 0 0 -6 0 -6 0 -6 0 0 1-4cyls.dat
+0 BFC INVERTNEXT
+1 16 10 4 -10 6 0 0 0 16 0 0 0 6 2-4cyli.dat
+0 BFC INVERTNEXT
+1 16 10 10 -10 6 0 0 0 10 0 0 0 -6 2-4cyli.dat
+1 16 10 12 -10 0 0 8 0 -8 0 -8 0 0 1-4cyls.dat
+1 16 10 12 -10 0 0 -8 0 -8 0 -8 0 0 1-4cyls.dat
+1 16 10 4 -10 8 0 0 0 16 0 0 0 8 2-4cyli.dat
+1 16 10 12 -10 8 0 0 0 8 0 0 0 -8 2-4cyli.dat
+1 16 -10 20 -10 1 0 0 0 -1 0 0 0 1 stud4a.dat
+1 16 -10 4 -10 6 0 0 0 1 0 0 0 6 2-4edge.dat
+1 16 -10 4 -10 6 0 0 0 1 6 0 0 -6 2-4edge.dat
+1 16 -10 4 -10 8 0 0 0 1 0 0 0 8 2-4edge.dat
+1 16 -10 4 -10 8 0 0 0 1 8 0 0 -8 2-4edge.dat
+0 BFC INVERTNEXT
+1 16 -10 10 -10 0 0 6 0 -6 0 -6 0 0 1-4cyls.dat
+0 BFC INVERTNEXT
+1 16 -10 10 -10 0 0 -6 0 -6 0 -6 0 0 1-4cyls.dat
+0 BFC INVERTNEXT
+1 16 -10 4 -10 6 0 0 0 16 0 0 0 6 2-4cyli.dat
+0 BFC INVERTNEXT
+1 16 -10 10 -10 6 0 0 0 10 0 0 0 -6 2-4cyli.dat
+1 16 -10 12 -10 0 0 8 0 -8 0 -8 0 0 1-4cyls.dat
+1 16 -10 12 -10 0 0 -8 0 -8 0 -8 0 0 1-4cyls.dat
+1 16 -10 4 -10 8 0 0 0 16 0 0 0 8 2-4cyli.dat
+1 16 -10 12 -10 8 0 0 0 8 0 0 0 -8 2-4cyli.dat
+2 24 26 24 6 -26 24 6
+2 24 -26 24 6 -26 24 -26
+2 24 -26 24 -26 26 24 -26
+2 24 26 24 -26 26 24 6
+2 24 30 24 10 -30 24 10
+2 24 -30 24 10 -30 24 -30
+2 24 -30 24 -30 30 24 -30
+2 24 30 24 -30 30 24 10
+2 24 26 24 6 26 4 6
+2 24 -26 24 6 -26 4 6
+2 24 26 24 -26 26 20 -26
+2 24 -26 24 -26 -26 20 -26
+2 24 26 4 6 -26 4 6
+2 24 26 4 -10 -26 4 -10
+2 24 26 20 -26 -26 20 -26
+2 24 26 4 6 26 4 -10
+2 24 -26 4 6 -26 4 -10
+2 24 26 20 -26 26 4 -10
+2 24 -26 20 -26 -26 4 -10
+2 24 30 24 10 30 0 10
+2 24 -30 24 10 -30 0 10
+2 24 30 24 -30 30 20 -30
+2 24 -30 24 -30 -30 20 -30
+2 24 30 0 10 -30 0 10
+2 24 30 0 -10 -30 0 -10
+2 24 30 20 -30 -30 20 -30
+2 24 30 0 10 30 0 -10
+2 24 -30 0 10 -30 0 -10
+2 24 30 20 -30 30 0 -10
+2 24 -30 20 -30 -30 0 -10
+4 16 30 24 10 26 24 6 -26 24 6 -30 24 10
+4 16 -30 24 10 -26 24 6 -26 24 -26 -30 24 -30
+4 16 -30 24 -30 -26 24 -26 26 24 -26 30 24 -30
+4 16 30 24 -30 26 24 -26 26 24 6 30 24 10
+4 16 26 4 6 26 4 -10 -26 4 -10 -26 4 6
+4 16 30 0 10 -30 0 10 -30 0 -10 30 0 -10
+4 16 30 24 10 -30 24 10 -30 0 10 30 0 10
+4 16 26 24 6 26 4 6 -26 4 6 -26 24 6
+4 16 26 24 -26 -26 24 -26 -26 20 -26 26 20 -26
+4 16 30 24 -30 30 20 -30 -30 20 -30 -30 24 -30
+4 16 30 24 10 30 0 10 30 20 -30 30 24 -30
+3 16 30 0 10 30 0 -10 30 20 -30
+4 16 26 24 6 26 24 -26 26 20 -26 26 4 6
+3 16 26 4 6 26 20 -26 26 4 -10
+4 16 -26 24 6 -26 4 6 -26 20 -26 -26 24 -26
+3 16 -26 4 6 -26 4 -10 -26 20 -26
+4 16 -30 24 10 -30 24 -30 -30 20 -30 -30 0 10
+3 16 -30 0 10 -30 20 -30 -30 0 -10
+4 16 26 20 -26 -26 20 -26 -26 4 -10 26 4 -10
+1 16 -20 0 0 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 20 0 0 1 0 0 0 1 0 0 0 1 stud.dat
+
+0 FILE stud4a.dat
+0 Stud Tube Open without Base Edges
+0 Name: stud4a.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2009-02
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 -4 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
+1 16 0 -4 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
+0 BFC INVERTNEXT
+1 16 0 -4 0 6 0 0 0 4 0 0 0 6 4-4cyli.dat
+1 16 0 -4 0 8 0 0 0 4 0 0 0 8 4-4cyli.dat
+1 16 0 -4 0 2 0 0 0 1 0 0 0 2 4-4ring3.dat
+
+0 FILE 2-4edge.dat
+0 Circle 0.5
+0 Name: 2-4edge.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2017-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+2 24 1 0 0 0.9239 0 0.3827
+2 24 0.9239 0 0.3827 0.7071 0 0.7071
+2 24 0.7071 0 0.7071 0.3827 0 0.9239
+2 24 0.3827 0 0.9239 0 0 1
+2 24 0 0 1 -0.3827 0 0.9239
+2 24 -0.3827 0 0.9239 -0.7071 0 0.7071
+2 24 -0.7071 0 0.7071 -0.9239 0 0.3827
+2 24 -0.9239 0 0.3827 -1 0 0
+
+0 FILE 1-4cyls.dat
+0 Cylinder Sloped 0.25
+0 Name: 1-4cyls.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2012-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+3 16 0.9239 0.0761 0.3827 0.9239 0 0.3827 1 0 0
+4 16 0.9239 0.0761 0.3827 0.7071 0.2929 0.7071 0.7071 0 0.7071 0.9239 0 0.3827
+4 16 0.7071 0.2929 0.7071 0.3827 0.6173 0.9239 0.3827 0 0.9239 0.7071 0 0.7071
+4 16 0.3827 0.6173 0.9239 0 1 1 0 0 1 0.3827 0 0.9239
+5 24 0.9239 0 0.3827 0.9239 0.0761 0.3827 0.7071 0 0.7071 1 0 0
+5 24 0.7071 0 0.7071 0.7071 0.2929 0.7071 0.3827 0 0.9239 0.9239 0 0.3827
+5 24 0.3827 0 0.9239 0.3827 0.6173 0.9239 0 0 1 0.7071 0 0.7071
+5 24 0 0 1 0 1 1 0.3827 0 0.9239 -1 0 1
+
+0 FILE 2-4cyli.dat
+0 Cylinder 0.5
+0 Name: 2-4cyli.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2005-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+4 16 .9239 1 .3827 .9239 0 .3827 1 0 0 1 1 0
+4 16 .7071 1 .7071 .7071 0 .7071 .9239 0 .3827 .9239 1 .3827
+4 16 .3827 1 .9239 .3827 0 .9239 .7071 0 .7071 .7071 1 .7071
+4 16 0 1 1 0 0 1 .3827 0 .9239 .3827 1 .9239
+4 16 -.3827 1 .9239 -.3827 0 .9239 0 0 1 0 1 1
+4 16 -.7071 1 .7071 -.7071 0 .7071 -.3827 0 .9239 -.3827 1 .9239
+4 16 -.9239 1 .3827 -.9239 0 .3827 -.7071 0 .7071 -.7071 1 .7071
+4 16 -1 1 0 -1 0 0 -.9239 0 .3827 -.9239 1 .3827
+5 24 1 1 0 1 0 0 1 1 -.4142 .9239 1 .3827
+5 24 .9239 1 .3827 .9239 0 .3827 1 1 0 .7071 1 .7071
+5 24 .7071 1 .7071 .7071 0 .7071 .9239 1 .3827 .3827 1 .9239
+5 24 .3827 1 .9239 .3827 0 .9239 .7071 1 .7071 0 1 1
+5 24 0 1 1 0 0 1 .3827 1 .9239 -.3827 1 .9239
+5 24 -.3827 1 .9239 -.3827 0 .9239 0 1 1 -.7071 1 .7071
+5 24 -.7071 1 .7071 -.7071 0 .7071 -.3827 1 .9239 -.9239 1 .3827
+5 24 -.9239 1 .3827 -.9239 0 .3827 -.7071 1 .7071 -1 1 0
+5 24 -1 1 0 -1 0 0 -.9239 1 .3827 -1 1 -.4142
+
+0 FILE 3481.dat
+0 Plate  2 x  2 with Helicopter Tail Rotor Holder
+0 Name: 3481.dat
+0 Author: Christian M. Angele [cma_1971]
+0 !LDRAW_ORG Part UPDATE 2025-09
+0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+2 24 20 8 11 20 8 16
+2 24 20 8 9 20 8 -9
+2 24 20 8 -16 20 8 -11
+2 24 20 8 16 -16 8 16
+2 24 -16 8 16 -16 8 -16
+2 24 -16 8 -16 20 8 -16
+2 24 24 8 -20 24 8 20
+2 24 24 8 20 -20 8 20
+2 24 -20 8 20 -20 8 -20
+2 24 -20 8 -20 24 8 -20
+4 16 24 8 -20 20 8 -16 20 8 16 24 8 20
+4 16 24 8 20 20 8 16 -16 8 16 -20 8 20
+4 16 -20 8 20 -16 8 16 -16 8 -16 -20 8 -20
+4 16 -20 8 -20 -16 8 -16 20 8 -16 24 8 -20
+2 24 20 8 -9 20 4 -9
+2 24 20 8 -11 20 4 -11
+2 24 20 8 11 20 4 11
+2 24 20 8 9 20 4 9
+1 16 18 4 -10 0 0 -2 0 4 0 1 0 0 box4-4a.dat
+1 16 18 4 10 0 0 -2 0 4 0 1 0 0 box4-4a.dat
+1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud4.dat
+2 24 20 8 -16 20 4 -16
+2 24 20 8 16 20 4 16
+2 24 -16 8 16 -16 4 16
+2 24 -16 8 -16 -16 4 -16
+4 16 20 8 -16 20 4 -16 20 4 16 20 8 16
+4 16 20 8 16 20 4 16 -16 4 16 -16 8 16
+4 16 -16 8 16 -16 4 16 -16 4 -16 -16 8 -16
+4 16 -16 8 -16 -16 4 -16 20 4 -16 20 8 -16
+2 24 20 4 -16 20 4 16
+2 24 20 4 16 -16 4 16
+2 24 -16 4 16 -16 4 -16
+2 24 -16 4 -16 20 4 -16
+4 16 -16 4 -16 -16 4 16 20 4 16 20 4 -16
+2 24 24 8 -20 24 -24 -20
+2 24 24 8 20 24 -24 20
+2 24 -20 8 20 -20 0 20
+2 24 -20 8 -20 -20 0 -20
+4 16 24 8 20 24 -24 20 24 -24 -20 24 8 -20
+4 16 -20 8 20 -20 0 20 24 0 20 24 8 20
+4 16 -20 8 -20 -20 0 -20 -20 0 20 -20 8 20
+4 16 24 8 -20 24 0 -20 -20 0 -20 -20 8 -20
+2 24 20 0 -20 20 0 20
+2 24 20 0 20 -20 0 20
+2 24 -20 0 20 -20 0 -20
+2 24 -20 0 -20 20 0 -20
+4 16 20 0 -20 20 0 20 -20 0 20 -20 0 -20
+2 24 20 0 20 20 -24 20
+2 24 20 0 -20 20 -24 -20
+4 16 20 0 20 20 -24 20 24 -24 20 24 0 20
+4 16 20 0 -20 20 -24 -20 20 -24 20 20 0 20
+4 16 24 0 -20 24 -24 -20 20 -24 -20 20 0 -20
+2 24 24 -24 -20 24 -24 20
+2 24 24 -24 20 20 -24 20
+2 24 20 -24 20 20 -24 -20
+2 24 20 -24 -20 24 -24 -20
+4 16 24 -24 -20 24 -24 20 20 -24 20 20 -24 -20
+2 24 24 8 -12.5 32 4 -6
+2 24 32 4 -6 32 4 6
+2 24 32 4 6 24 8 12.5
+2 24 24 8 -20 36 2 -10
+2 24 36 2 -10 36 2 10
+2 24 36 2 10 24 8 20
+4 16 24 8 -12.5 32 4 -6 36 2 -10 24 8 -20
+4 16 32 4 -6 32 4 6 36 2 10 36 2 -10
+4 16 32 4 6 24 8 12.5 24 8 20 36 2 10
+2 24 24 8 -12.5 24 -20 -12.5
+2 24 32 4 -6 32 -14 -6
+2 24 32 4 6 32 -14 6
+2 24 24 8 12.5 24 -20 12.5
+4 16 24 8 -12.5 24 -20 -12.5 32 -14 -6 32 4 -6
+4 16 32 4 -6 32 -14 -6 32 -14 6 32 4 6
+4 16 32 4 6 32 -14 6 24 -20 12.5 24 8 12.5
+2 24 36 2 -10 36 -18 -10
+2 24 36 2 10 36 -18 10
+4 16 36 2 -10 36 -18 -10 24 -24 -20 24 8 -20
+4 16 36 2 10 36 -18 10 36 -18 -10 36 2 -10
+4 16 24 8 20 24 -24 20 36 -18 10 36 2 10
+2 24 24 -20 -12.5 32 -14 -6
+2 24 32 -14 -6 32 -14 6
+2 24 32 -14 6 24 -20 12.5
+2 24 24 -20 12.5 24 -20 -12.5
+4 16 24 -20 -12.5 24 -20 12.5 32 -14 6 32 -14 -6
+2 24 24 -24 -20 36 -18 -10
+2 24 36 -18 -10 36 -18 10
+2 24 36 -18 10 24 -24 20
+4 16 36 -18 -10 36 -18 10 24 -24 20 24 -24 -20
+1 16 36 -8 0 0 -1.6 0 4.5484 0 -1.884 -1.884 0 -4.5484 4-4edge.dat
+1 16 36 -8 0 0 -1.6 0 7.3912 0 -3.0615 -3.0615 0 -7.3912 4-4edge.dat
+1 16 39 -8 0 0 -1.6 0 7.3912 0 -3.0615 -3.0615 0 -7.3912 4-4edge.dat
+1 16 39 -8 0 0 -3.2 0 7.3912 0 -3.0615 3.0615 0 7.3912 4-4cyli.dat
+1 16 39 -8 0 0 -1.6 0 6.8227 0 -2.826 -2.826 0 -6.8227 4-4edge.dat
+1 16 39 -8 0 0 -1.6 0 -0.5686 0 0.2355 -0.2355 0 -0.5686 4-4ring12.dat
+1 16 36 -8 0 0 -1.6 0 1.2308 0 0 0 0 1.2308 connect4.dat
+1 16 10 0 10 -1 0 0 0 1 0 0 0 1 stud.dat
+1 16 -10 0 10 -1 0 0 0 1 0 0 0 1 stud.dat
+1 16 10 0 -10 -1 0 0 0 1 0 0 0 1 stud.dat
+1 16 -10 0 -10 -1 0 0 0 1 0 0 0 1 stud.dat
+
+0 FILE box4-4a.dat
+0 Box with  4 Faces without  4 Adjacent Edges
+0 Name: box4-4a.dat
+0 Author: Willy Tschager [Holly-Wood]
+0 !LDRAW_ORG Primitive UPDATE 2024-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+2 24 -1 1 -1 -1 1 1
+2 24 1 1 1 1 1 -1
+2 24 -1 1 1 1 1 1
+4 16 1 1 1 1 1 -1 -1 1 -1 -1 1 1
+2 24 -1 0 -1 -1 0 1
+4 16 -1 1 1 -1 1 -1 -1 0 -1 -1 0 1
+2 24 1 0 1 1 0 -1
+4 16 1 1 -1 1 1 1 1 0 1 1 0 -1
+2 24 1 1 1 1 0 1
+2 24 -1 1 1 -1 0 1
+2 24 -1 0 1 1 0 1
+4 16 1 1 1 -1 1 1 -1 0 1 1 0 1
+
+0 FILE 4-4ring12.dat
+0 Ring 12 x 1.0
+0 Name: 4-4ring12.dat
+0 Author: Willy Tschager [Holly-Wood]
+0 !LDRAW_ORG Primitive UPDATE 2024-02
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+4 16 13 0 0 12.0107 0 4.9751 11.0868 0 4.5924 12 0 0
+4 16 12.0107 0 4.9751 9.1923 0 9.1923 8.4852 0 8.4852 11.0868 0 4.5924
+4 16 9.1923 0 9.1923 4.9751 0 12.0107 4.5924 0 11.0868 8.4852 0 8.4852
+4 16 4.9751 0 12.0107 0 0 13 0 0 12 4.5924 0 11.0868
+4 16 0 0 13 -4.9751 0 12.0107 -4.5924 0 11.0868 0 0 12
+4 16 -4.9751 0 12.0107 -9.1923 0 9.1923 -8.4852 0 8.4852 -4.5924 0 11.0868
+4 16 -9.1923 0 9.1923 -12.0107 0 4.9751 -11.0868 0 4.5924 -8.4852 0 8.4852
+4 16 -12.0107 0 4.9751 -13 0 0 -12 0 0 -11.0868 0 4.5924
+4 16 -13 0 0 -12.0107 0 -4.9751 -11.0868 0 -4.5924 -12 0 0
+4 16 -12.0107 0 -4.9751 -9.1923 0 -9.1923 -8.4852 0 -8.4852 -11.0868 0 -4.5924
+4 16 -9.1923 0 -9.1923 -4.9751 0 -12.0107 -4.5924 0 -11.0868 -8.4852 0 -8.4852
+4 16 -4.9751 0 -12.0107 0 0 -13 0 0 -12 -4.5924 0 -11.0868
+4 16 0 0 -13 4.9751 0 -12.0107 4.5924 0 -11.0868 0 0 -12
+4 16 4.9751 0 -12.0107 9.1923 0 -9.1923 8.4852 0 -8.4852 4.5924 0 -11.0868
+4 16 9.1923 0 -9.1923 12.0107 0 -4.9751 11.0868 0 -4.5924 8.4852 0 -8.4852
+4 16 12.0107 0 -4.9751 13 0 0 12 0 0 11.0868 0 -4.5924
+
+0 FILE connect4.dat
+0 Technic Pin 0.5 without Base Collar
+0 Name: connect4.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2025-05
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+2 24 5.801 -8 1 5.5434 -8 2.2962
+2 24 -5.5434 -8 2.2962 -5.801 -8 1
+2 24 -5.801 -8 -1 -5.5434 -8 -2.2962
+2 24 5.5434 -8 -2.2962 5.801 -8 -1
+2 24 6.301 -8 1 6.00535 -8 2.48755
+2 24 -6.00535 -8 2.48755 -6.301 -8 1
+2 24 -6.301 -8 -1 -6.00535 -8 -2.48755
+2 24 6.00535 -8 -2.48755 6.301 -8 -1
+2 24 6.301 -10 1 6.00535 -10 2.48755
+2 24 -6.00535 -10 2.48755 -6.301 -10 1
+2 24 -6.301 -10 -1 -6.00535 -10 -2.48755
+2 24 6.00535 -10 -2.48755 6.301 -10 -1
+2 24 3.801 -10 1 3.6956 -10 1.5308
+2 24 -3.6956 -10 1.5308 -3.801 -10 1
+2 24 -3.801 -10 -1 -3.6956 -10 -1.5308
+2 24 3.6956 -10 -1.5308 3.801 -10 -1
+2 24 5.801 -5 1 5.801 -8 1
+2 24 5.801 -8 1 6.301 -8 1
+2 24 6.301 -8 1 6.301 -10 1
+2 24 6.301 -10 1 3.801 -10 1
+2 24 3.801 -10 1 3.801 -5 1
+2 24 5.801 -5 -1 5.801 -8 -1
+2 24 5.801 -8 -1 6.301 -8 -1
+2 24 6.301 -8 -1 6.301 -10 -1
+2 24 6.301 -10 -1 3.801 -10 -1
+2 24 3.801 -10 -1 3.801 -5 -1
+2 24 -5.801 -5 1 -5.801 -8 1
+2 24 -5.801 -8 1 -6.301 -8 1
+2 24 -6.301 -8 1 -6.301 -10 1
+2 24 -6.301 -10 1 -3.801 -10 1
+2 24 -3.801 -10 1 -3.801 -5 1
+2 24 -5.801 -5 -1 -5.801 -8 -1
+2 24 -5.801 -8 -1 -6.301 -8 -1
+2 24 -6.301 -8 -1 -6.301 -10 -1
+2 24 -6.301 -10 -1 -3.801 -10 -1
+2 24 -3.801 -10 -1 -3.801 -5 -1
+4 16 5.801 -4 1 5.5434 -4 2.2962 5.5434 -8 2.2962 5.801 -8 1
+4 16 -5.5434 -4 2.2962 -5.801 -4 1 -5.801 -8 1 -5.5434 -8 2.2962
+4 16 -5.801 -4 -1 -5.5434 -4 -2.2962 -5.5434 -8 -2.2962 -5.801 -8 -1
+4 16 5.5434 -4 -2.2962 5.801 -4 -1 5.801 -8 -1 5.5434 -8 -2.2962
+4 16 5.801 -8 1 5.5434 -8 2.2962 6.00535 -8 2.48755 6.301 -8 1
+4 16 -5.5434 -8 2.2962 -5.801 -8 1 -6.301 -8 1 -6.00535 -8 2.48755
+4 16 -5.801 -8 -1 -5.5434 -8 -2.2962 -6.00535 -8 -2.48755 -6.301 -8 -1
+4 16 5.5434 -8 -2.2962 5.801 -8 -1 6.301 -8 -1 6.00535 -8 -2.48755
+4 16 6.301 -8 1 6.00535 -8 2.48755 6.00535 -10 2.48755 6.301 -10 1
+4 16 -6.00535 -8 2.48755 -6.301 -8 1 -6.301 -10 1 -6.00535 -10 2.48755
+4 16 -6.301 -8 -1 -6.00535 -8 -2.48755 -6.00535 -10 -2.48755 -6.301 -10 -1
+4 16 6.00535 -8 -2.48755 6.301 -8 -1 6.301 -10 -1 6.00535 -10 -2.48755
+4 16 5.801 -5 1 5.801 -8 1 3.801 -10 1 3.801 -5 1
+4 16 6.301 -10 1 3.801 -10 1 5.801 -8 1 6.301 -8 1
+4 16 6.301 -10 1 6.00535 -10 2.48755 3.6956 -10 1.5308 3.801 -10 1
+4 16 -6.00535 -10 2.48755 -6.301 -10 1 -3.801 -10 1 -3.6956 -10 1.5308
+4 16 -6.301 -8 1 -5.801 -8 1 -3.801 -10 1 -6.301 -10 1
+4 16 -3.801 -10 1 -5.801 -8 1 -5.801 -5 1 -3.801 -5 1
+4 16 -5.801 -5 -1 -5.801 -8 -1 -3.801 -10 -1 -3.801 -5 -1
+4 16 -6.301 -10 -1 -3.801 -10 -1 -5.801 -8 -1 -6.301 -8 -1
+4 16 -6.301 -10 -1 -6.00535 -10 -2.48755 -3.6956 -10 -1.5308 -3.801 -10 -1
+4 16 6.00535 -10 -2.48755 6.301 -10 -1 3.801 -10 -1 3.6956 -10 -1.5308
+4 16 3.801 -10 -1 6.301 -10 -1 6.301 -8 -1 5.801 -8 -1
+4 16 3.801 -10 -1 5.801 -8 -1 5.801 -5 -1 3.801 -5 -1
+4 16 3.801 -10 1 3.6956 -10 1.5308 3.6956 -4 1.5308 3.801 -4 1
+4 16 -3.6956 -10 1.5308 -3.801 -10 1 -3.801 -4 1 -3.6956 -4 1.5308
+4 16 -3.801 -10 -1 -3.6956 -10 -1.5308 -3.6956 -4 -1.5308 -3.801 -4 -1
+4 16 3.6956 -10 -1.5308 3.801 -10 -1 3.801 -4 -1 3.6956 -4 -1.5308
+1 16 0 -4 0 6 0 0 0 4 0 0 0 6 4-4cyli.dat
+1 16 0 -8 0 0 0 6 0 4 0 -6 0 0 3-16cyli.dat
+1 16 0 -8 0 0 0 -6 0 4 0 6 0 0 3-16cyli.dat
+1 16 0 -10 0 0 0 -6.5 0 2 0 6.5 0 0 3-16cylo.dat
+1 16 0 -10 0 0 0 6.5 0 2 0 -6.5 0 0 3-16cylo.dat
+1 16 0 -8 0 0 0 -6 0 4 0 -6 0 0 3-16cyli.dat
+1 16 0 -8 0 0 0 6 0 4 0 6 0 0 3-16cyli.dat
+1 16 0 -10 0 0 0 6.5 0 2 0 6.5 0 0 3-16cylo.dat
+1 16 0 -10 0 0 0 -6.5 0 2 0 -6.5 0 0 3-16cylo.dat
+0 BFC INVERTNEXT
+1 16 0 -4 0 4 0 0 0 4 0 0 0 4 4-4cyli.dat
+0 BFC INVERTNEXT
+1 16 0 -10 0 0 0 -4 0 6 0 4 0 0 3-16cyli.dat
+0 BFC INVERTNEXT
+1 16 0 -10 0 0 0 4 0 6 0 -4 0 0 3-16cyli.dat
+0 BFC INVERTNEXT
+1 16 0 -10 0 0 0 4 0 6 0 4 0 0 3-16cyli.dat
+0 BFC INVERTNEXT
+1 16 0 -10 0 0 0 -4 0 6 0 -4 0 0 3-16cyli.dat
+1 16 0 -10 0 0 0 -4 0 1 0 -4 0 0 3-16tndis.dat
+1 16 0 -10 0 0 0 4 0 1 0 4 0 0 3-16tndis.dat
+1 16 0 -10 0 0 0 4 0 1 0 -4 0 0 3-16tndis.dat
+1 16 0 -10 0 0 0 -4 0 1 0 4 0 0 3-16tndis.dat
+3 16 3.6956 -10 1.5308 6.00535 -10 2.48755 3.6956 -10 4
+3 16 3.6956 -10 4 6.00535 -10 2.48755 0 -10 6.5
+3 16 3.6956 -10 4 0 -10 6.5 0 -10 4
+3 16 -6.00535 -10 2.48755 -3.6956 -10 1.5308 -3.6956 -10 4
+3 16 -6.00535 -10 2.48755 -3.6956 -10 4 0 -10 6.5
+3 16 0 -10 6.5 -3.6956 -10 4 0 -10 4
+3 16 6.00535 -10 -2.48755 3.6956 -10 -1.5308 3.6956 -10 -4
+3 16 6.00535 -10 -2.48755 3.6956 -10 -4 0 -10 -6.5
+3 16 0 -10 -6.5 3.6956 -10 -4 0 -10 -4
+3 16 -3.6956 -10 -1.5308 -6.00535 -10 -2.48755 -3.6956 -10 -4
+3 16 -3.6956 -10 -4 -6.00535 -10 -2.48755 0 -10 -6.5
+3 16 -3.6956 -10 -4 0 -10 -6.5 0 -10 -4
+1 16 0 -10 0 0 0 -6.5 0 1 0 6.5 0 0 3-16chrd.dat
+1 16 0 -10 0 0 0 6.5 0 1 0 -6.5 0 0 3-16chrd.dat
+1 16 0 -10 0 0 0 6.5 0 1 0 6.5 0 0 3-16chrd.dat
+1 16 0 -10 0 0 0 -6.5 0 1 0 -6.5 0 0 3-16chrd.dat
+1 16 0 -8 0 0 0 -.5 0 -1 0 .5 0 0 3-16ring12.dat
+1 16 0 -8 0 0 0 .5 0 -1 0 -.5 0 0 3-16ring12.dat
+1 16 0 -8 0 0 0 .5 0 -1 0 .5 0 0 3-16ring12.dat
+1 16 0 -8 0 0 0 -.5 0 -1 0 -.5 0 0 3-16ring12.dat
+1 16 0 -8 0 0 0 -6 0 1 0 -6 0 0 3-16edge.dat
+1 16 0 -8 0 0 0 6 0 1 0 6 0 0 3-16edge.dat
+1 16 0 -10 0 0 0 -4 0 1 0 -4 0 0 3-16edge.dat
+1 16 0 -10 0 0 0 4 0 1 0 4 0 0 3-16edge.dat
+1 16 0 -8 0 0 0 6 0 1 0 -6 0 0 3-16edge.dat
+1 16 0 -8 0 0 0 -6 0 1 0 6 0 0 3-16edge.dat
+1 16 0 -10 0 0 0 4 0 1 0 -4 0 0 3-16edge.dat
+1 16 0 -10 0 0 0 -4 0 1 0 4 0 0 3-16edge.dat
+1 16 -6 -5 0 0 1 0.199 1 0 0 0 0 1 8\1-4ndis.dat
+1 16 -6 -5 0 0 1 0.199 1 0 0 0 0 -1 8\1-4ndis.dat
+1 16 6 -5 0 0 -1 -0.199 1 0 0 0 0 -1 8\1-4ndis.dat
+1 16 6 -5 0 0 -1 -0.199 1 0 0 0 0 1 8\1-4ndis.dat
+1 16 -4 -5 0 0 -1 0.199 1 0 0 0 0 1 8\1-4ndis.dat
+1 16 -4 -5 0 0 -1 0.199 1 0 0 0 0 -1 8\1-4ndis.dat
+1 16 4 -5 0 0 1 -0.199 1 0 0 0 0 -1 8\1-4ndis.dat
+1 16 4 -5 0 0 1 -0.199 1 0 0 0 0 1 8\1-4ndis.dat
+0 BFC INVERTNEXT
+1 16 -6 -5 0 0 2 0.199 1 0 0 0 0 1 8\1-4cylo.dat
+0 BFC INVERTNEXT
+1 16 -6 -5 0 0 2 0.199 1 0 0 0 0 -1 8\1-4cylo.dat
+0 BFC INVERTNEXT
+1 16 6 -5 0 0 -2 -0.199 1 0 0 0 0 -1 8\1-4cylo.dat
+0 BFC INVERTNEXT
+1 16 6 -5 0 0 -2 -0.199 1 0 0 0 0 1 8\1-4cylo.dat
+5 24 5.5434 -8 2.2962 5.5434 -4 2.2962 5.801 -8 1 4.2426 -8 4.2426
+5 24 6.00535 -10 2.48755 6.00535 -8 2.48755 6.301 -10 1 4.59615 -10 4.59615
+5 24 3.6956 -10 1.5308 3.6956 -4 1.5308 3.801 -10 1 2.8284 -10 2.8284
+5 24 -5.5434 -8 2.2962 -5.5434 -4 2.2962 -5.801 -8 1 -4.2426 -8 4.2426
+5 24 -6.00535 -10 2.48755 -6.00535 -8 2.48755 -6.301 -10 1 -4.59615 -10 4.59615
+5 24 -3.6956 -10 1.5308 -3.6956 -4 1.5308 -3.801 -10 1 -2.8284 -10 2.8284
+5 24 5.5434 -8 -2.2962 5.5434 -4 -2.2962 5.801 -8 -1 4.2426 -8 -4.2426
+5 24 6.00535 -10 -2.48755 6.00535 -8 -2.48755 6.301 -10 -1 4.59615 -10 -4.59615
+5 24 3.6956 -10 -1.5308 3.6956 -4 -1.5308 3.801 -10 -1 2.8284 -10 -2.8284
+5 24 -5.5434 -8 -2.2962 -5.5434 -4 -2.2962 -5.801 -8 -1 -4.2426 -8 -4.2426
+5 24 -6.00535 -10 -2.48755 -6.00535 -8 -2.48755 -6.301 -10 -1 -4.59615 -10 -4.59615
+5 24 -3.6956 -10 -1.5308 -3.6956 -4 -1.5308 -3.801 -10 -1 -2.8284 -10 -2.8284
+
+0 FILE 3-16cyli.dat
+0 Cylinder 0.1875
+0 Name: 3-16cyli.dat
+0 Author: Mark Kennedy [mkennedy]
+0 !LDRAW_ORG Primitive UPDATE 2005-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+4 16 .9239 1 .3827 .9239 0 .3827 1 0 0 1 1 0
+4 16 .7071 1 .7071 .7071 0 .7071 .9239 0 .3827 .9239 1 .3827
+4 16 .3827 1 .9239 .3827 0 .9239 .7071 0 .7071 .7071 1 .7071
+5 24 1 1 0 1 0 0 1 1 -.4142 .9239 1 .3827
+5 24 .9239 1 .3827 .9239 0 .3827 1 1 0 .7071 1 .7071
+5 24 .7071 1 .7071 .7071 0 .7071 .9239 1 .3827 .3827 1 .9239
+5 24 .3827 1 .9239 .3827 0 .9239 .7071 1 .7071 0 1 1.0824
+
+0 FILE 3-16cylo.dat
+0 Cylinder Open 0.1875
+0 Name: 3-16cylo.dat
+0 Author: J.C. Tchang [tchang]
+0 !LDRAW_ORG Primitive UPDATE 2013-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 3-16edge.dat
+1 16 0 1 0 1 0 0 0 1 0 0 0 1 3-16edge.dat
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 3-16cyli.dat
+
+0 FILE 3-16edge.dat
+0 Circle 0.1875
+0 Name: 3-16edge.dat
+0 Author: Donald Sutter [technog]
+0 !LDRAW_ORG Primitive UPDATE 2017-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+2 24 1 0 0 0.9239 0 0.3827
+2 24 0.9239 0 0.3827 0.7071 0 0.7071
+2 24 0.7071 0 0.7071 0.3827 0 0.9239
+
+0 FILE 3-16tndis.dat
+0 Disc Negative Truncated 0.1875
+0 Name: 3-16tndis.dat
+0 Author: Massimo Maso [Sirio]
+0 !LDRAW_ORG Primitive UPDATE 2022-02
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+3 16 1 0 .9239 .9239 0 .3827 1 0 0
+3 16 1 0 .9239 .7071 0 .7071 .9239 0 .3827
+3 16 1 0 .9239 .3827 0 .9239 .7071 0 .7071
+
+0 FILE 3-16chrd.dat
+0 Chord 0.1875
+0 Name: 3-16chrd.dat
+0 Author: Niels Karsdorp [nielsk]
+0 !LDRAW_ORG Primitive UPDATE 2009-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+4 16 1 0 0 0.9239 0 0.3827 0.7071 0 0.7071 0.3827 0 0.9239
+
+0 FILE 3-16ring12.dat
+0 Ring 12 x 0.1875
+0 Name: 3-16ring12.dat
+0 Author: Alex Taylor [anathema]
+0 !LDRAW_ORG Primitive UPDATE 2014-02
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+4 16 12 0 0 13 0 0 12.0107 0 4.9751 11.0868 0 4.5924
+4 16 11.0868 0 4.5924 12.0107 0 4.9751 9.1923 0 9.1923 8.4852 0 8.4852
+4 16 8.4852 0 8.4852 9.1923 0 9.1923 4.9751 0 12.0107 4.5924 0 11.0868
+
+0 FILE 8/1-4ndis.dat
+0 Lo-Res Disc Negative 0.25
+0 Name: 8\1-4ndis.dat
+0 Author: Magnus Forsberg [MagFors]
+0 !LDRAW_ORG 8_Primitive UPDATE 2018-02
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+3 16 1 0 1 0.7071 0 0.7071 1 0 0
+3 16 1 0 1 0 0 1 0.7071 0 0.7071
+
+0 FILE 8/1-4cylo.dat
+0 Lo-Res Cylinder Open 0.25
+0 Name: 8\1-4cylo.dat
+0 Author: Magnus Forsberg [MagFors]
+0 !LDRAW_ORG 8_Primitive UPDATE 2018-02
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 8\1-4edge.dat
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 8\1-4cyli.dat
+1 16 0 1 0 1 0 0 0 1 0 0 0 1 8\1-4edge.dat
+
+0 FILE 8/1-4edge.dat
+0 Circle 0.25
+0 Name: 8\1-4edge.dat
+0 Author: Philippe Hurbain [Philo]
+0 !LDRAW_ORG 8_Primitive UPDATE 2016-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+2 24 1 0 0 0.7071 0 0.7071
+2 24 0.7071 0 0.7071 0 0 1
+
+0 FILE 8/1-4cyli.dat
+0 Cylinder 0.25
+0 Name: 8\1-4cyli.dat
+0 Author: Philippe Hurbain [Philo]
+0 !LDRAW_ORG 8_Primitive UPDATE 2016-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+4 16 0.7071 0 0.7071 1 0 0 1 1 0 0.7071 1 0.7071
+4 16 0 0 1 0.7071 0 0.7071 0.7071 1 0.7071 0 1 1
+5 24 1 1 0 1 0 0 1 1 -1 0.7071 1 0.7071
+5 24 0.7071 1 0.7071 0.7071 0 0.7071 1 1 0 0 1 1
+5 24 0 1 1 0 0 1 0.7071 1 0.7071 -1 1 1
+
+0 FILE 3462.dat
+0 Plate  2 x  3 with Rotor Holder
+0 Name: 3462.dat
+0 Author: Christian M. Angele [cma_1971]
+0 !LDRAW_ORG Part UPDATE 2024-02
+0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 10 4 0 1 0 0 0 -1 0 0 0 1 stud4.dat
+1 16 -10 4 0 1 0 0 0 -1 0 0 0 1 stud4.dat
+0 BFC INVERTNEXT
+1 16 0 8 0 26 0 0 0 -4 0 0 0 16 box5.dat
+4 16 30 8 20 26 8 16 -26 8 16 -30 8 20
+4 16 -30 8 -20 -26 8 -16 26 8 -16 30 8 -20
+4 16 30 8 -20 26 8 -16 26 8 16 30 8 20
+4 16 -30 8 20 -26 8 16 -26 8 -16 -30 8 -20
+1 16 0 8 0 30 0 0 0 -8 0 0 0 20 box5.dat
+1 16 20 0 0 1 0 0 0 1 0 0 0 1 stug-2x1.dat
+1 16 -20 0 0 1 0 0 0 1 0 0 0 1 stug-2x1.dat
+1 16 0 -4 10 4.242641 0 4.242641 0 4 0 -4.242641 0 4.242641 3-4cylc.dat
+1 16 0 -4 -10 -4.242641 0 -4.242641 0 4 0 4.242641 0 -4.242641 3-4cylc.dat
+3 16 0 -4 10 -4.2426 -4 5.7574 4.2426 -4 5.7574
+3 16 -4.2426 -4 -5.7574 0 -4 -10 4.2426 -4 -5.7574
+1 16 0 0 0 3.75 0 0 0 1 0 0 0 3.75 4-4edge.dat
+1 16 0 -8 0 7.5 0 0 0 1 0 0 0 7.5 4-4edge.dat
+1 16 0 -8 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
+1 16 0 0 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
+1 16 0 -8 0 .5 0 0 0 1 0 0 0 .5 4-4ring15.dat
+1 16 0 -8 0 8 0 0 0 8 0 0 0 8 4-4cyli.dat
+2 24 3.0615 -4 7.391 4.6328 -4 6.3412
+2 24 4.6328 -4 6.3412 4.6328 0 6.3412
+2 24 -3.0614 -4 7.391 -4.6328 -4 6.3412
+2 24 -4.6328 -4 6.3412 -4.6328 0 6.3412
+2 24 3.0614 -4 -7.391 4.6328 -4 -6.3412
+2 24 4.6328 -4 -6.3412 4.6328 0 -6.3412
+2 24 -3.0615 -4 -7.391 -4.6328 -4 -6.3412
+2 24 -4.6328 -4 -6.3412 -4.6328 0 -6.3412
+1 16 0 -4 0 3.061467 0 -7.391036 0 1 0 7.391036 0 3.061467 1-8edge.dat
+1 16 0 -4 0 -3.061467 0 7.391036 0 1 0 -7.391036 0 -3.061467 1-8edge.dat
+0 BFC INVERTNEXT
+1 16 0 -8 0 3.75 0 0 0 8 0 0 0 3.75 4-4cyli.dat
+1 16 0 -16 0 0 0 7.5 0 8 0 -7.5 0 0 3-16cyli.dat
+1 16 0 -20 0 0 0 8.125 0 4 0 -8.125 0 0 3-16cyli.dat
+0 BFC INVERTNEXT
+1 16 0 -20 0 0 0 3.75 0 12 0 -3.75 0 0 3-16cyli.dat
+1 16 0 -20 0 0 0 3.75 0 1 0 -3.75 0 0 3-16ndis.dat
+1 16 0 -20 0 0 0 8.125 0 1 0 -8.125 0 0 3-16chrd.dat
+1 16 0 -16 0 0 0 .625 0 -1 0 -.625 0 0 3-16ring12.dat
+3 16 0 -20 -3.75 0 -20 -8.125 3.75 -20 -3.75
+3 16 3.75 -20 -3.75 0 -20 -8.125 7.5067 -20 -3.1094
+3 16 3.75 -20 -3.75 7.5067 -20 -3.1094 3.4646 -20 -1.4351
+1 16 0 -16 0 0 0 7.5 0 1 0 -7.5 0 0 3-16edge.dat
+1 16 0 -16 0 0 0 8.125 0 1 0 -8.125 0 0 3-16edge.dat
+1 16 0 -20 0 0 0 8.125 0 1 0 -8.125 0 0 3-16edge.dat
+1 16 0 -20 0 0 0 3.75 0 1 0 -3.75 0 0 3-16edge.dat
+1 16 0 -16 0 0 0 7.5 0 8 0 7.5 0 0 3-16cyli.dat
+1 16 0 -20 0 0 0 8.125 0 4 0 8.125 0 0 3-16cyli.dat
+0 BFC INVERTNEXT
+1 16 0 -20 0 0 0 3.75 0 12 0 3.75 0 0 3-16cyli.dat
+1 16 0 -20 0 0 0 3.75 0 1 0 3.75 0 0 3-16ndis.dat
+1 16 0 -20 0 0 0 8.125 0 1 0 8.125 0 0 3-16chrd.dat
+3 16 0 -20 8.125 0 -20 3.75 3.75 -20 3.75
+3 16 0 -20 8.125 3.75 -20 3.75 7.5067 -20 3.1094
+3 16 7.5067 -20 3.1094 3.75 -20 3.75 3.4646 -20 1.4351
+1 16 0 -16 0 0 0 .625 0 -1 0 .625 0 0 3-16ring12.dat
+1 16 0 -16 0 0 0 7.5 0 1 0 7.5 0 0 3-16edge.dat
+1 16 0 -16 0 0 0 8.125 0 1 0 8.125 0 0 3-16edge.dat
+1 16 0 -20 0 0 0 8.125 0 1 0 8.125 0 0 3-16edge.dat
+1 16 0 -20 0 0 0 3.75 0 1 0 3.75 0 0 3-16edge.dat
+1 16 0 -16 0 -5.303301 0 -5.303301 0 8 0 5.303301 0 -5.303301 1-4cyli.dat
+1 16 0 -20 0 -5.745243 0 -5.745243 0 4 0 5.745243 0 -5.745243 1-4cyli.dat
+0 BFC INVERTNEXT
+1 16 0 -20 0 -3.464548 0 -1.435063 0 12 0 1.435063 0 -3.464548 1-8cyli.dat
+1 16 0 -20 0 -3.464548 0 -1.435063 0 1 0 1.435063 0 -3.464548 1-8ndis.dat
+1 16 0 -16 0 -.441942 0 -.441942 0 -1 0 .441942 0 -.441942 1-4ring12.dat
+1 16 0 -20 0 -5.745243 0 -5.745243 0 1 0 5.745243 0 -5.745243 1-4chrd.dat
+1 16 0 -16 0 -5.303301 0 -5.303301 0 1 0 5.303301 0 -5.303301 1-4edge.dat
+1 16 0 -16 0 -5.745243 0 -5.745243 0 1 0 5.745243 0 -5.745243 1-4edge.dat
+1 16 0 -20 0 -5.745243 0 -5.745243 0 1 0 5.745243 0 -5.745243 1-4edge.dat
+1 16 0 -20 0 -3.464548 0 -1.435063 0 1 0 1.435063 0 -3.464548 1-8edge.dat
+4 16 -2.8247 -20 -2.3926 -3.4645 -20 -1.435 -4.8996 -20 -2.0295 -5.7452 -20 -5.7452
+3 16 -5.7452 -20 -5.7452 -4.8996 -20 -2.0295 -5.7452 -20 5.7452
+3 16 -5.7452 -20 5.7452 -4.8996 -20 -2.0295 -3.4645 -20 1.4351
+3 16 -5.7452 -20 5.7452 -3.4645 -20 1.4351 -2.8247 -20 2.3926
+2 24 7.2513 -16 1.25 6.9293 -16 2.8703
+2 24 6.9293 -16 -2.8703 7.2513 -16 -1.25
+2 24 7.8763 -16 1.25 7.5067 -16 3.1094
+2 24 7.5067 -16 -3.1094 7.8763 -16 -1.25
+2 24 7.8763 -20 1.25 7.5067 -20 3.1094
+2 24 7.5067 -20 -3.1094 7.8763 -20 -1.25
+2 24 3.5 -20 1.25 3.4646 -20 1.4351
+2 24 3.4646 -20 -1.4351 3.5 -20 -1.25
+2 24 7.25 -10 1.25 7.2513 -16 1.25
+2 24 7.2513 -16 1.25 7.8763 -16 1.25
+2 24 7.8763 -16 1.25 7.8763 -20 1.25
+2 24 7.8763 -20 1.25 3.5 -20 1.25
+2 24 3.5 -20 1.25 3.5011 -10 1.25
+2 24 7.25 -10 -1.25 7.2513 -16 -1.25
+2 24 7.2513 -16 -1.25 7.8763 -16 -1.25
+2 24 7.8763 -16 -1.25 7.8763 -20 -1.25
+2 24 7.8763 -20 -1.25 3.5 -20 -1.25
+2 24 3.5 -20 -1.25 3.5 -10 -1.25
+4 16 7.25 -8 1.25 6.9293 -8 2.8703 6.9293 -16 2.8703 7.2513 -16 1.25
+4 16 6.9293 -8 -2.8703 7.25 -8 -1.25 7.2513 -16 -1.25 6.9293 -16 -2.8703
+4 16 7.2513 -16 1.25 6.9293 -16 2.8703 7.5067 -16 3.1094 7.8763 -16 1.25
+4 16 6.9293 -16 -2.8703 7.2513 -16 -1.25 7.8763 -16 -1.25 7.5067 -16 -3.1094
+4 16 7.8763 -16 1.25 7.5067 -16 3.1094 7.5067 -20 3.1094 7.8763 -20 1.25
+4 16 7.5067 -16 -3.1094 7.8763 -16 -1.25 7.8763 -20 -1.25 7.5067 -20 -3.1094
+4 16 7.25 -10 1.25 7.2513 -16 1.25 3.5 -20 1.25 3.5011 -10 1.25
+4 16 7.8763 -20 1.25 3.5 -20 1.25 7.2513 -16 1.25 7.8763 -16 1.25
+4 16 7.8763 -20 1.25 7.5067 -20 3.1094 3.4646 -20 1.4351 3.5 -20 1.25
+4 16 7.5067 -20 -3.1094 7.8763 -20 -1.25 3.5 -20 -1.25 3.4646 -20 -1.4351
+4 16 7.8763 -16 -1.25 7.2513 -16 -1.25 3.5 -20 -1.25 7.8763 -20 -1.25
+4 16 3.5 -20 -1.25 7.2513 -16 -1.25 7.25 -10 -1.25 3.5 -10 -1.25
+4 16 3.4646 -20 1.4351 3.4646 -8 1.4351 3.5011 -10 1.25 3.5 -20 1.25
+3 16 3.4646 -8 1.4351 3.5013 -8 1.25 3.5011 -10 1.25
+3 16 3.5 -10 -1.25 3.5 -8 -1.25 3.4646 -8 -1.4351
+4 16 3.5 -20 -1.25 3.5 -10 -1.25 3.4646 -8 -1.4351 3.4646 -20 -1.4351
+5 24 3.4646 -20 1.4351 3.4646 -8 1.4351 3.5355 -8 3.5355 5 -8 0
+5 24 3.4646 -20 -1.4351 3.4646 -8 -1.4351 5 -8 0 3.5355 -8 -3.5355
+5 24 7.5067 -20 3.1094 7.5067 -16 3.1094 5.7452 -16 5.7452 7.8763 -16 1.25
+5 24 7.5067 -20 -3.1094 7.5067 -16 -3.1094 7.8763 -16 -1.25 5.7452 -16 -5.7452
+5 24 6.9293 -16 2.8703 6.9293 -8 2.8703 5.3033 -8 5.3033 7.5 -8 0
+5 24 6.9293 -16 -2.8703 6.9293 -8 -2.8703 5.3033 -8 -5.3033 7.5 -8 0
+1 16 7.5 -10 0 0 -1 -.25 2 0 0 0 0 -1.25 1-4ndis.dat
+1 16 7.5 -10 0 0 -1 -.25 2 0 0 0 0 1.25 1-4ndis.dat
+1 16 3.75 -10 0 0 1 -.25 2 0 0 0 0 -1.25 1-4ndis.dat
+1 16 3.75 -10 0 0 1 -.25 2 0 0 0 0 1.25 1-4ndis.dat
+0 BFC INVERTNEXT
+1 16 7.5 -10 0 0 -3.75 -.25 2 0 0 0 0 -1.25 1-4cylo.dat
+0 BFC INVERTNEXT
+1 16 7.5 -10 0 0 -3.75 -.25 2 0 0 0 0 1.25 1-4cylo.dat
+2 24 -2.9132 -20 -7.5457 -.6474 -20 -3.6213
+2 24 -2.8247 -20 -2.3926 -5.0345 -20 -6.2201
+2 24 -2.5895 -16 -6.9851 -2.9132 -16 -7.5457
+2 24 -5.0345 -16 -6.2201 -4.7274 -16 -5.6881
+2 24 -4.7274 -10 -5.6881 -4.6481 -9.2346 -5.7411
+2 24 -2.7658 -9.2346 -2.4808 -2.8247 -10 -2.3926
+2 24 -4.4223 -8.5858 -5.892 -4.6481 -9.2346 -5.7411
+2 24 -2.6516 -8.7933 -2.6516 -2.5794 -8.5858 -2.6999
+2 24 -2.7658 -9.2346 -2.4808 -2.6516 -8.7933 -2.6516
+2 24 -3.2873 -8.1522 -6.6505 -3.6859 -8 -6.3841
+2 24 -3.2873 -8.1522 -6.6505 -2.9494 -8.5858 -6.8763
+2 24 -4.0845 -8.1522 -6.1178 -4.4223 -8.5858 -5.892
+2 24 -4.0845 -8.1522 -6.1178 -3.6859 -8 -6.3841
+2 24 -2.8703 -8.8134 -6.9293 -2.9494 -8.5858 -6.8763
+2 24 -4.7274 -10 -5.6881 -4.7274 -16 -5.6881
+2 24 -2.688 -9.2346 -6.9655 -2.8703 -8.8134 -6.9293
+2 24 -2.5895 -10 -6.9851 -2.688 -9.2346 -6.9655
+2 24 -2.5895 -16 -6.9851 -2.5895 -10 -6.9851
+2 24 -1.8429 -8 -3.1921 -1.4447 -8.1522 -3.4591
+2 24 -1.0266 -8.5858 -3.5459 -1.4447 -8.1522 -3.4591
+2 24 -2.5794 -8.5858 -2.6999 -2.2415 -8.1522 -2.9257
+2 24 -2.2415 -8.1522 -2.9257 -1.8429 -8 -3.1921
+2 24 -1.0266 -8.5858 -3.5459 -.7459 -9.2346 -3.6017
+2 24 -.6474 -10 -3.6213 -.7459 -9.2346 -3.6017
+2 24 -2.9132 -16 -7.5457 -2.9132 -20 -7.5457
+2 24 -5.0345 -20 -6.2201 -5.0345 -16 -6.2201
+2 24 -2.8247 -20 -2.3926 -2.8247 -10 -2.3926
+2 24 -.6474 -20 -3.6213 -.6474 -10 -3.6213
+2 24 -2.8247 -20 2.3926 -3.4645 -20 1.4351
+4 16 -3.4646 -8 -1.4351 -3.4645 -20 -1.435 -2.8247 -20 -2.3926 -2.8247 -10 -2.3926
+3 16 -3.4646 -8 -1.4351 -2.8247 -10 -2.3926 -2.7658 -9.2346 -2.4808
+4 16 -2.6516 -8 -2.6516 -3.4646 -8 -1.4351 -2.7658 -9.2346 -2.4808 -2.6516 -8.7933 -2.6516
+3 16 -2.6516 -8.7933 -2.6516 -2.5794 -8.5858 -2.6999 -2.6516 -8 -2.6516
+3 16 -2.6516 -8 -2.6516 -2.5794 -8.5858 -2.6999 -2.2415 -8.1522 -2.9257
+3 16 -2.6516 -8 -2.6516 -2.2415 -8.1522 -2.9257 -1.8429 -8 -3.1921
+3 16 -1.8429 -8 -3.1921 -1.4447 -8.1522 -3.4591 -1.4351 -8 -3.4646
+3 16 -1.4351 -8 -3.4646 -1.4447 -8.1522 -3.4591 -1.0266 -8.5858 -3.5459
+3 16 -1.4351 -8 -3.4646 -1.0266 -8.5858 -3.5459 0 -8 -3.75
+3 16 0 -8 -3.75 -1.0266 -8.5858 -3.5459 -.7459 -9.2346 -3.6017
+3 16 0 -8 -3.75 -.7459 -9.2346 -3.6017 -.6474 -10 -3.6213
+4 16 0 -8 -3.75 -.6474 -10 -3.6213 -.6474 -20 -3.6213 0 -20 -3.75
+4 16 0 -20 -3.75 -.6474 -20 -3.6213 -2.9132 -20 -7.5457 0 -20 -8.125
+4 16 0 -16 -8.125 0 -20 -8.125 -2.9132 -20 -7.5457 -2.9132 -16 -7.5457
+4 16 0 -16 -7.5 0 -16 -8.125 -2.9132 -16 -7.5457 -2.5895 -16 -6.9851
+4 16 0 -16 -7.5 -2.5895 -16 -6.9851 -2.5895 -10 -6.9851 0 -8 -7.5
+3 16 0 -8 -7.5 -2.5895 -10 -6.9851 -2.688 -9.2346 -6.9655
+3 16 0 -8 -7.5 -2.688 -9.2346 -6.9655 -2.8703 -8.8134 -6.9293
+3 16 0 -8 -7.5 -2.8703 -8.8134 -6.9293 -2.8703 -8 -6.9293
+3 16 -2.8703 -8 -6.9293 -2.8703 -8.8134 -6.9293 -2.9494 -8.5858 -6.8763
+3 16 -2.8703 -8 -6.9293 -2.9494 -8.5858 -6.8763 -3.2873 -8.1522 -6.6505
+3 16 -2.8703 -8 -6.9293 -3.2873 -8.1522 -6.6505 -3.6859 -8 -6.3841
+3 16 -5.3033 -8 -5.3033 -3.6859 -8 -6.3841 -4.0845 -8.1522 -6.1178
+3 16 -5.3033 -8 -5.3033 -4.0845 -8.1522 -6.1178 -4.4223 -8.5858 -5.892
+3 16 -5.3033 -8 -5.3033 -4.4223 -8.5858 -5.892 -4.6481 -9.2346 -5.7411
+3 16 -5.3033 -8 -5.3033 -4.6481 -9.2346 -5.7411 -4.7274 -10 -5.6881
+4 16 -5.3033 -16 -5.3033 -5.3033 -8 -5.3033 -4.7274 -10 -5.6881 -4.7274 -16 -5.6881
+4 16 -5.3033 -16 -5.3033 -4.7274 -16 -5.6881 -5.0345 -16 -6.2201 -5.7452 -16 -5.7452
+4 16 -5.7452 -20 -5.7452 -5.7452 -16 -5.7452 -5.0345 -16 -6.2201 -5.0345 -20 -6.2201
+3 16 -5.7452 -20 -5.7452 -5.0345 -20 -6.2201 -2.8247 -20 -2.3926
+2 24 0 -20 -3.75 -.6474 -20 -3.6213
+2 24 0 -20 -8.125 -2.9132 -20 -7.5457
+2 24 0 -16 -8.125 -2.9132 -16 -7.5457
+2 24 0 -16 -7.5 -2.5895 -16 -6.9851
+2 24 -5.3033 -16 -5.3033 -4.7274 -16 -5.6881
+2 24 -5.7452 -16 -5.7452 -5.0345 -16 -6.2201
+2 24 -5.7452 -20 -5.7452 -5.0345 -20 -6.2201
+4 16 -5.0345 -16 -6.2201 -4.7274 -16 -5.6881 -2.8247 -20 -2.3926 -5.0345 -20 -6.2201
+4 16 -2.8247 -10 -2.3926 -2.8247 -20 -2.3926 -4.7274 -16 -5.6881 -4.7274 -10 -5.6881
+4 16 -4.7274 -10 -5.6881 -4.6481 -9.2346 -5.7411 -2.7658 -9.2346 -2.4808 -2.8247 -10 -2.3926
+4 16 -2.7658 -9.2346 -2.4808 -4.6481 -9.2346 -5.7411 -4.4223 -8.5858 -5.892 -2.6516 -8.7933 -2.6516
+3 16 -2.5794 -8.5858 -2.6999 -2.6516 -8.7933 -2.6516 -4.4223 -8.5858 -5.892
+4 16 -2.2415 -8.1522 -2.9257 -2.5794 -8.5858 -2.6999 -4.4223 -8.5858 -5.892 -4.0845 -8.1522 -6.1178
+4 16 -4.0845 -8.1522 -6.1178 -3.6859 -8 -6.3841 -1.8429 -8 -3.1921 -2.2415 -8.1522 -2.9257
+4 16 -3.6859 -8 -6.3841 -3.2873 -8.1522 -6.6505 -1.4447 -8.1522 -3.4591 -1.8429 -8 -3.1921
+4 16 -1.4447 -8.1522 -3.4591 -3.2873 -8.1522 -6.6505 -2.9494 -8.5858 -6.8763 -1.0266 -8.5858 -3.5459
+3 16 -2.9494 -8.5858 -6.8763 -2.8703 -8.8134 -6.9293 -1.0266 -8.5858 -3.5459
+4 16 -2.8703 -8.8134 -6.9293 -2.688 -9.2346 -6.9655 -.7459 -9.2346 -3.6017 -1.0266 -8.5858 -3.5459
+4 16 -2.688 -9.2346 -6.9655 -2.5895 -10 -6.9851 -.6474 -10 -3.6213 -.7459 -9.2346 -3.6017
+4 16 -.6474 -10 -3.6213 -2.5895 -10 -6.9851 -2.5895 -16 -6.9851 -.6474 -20 -3.6213
+4 16 -2.9132 -20 -7.5457 -.6474 -20 -3.6213 -2.5895 -16 -6.9851 -2.9132 -16 -7.5457
+5 24 -.6474 -10 -3.6213 -2.5895 -10 -6.9851 -2.688 -9.2346 -6.9655 -2.5895 -16 -6.9851
+5 24 -.7459 -9.2346 -3.6017 -2.688 -9.2346 -6.9655 -2.8703 -8.8134 -6.9293 -2.5895 -10 -6.9851
+5 24 -1.0266 -8.5858 -3.5459 -2.9494 -8.5858 -6.8763 -3.2873 -8.1522 -6.6505 -2.8703 -8.8134 -6.9293
+5 24 -1.4447 -8.1522 -3.4591 -3.2873 -8.1522 -6.6505 -3.6859 -8 -6.3841 -2.9494 -8.5858 -6.8763
+5 24 -1.8429 -8 -3.1921 -3.6859 -8 -6.3841 -4.0845 -8.1522 -6.1178 -3.2873 -8.1522 -6.6505
+5 24 -2.2415 -8.1522 -2.9257 -4.0845 -8.1522 -6.1178 -3.6859 -8 -6.3841 -4.4223 -8.5858 -5.892
+5 24 -2.5794 -8.5858 -2.6999 -4.4223 -8.5858 -5.892 -4.0845 -8.1522 -6.1178 -4.6481 -9.2346 -5.7411
+5 24 -2.7658 -9.2346 -2.4808 -4.6481 -9.2346 -5.7411 -4.4223 -8.5858 -5.892 -4.7274 -10 -5.6881
+5 24 -2.8247 -10 -2.3926 -4.7274 -10 -5.6881 -4.6481 -9.2346 -5.7411 -4.7274 -16 -5.6881
+5 24 0 -20 -3.75 0 -8 -3.75 -.6474 -20 -3.6213 1.4351 -20 -3.4646
+5 24 0 -20 -8.125 0 -16 -8.125 3.1094 -20 -7.5067 -2.9132 -20 -7.5457
+5 24 0 -16 -7.5 0 -8 -7.5 2.8703 -8 -6.9293 -2.8703 -8 -6.9293
+5 24 -2.8703 -8 -6.9293 -2.8703 -8.8134 -6.9293 0 -8 -7.5 -5.3033 -8 -5.3033
+5 24 -5.3033 -16 -5.3033 -5.3033 -8 -5.3033 -2.8703 -8 -6.9293 -6.9293 -8 -2.8701
+5 24 -5.7452 -20 -5.7452 -5.7452 -16 -5.7452 -5.0345 -16 -6.2201 -7.5067 -16 -3.1093
+5 24 -3.4646 -8 -1.4351 -3.4645 -20 -1.435 -3.7501 -8 0 -2.6516 -8 -2.6516
+5 24 -2.6516 -8 -2.6516 -2.6516 -8.7933 -2.6516 -3.4646 -8 -1.4351 -1.4351 -8 -3.4646
+5 24 -1.4351 -8 -3.4646 -1.4447 -8.1522 -3.4591 0 -8 -3.75 -2.6516 -8 -2.6516
+2 24 -2.9132 -20 7.5457 -.6474 -20 3.6213
+2 24 -2.8247 -20 2.3926 -5.0345 -20 6.2201
+2 24 -2.5895 -16 6.9851 -2.9132 -16 7.5457
+2 24 -5.0345 -16 6.2201 -4.7274 -16 5.6881
+2 24 -4.7274 -10 5.6881 -4.6481 -9.2346 5.7411
+2 24 -2.7658 -9.2346 2.4808 -2.8247 -10 2.3926
+2 24 -4.4223 -8.5858 5.892 -4.6481 -9.2346 5.7411
+2 24 -2.6516 -8.7933 2.6516 -2.5794 -8.5858 2.6999
+2 24 -2.7658 -9.2346 2.4808 -2.6516 -8.7933 2.6516
+2 24 -3.2873 -8.1522 6.6505 -3.6859 -8 6.3841
+2 24 -3.2873 -8.1522 6.6505 -2.9494 -8.5858 6.8763
+2 24 -4.0845 -8.1522 6.1178 -4.4223 -8.5858 5.892
+2 24 -4.0845 -8.1522 6.1178 -3.6859 -8 6.3841
+2 24 -2.8703 -8.8134 6.9293 -2.9494 -8.5858 6.8763
+2 24 -4.7274 -10 5.6881 -4.7274 -16 5.6881
+2 24 -2.688 -9.2346 6.9655 -2.8703 -8.8134 6.9293
+2 24 -2.5895 -10 6.9851 -2.688 -9.2346 6.9655
+2 24 -2.5895 -16 6.9851 -2.5895 -10 6.9851
+2 24 -1.8429 -8 3.1921 -1.4447 -8.1522 3.4591
+2 24 -1.4447 -8.1522 3.4591 -1.0266 -8.5858 3.5459
+2 24 -2.5794 -8.5858 2.6999 -2.2415 -8.1522 2.9257
+2 24 -2.2415 -8.1522 2.9257 -1.8429 -8 3.1921
+2 24 -1.0266 -8.5858 3.5459 -.7459 -9.2346 3.6017
+2 24 -.6474 -10 3.6213 -.7459 -9.2346 3.6017
+2 24 -2.9132 -16 7.5457 -2.9132 -20 7.5457
+2 24 -5.0345 -20 6.2201 -5.0345 -16 6.2201
+2 24 -2.8247 -20 2.3926 -2.8247 -10 2.3926
+2 24 -.6474 -20 3.6213 -.6474 -10 3.6213
+2 24 -3.4645 -20 -1.435 -2.8247 -20 -2.3926
+4 16 -2.8247 -20 2.3926 -3.4645 -20 1.4351 -3.4646 -8 1.4351 -2.8247 -10 2.3926
+3 16 -2.8247 -10 2.3926 -3.4646 -8 1.4351 -2.7658 -9.2346 2.4808
+4 16 -3.4646 -8 1.4351 -2.6516 -8 2.6516 -2.6516 -8.7933 2.6516 -2.7658 -9.2346 2.4808
+3 16 -2.5794 -8.5858 2.6999 -2.6516 -8.7933 2.6516 -2.6516 -8 2.6516
+3 16 -2.5794 -8.5858 2.6999 -2.6516 -8 2.6516 -2.2415 -8.1522 2.9257
+3 16 -2.2415 -8.1522 2.9257 -2.6516 -8 2.6516 -1.8429 -8 3.1921
+3 16 -1.4447 -8.1522 3.4591 -1.8429 -8 3.1921 -1.4351 -8 3.4646
+3 16 -1.4447 -8.1522 3.4591 -1.4351 -8 3.4646 -1.0266 -8.5858 3.5459
+3 16 -1.0266 -8.5858 3.5459 -1.4351 -8 3.4646 0 -8 3.75
+3 16 -1.0266 -8.5858 3.5459 0 -8 3.75 -.7459 -9.2346 3.6017
+3 16 -.7459 -9.2346 3.6017 0 -8 3.75 -.6474 -10 3.6213
+4 16 0 -8 3.75 0 -20 3.75 -.6474 -20 3.6213 -.6474 -10 3.6213
+4 16 -2.9132 -20 7.5457 -.6474 -20 3.6213 0 -20 3.75 0 -20 8.125
+4 16 -2.9132 -20 7.5457 0 -20 8.125 0 -16 8.125 -2.9132 -16 7.5457
+4 16 -2.9132 -16 7.5457 0 -16 8.125 0 -16 7.5 -2.5895 -16 6.9851
+4 16 -2.5895 -10 6.9851 -2.5895 -16 6.9851 0 -16 7.5 0 -8 7.5
+3 16 -2.5895 -10 6.9851 0 -8 7.5 -2.688 -9.2346 6.9655
+3 16 -2.688 -9.2346 6.9655 0 -8 7.5 -2.8703 -8.8134 6.9293
+3 16 -2.8703 -8.8134 6.9293 0 -8 7.5 -2.8703 -8 6.9293
+3 16 -2.8703 -8.8134 6.9293 -2.8703 -8 6.9293 -2.9494 -8.5858 6.8763
+3 16 -2.9494 -8.5858 6.8763 -2.8703 -8 6.9293 -3.2873 -8.1522 6.6505
+3 16 -3.2873 -8.1522 6.6505 -2.8703 -8 6.9293 -3.6859 -8 6.3841
+3 16 -3.6859 -8 6.3841 -5.3033 -8 5.3033 -4.0845 -8.1522 6.1178
+3 16 -4.0845 -8.1522 6.1178 -5.3033 -8 5.3033 -4.4223 -8.5858 5.892
+3 16 -4.4223 -8.5858 5.892 -5.3033 -8 5.3033 -4.6481 -9.2346 5.7411
+3 16 -4.6481 -9.2346 5.7411 -5.3033 -8 5.3033 -4.7274 -10 5.6881
+4 16 -4.7274 -10 5.6881 -5.3033 -8 5.3033 -5.3033 -16 5.3033 -4.7274 -16 5.6881
+4 16 -5.0345 -16 6.2201 -4.7274 -16 5.6881 -5.3033 -16 5.3033 -5.7452 -16 5.7452
+4 16 -5.0345 -16 6.2201 -5.7452 -16 5.7452 -5.7452 -20 5.7452 -5.0345 -20 6.2201
+3 16 -5.0345 -20 6.2201 -5.7452 -20 5.7452 -2.8247 -20 2.3926
+2 24 0 -20 3.75 -.6474 -20 3.6213
+2 24 0 -20 8.125 -2.9132 -20 7.5457
+2 24 0 -16 8.125 -2.9132 -16 7.5457
+2 24 0 -16 7.5 -2.5895 -16 6.9851
+2 24 -5.3033 -16 5.3033 -4.7274 -16 5.6881
+2 24 -5.7452 -16 5.7452 -5.0345 -16 6.2201
+2 24 -5.7452 -20 5.7452 -5.0345 -20 6.2201
+3 16 -5.0345 -16 6.2201 -5.0345 -20 6.2201 -4.7274 -16 5.6881
+3 16 -2.8247 -20 2.3926 -4.7274 -16 5.6881 -5.0345 -20 6.2201
+4 16 -4.7274 -16 5.6881 -2.8247 -20 2.3926 -2.8247 -10 2.3926 -4.7274 -10 5.6881
+4 16 -4.7274 -10 5.6881 -2.8247 -10 2.3926 -2.7658 -9.2346 2.4808 -4.6481 -9.2346 5.7411
+4 16 -2.7658 -9.2346 2.4808 -2.6516 -8.7933 2.6516 -4.4223 -8.5858 5.892 -4.6481 -9.2346 5.7411
+3 16 -2.6516 -8.7933 2.6516 -2.5794 -8.5858 2.6999 -4.4223 -8.5858 5.892
+4 16 -4.4223 -8.5858 5.892 -2.5794 -8.5858 2.6999 -2.2415 -8.1522 2.9257 -4.0845 -8.1522 6.1178
+4 16 -1.8429 -8 3.1921 -3.6859 -8 6.3841 -4.0845 -8.1522 6.1178 -2.2415 -8.1522 2.9257
+4 16 -1.4447 -8.1522 3.4591 -3.2873 -8.1522 6.6505 -3.6859 -8 6.3841 -1.8429 -8 3.1921
+4 16 -1.0266 -8.5858 3.5459 -2.9494 -8.5858 6.8763 -3.2873 -8.1522 6.6505 -1.4447 -8.1522 3.4591
+3 16 -2.8703 -8.8134 6.9293 -2.9494 -8.5858 6.8763 -1.0266 -8.5858 3.5459
+4 16 -.7459 -9.2346 3.6017 -2.688 -9.2346 6.9655 -2.8703 -8.8134 6.9293 -1.0266 -8.5858 3.5459
+4 16 -.6474 -10 3.6213 -2.5895 -10 6.9851 -2.688 -9.2346 6.9655 -.7459 -9.2346 3.6017
+4 16 -2.5895 -16 6.9851 -2.5895 -10 6.9851 -.6474 -10 3.6213 -.6474 -20 3.6213
+4 16 -2.5895 -16 6.9851 -.6474 -20 3.6213 -2.9132 -20 7.5457 -2.9132 -16 7.5457
+5 24 -.6474 -10 3.6213 -2.5895 -10 6.9851 -2.688 -9.2346 6.9655 -2.5895 -16 6.9851
+5 24 -.7459 -9.2346 3.6017 -2.688 -9.2346 6.9655 -2.8703 -8.8134 6.9293 -2.5895 -10 6.9851
+5 24 -1.0266 -8.5858 3.5459 -2.9494 -8.5858 6.8763 -3.2873 -8.1522 6.6505 -2.8703 -8.8134 6.9293
+5 24 -1.4447 -8.1522 3.4591 -3.2873 -8.1522 6.6505 -3.6859 -8 6.3841 -2.9494 -8.5858 6.8763
+5 24 -1.8429 -8 3.1921 -3.6859 -8 6.3841 -4.0845 -8.1522 6.1178 -3.2873 -8.1522 6.6505
+5 24 -2.2415 -8.1522 2.9257 -4.0845 -8.1522 6.1178 -3.6859 -8 6.3841 -4.4223 -8.5858 5.892
+5 24 -2.5794 -8.5858 2.6999 -4.4223 -8.5858 5.892 -4.0845 -8.1522 6.1178 -4.6481 -9.2346 5.7411
+5 24 -2.7658 -9.2346 2.4808 -4.6481 -9.2346 5.7411 -4.4223 -8.5858 5.892 -4.7274 -10 5.6881
+5 24 -2.8247 -10 2.3926 -4.7274 -10 5.6881 -4.6481 -9.2346 5.7411 -4.7274 -16 5.6881
+5 24 0 -20 3.75 0 -8 3.75 -.6474 -20 3.6213 1.4351 -20 3.4646
+5 24 -1.4351 -8 3.4646 -1.4447 -8.1522 3.4591 -2.6516 -8 2.6516 0 -8 3.75
+5 24 0 -20 8.125 0 -16 8.125 3.1094 -20 7.5067 -2.9132 -20 7.5457
+5 24 0 -16 7.5 0 -8 7.5 2.8703 -8 6.9293 -2.8703 -8 6.9293
+5 24 -2.8703 -8 6.9293 -2.8703 -8.8134 6.9293 0 -8 7.5 -5.3033 -8 5.3033
+5 24 -5.3033 -16 5.3033 -5.3033 -8 5.3033 -2.8703 -8 6.9293 -6.9293 -8 2.8701
+5 24 -5.7452 -20 5.7452 -5.7452 -16 5.7452 -5.0345 -16 6.2201 -7.5067 -16 3.1093
+5 24 -2.6516 -8 2.6516 -2.6516 -8.7933 2.6516 -3.4646 -8 1.4351 -1.4351 -8 3.4646
+5 24 -3.4646 -8 1.4351 -3.4645 -20 1.4351 -2.6516 -8 2.6516 -3.7501 -8 0
+
+0 FILE stug-2x1.dat
+0 Stud Group  2 x  1
+0 Name: stug-2x1.dat
+0 Author: Magnus Forsberg [MagFors]
+0 !LDRAW_ORG Primitive UPDATE 2011-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 0 10 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 0 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
+
+0 FILE 3-4cylc.dat
+0 Cylinder Closed 0.75
+0 Name: 3-4cylc.dat
+0 Author: J.C. Tchang [tchang]
+0 !LDRAW_ORG Primitive UPDATE 2010-02
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 3-4edge.dat
+1 16 0 1 0 1 0 0 0 1 0 0 0 1 3-4edge.dat
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 3-4disc.dat
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 3-4cyli.dat
+
+0 FILE 3-4edge.dat
+0 Circle 0.75
+0 Name: 3-4edge.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2017-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+2 24 1 0 0 0.9239 0 0.3827
+2 24 0.9239 0 0.3827 0.7071 0 0.7071
+2 24 0.7071 0 0.7071 0.3827 0 0.9239
+2 24 0.3827 0 0.9239 0 0 1
+2 24 0 0 1 -0.3827 0 0.9239
+2 24 -0.3827 0 0.9239 -0.7071 0 0.7071
+2 24 -0.7071 0 0.7071 -0.9239 0 0.3827
+2 24 -0.9239 0 0.3827 -1 0 0
+2 24 -1 0 -0 -0.9239 0 -0.3827
+2 24 -0.9239 0 -0.3827 -0.7071 0 -0.7071
+2 24 -0.7071 0 -0.7071 -0.3827 0 -0.9239
+2 24 -0.3827 0 -0.9239 0 0 -1
+
+0 FILE 3-4disc.dat
+0 Disc 0.75
+0 Name: 3-4disc.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2002-02
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+3 16 0 0 0 1 0 0 0.9239 0 0.3827
+3 16 0 0 0 0.9239 0 0.3827 0.7071 0 0.7071
+3 16 0 0 0 0.7071 0 0.7071 0.3827 0 0.9239
+3 16 0 0 0 0.3827 0 0.9239 0 0 1
+3 16 0 0 0 0 0 1 -0.3827 0 0.9239
+3 16 0 0 0 -0.3827 0 0.9239 -0.7071 0 0.7071
+3 16 0 0 0 -0.7071 0 0.7071 -0.9239 0 0.3827
+3 16 0 0 0 -0.9239 0 0.3827 -1 0 0
+3 16 0 0 0 -1 0 0 -0.9239 0 -0.3827
+3 16 0 0 0 -0.9239 0 -0.3827 -0.7071 0 -0.7071
+3 16 0 0 0 -0.7071 0 -0.7071 -0.3827 0 -0.9239
+3 16 0 0 0 -0.3827 0 -0.9239 0 0 -1
+
+0 FILE 3-4cyli.dat
+0 Cylinder 0.75
+0 Name: 3-4cyli.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2005-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+4 16 .9239 1 .3827 .9239 0 .3827 1 0 0 1 1 0
+4 16 .7071 1 .7071 .7071 0 .7071 .9239 0 .3827 .9239 1 .3827
+4 16 .3827 1 .9239 .3827 0 .9239 .7071 0 .7071 .7071 1 .7071
+4 16 0 1 1 0 0 1 .3827 0 .9239 .3827 1 .9239
+4 16 -.3827 1 .9239 -.3827 0 .9239 0 0 1 0 1 1
+4 16 -.7071 1 .7071 -.7071 0 .7071 -.3827 0 .9239 -.3827 1 .9239
+4 16 -.9239 1 .3827 -.9239 0 .3827 -.7071 0 .7071 -.7071 1 .7071
+4 16 -1 1 0 -1 0 0 -.9239 0 .3827 -.9239 1 .3827
+4 16 -.9239 1 -.3827 -.9239 0 -.3827 -1 0 0 -1 1 0
+4 16 -.7071 1 -.7071 -.7071 0 -.7071 -.9239 0 -.3827 -.9239 1 -.3827
+4 16 -.3827 1 -.9239 -.3827 0 -.9239 -.7071 0 -.7071 -.7071 1 -.7071
+4 16 0 1 -1 0 0 -1 -.3827 0 -.9239 -.3827 1 -.9239
+5 24 1 1 0 1 0 0 1 1 -.4142 .9239 1 .3827
+5 24 .9239 1 .3827 .9239 0 .3827 1 1 0 .7071 1 .7071
+5 24 .7071 1 .7071 .7071 0 .7071 .9239 1 .3827 .3827 1 .9239
+5 24 .3827 1 .9239 .3827 0 .9239 .7071 1 .7071 0 1 1
+5 24 0 1 1 0 0 1 .3827 1 .9239 -.3827 1 .9239
+5 24 -.3827 1 .9239 -.3827 0 .9239 0 1 1 -.7071 1 .7071
+5 24 -.7071 1 .7071 -.7071 0 .7071 -.3827 1 .9239 -.9239 1 .3827
+5 24 -.9239 1 .3827 -.9239 0 .3827 -.7071 1 .7071 -1 1 0
+5 24 -1 1 0 -1 0 0 -.9239 1 .3827 -.9239 1 -.3827
+5 24 -.9239 1 -.3827 -.9239 0 -.3827 -1 1 0 -.7071 1 -.7071
+5 24 -.7071 1 -.7071 -.7071 0 -.7071 -.9239 1 -.3827 -.3827 1 -.9239
+5 24 -.3827 1 -.9239 -.3827 0 -.9239 -.7071 1 -.7071 0 1 -1
+5 24 0 1 -1 0 0 -1 -.3827 1 -.9239 .4142 1 -1
+
+0 FILE 4-4ring15.dat
+0 Ring 15 x 1.0
+0 Name: 4-4ring15.dat
+0 Author: Mark Kennedy [mkennedy]
+0 !LDRAW_ORG Primitive UPDATE 2024-02
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+4 16 16 0 0 14.7824 0 6.1232 13.8585 0 5.7405 15 0 0
+4 16 14.7824 0 6.1232 11.3136 0 11.3136 10.6065 0 10.6065 13.8585 0 5.7405
+4 16 11.3136 0 11.3136 6.1232 0 14.7824 5.7405 0 13.8585 10.6065 0 10.6065
+4 16 6.1232 0 14.7824 0 0 16 0 0 15 5.7405 0 13.8585
+4 16 0 0 16 -6.1232 0 14.7824 -5.7405 0 13.8585 0 0 15
+4 16 -6.1232 0 14.7824 -11.3136 0 11.3136 -10.6065 0 10.6065 -5.7405 0 13.8585
+4 16 -11.3136 0 11.3136 -14.7824 0 6.1232 -13.8585 0 5.7405 -10.6065 0 10.6065
+4 16 -14.7824 0 6.1232 -16 0 0 -15 0 0 -13.8585 0 5.7405
+4 16 -16 0 0 -14.7824 0 -6.1232 -13.8585 0 -5.7405 -15 0 0
+4 16 -14.7824 0 -6.1232 -11.3136 0 -11.3136 -10.6065 0 -10.6065 -13.8585 0 -5.7405
+4 16 -11.3136 0 -11.3136 -6.1232 0 -14.7824 -5.7405 0 -13.8585 -10.6065 0 -10.6065
+4 16 -6.1232 0 -14.7824 0 0 -16 0 0 -15 -5.7405 0 -13.8585
+4 16 0 0 -16 6.1232 0 -14.7824 5.7405 0 -13.8585 0 0 -15
+4 16 6.1232 0 -14.7824 11.3136 0 -11.3136 10.6065 0 -10.6065 5.7405 0 -13.8585
+4 16 11.3136 0 -11.3136 14.7824 0 -6.1232 13.8585 0 -5.7405 10.6065 0 -10.6065
+4 16 14.7824 0 -6.1232 16 0 0 15 0 0 13.8585 0 -5.7405
+
+0 FILE 1-8edge.dat
+0 Circle 0.125
+0 Name: 1-8edge.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2017-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+2 24 1 0 0 0.9239 0 0.3827
+2 24 0.9239 0 0.3827 0.7071 0 0.7071
+
+0 FILE 3-16ndis.dat
+0 Disc Negative 0.1875
+0 Name: 3-16ndis.dat
+0 Author: Magnus Forsberg [MagFors]
+0 !LDRAW_ORG Primitive UPDATE 2024-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+3 16 1 0 1 0.9239 0 0.3827 1 0 0
+3 16 1 0 1 0.7071 0 0.7071 0.9239 0 0.3827
+3 16 1 0 1 0.3827 0 0.9239 0.7071 0 0.7071
+
+0 FILE 1-4cyli.dat
+0 Cylinder 0.25
+0 Name: 1-4cyli.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2012-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+4 16 1 1 0 0.9239 1 0.3827 0.9239 0 0.3827 1 0 0
+5 24 1 0 0 1 1 0 0.9239 0 0.3827 1 0 -1
+4 16 0.9239 1 0.3827 0.7071 1 0.7071 0.7071 0 0.7071 0.9239 0 0.3827
+5 24 0.9239 0 0.3827 0.9239 1 0.3827 0.7071 0 0.7071 1 0 0
+4 16 0.7071 1 0.7071 0.3827 1 0.9239 0.3827 0 0.9239 0.7071 0 0.7071
+5 24 0.7071 0 0.7071 0.7071 1 0.7071 0.3827 0 0.9239 0.9239 0 0.3827
+4 16 0.3827 1 0.9239 0 1 1 0 0 1 0.3827 0 0.9239
+5 24 0.3827 0 0.9239 0.3827 1 0.9239 0 0 1 0.7071 0 0.7071
+5 24 0 0 1 0 1 1 0.3827 0 0.9239 -1 0 1
+
+0 FILE 1-8cyli.dat
+0 Cylinder 0.125
+0 Name: 1-8cyli.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2005-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+4 16 .9239 1 .3827 .9239 0 .3827 1 0 0 1 1 0
+4 16 .7071 1 .7071 .7071 0 .7071 .9239 0 .3827 .9239 1 .3827
+5 24 1 1 0 1 0 0 1 1 -.4142 .9239 1 .3827
+5 24 .9239 1 .3827 .9239 0 .3827 1 1 0 .7071 1 .7071
+5 24 .7071 1 .7071 .7071 0 .7071 .9239 1 .3827 .4142 1 1
+
+0 FILE 1-8ndis.dat
+0 Disc Negative 0.125
+0 Name: 1-8ndis.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2012-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+3 16 0.9239 0 0.3827 1 0 0 1 0 1
+3 16 0.7071 0 0.7071 0.9239 0 0.3827 1 0 1
+
+0 FILE 1-4ring12.dat
+0 Ring 12 x 0.25
+0 Name: 1-4ring12.dat
+0 Author: Franklin W. Cain [fwcain]
+0 !LDRAW_ORG Primitive UPDATE 2024-02
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+4 16 13 0 0 12.0107 0 4.9751 11.0868 0 4.5924 12 0 0
+4 16 12.0107 0 4.9751 9.1923 0 9.1923 8.4852 0 8.4852 11.0868 0 4.5924
+4 16 9.1923 0 9.1923 4.9751 0 12.0107 4.5924 0 11.0868 8.4852 0 8.4852
+4 16 4.9751 0 12.0107 0 0 13 0 0 12 4.5924 0 11.0868
+
+0 FILE 1-4chrd.dat
+0 Chord 0.25
+0 Name: 1-4chrd.dat
+0 Author: Max Martin Richter [MMR1988]
+0 !LDRAW_ORG Primitive UPDATE 2023-05
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+4 16 0.9239 0 0.3827 0.3827 0 0.9239 0 0 1 1 0 0
+3 16 0.7071 0 0.7071 0.3827 0 0.9239 0.9239 0 0.3827
+
+0 FILE 1-4edge.dat
+0 Circle 0.25
+0 Name: 1-4edge.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2017-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+2 24 1 0 0 0.9239 0 0.3827
+2 24 0.9239 0 0.3827 0.7071 0 0.7071
+2 24 0.7071 0 0.7071 0.3827 0 0.9239
+2 24 0.3827 0 0.9239 0 0 1
+
+0 FILE 1-4ndis.dat
+0 Disc Negative 0.25
+0 Name: 1-4ndis.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2012-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+3 16 0.9239 0 0.3827 1 0 0 1 0 1
+3 16 0.7071 0 0.7071 0.9239 0 0.3827 1 0 1
+3 16 0.3827 0 0.9239 0.7071 0 0.7071 1 0 1
+3 16 0 0 1 0.3827 0 0.9239 1 0 1
+
+0 FILE 1-4cylo.dat
+0 Cylinder Open 0.25
+0 Name: 1-4cylo.dat
+0 Author: Max Martin Richter [MMR1988]
+0 !LDRAW_ORG Primitive UPDATE 2010-03
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 1-4edge.dat
+1 16 0 1 0 1 0 0 0 1 0 0 0 1 1-4edge.dat
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 1-4cyli.dat
+
+0 FILE 3461.dat
+0 Propeller  4 Blade  5 Diameter with Rotor Holder
+0 Name: 3461.dat
+0 Author: Christian M. Angele [cma_1971]
+0 !LDRAW_ORG Part UPDATE 2025-09
+0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 -4 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
+0 BFC INVERTNEXT
+1 16 0 -4 0 8 0 0 0 -4 0 0 0 8 4-4cyli.dat
+0 BFC INVERTNEXT
+1 16 0 -8 0 7.5 0 0 0 -8 0 0 0 7.5 4-4cyli.dat
+1 16 0 -8 0 7.5 0 0 0 1 0 0 0 7.5 4-4edge.dat
+1 16 0 -8 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
+0 BFC INVERTNEXT
+1 16 0 -16 0 8 0 0 0 -4 0 0 0 8 4-4cyli.dat
+1 16 0 -16 0 7.5 0 0 0 1 0 0 0 7.5 4-4edge.dat
+1 16 0 -16 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
+1 16 0 -20 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
+1 16 0 -8 0 0.5 0 0 0 -1 0 0 0 0.5 4-4ring15.dat
+1 16 0 -16 0 0.5 0 0 0 1 0 0 0 0.5 4-4ring15.dat
+1 16 0 -4 0 8 0 0 0 -1 0 0 0 8 4-4ndis.dat
+4 16 10 -4 10 8 -4 8 -8 -4 8 -10 -4 10
+4 16 -10 -4 10 -8 -4 8 -8 -4 -8 -10 -4 -10
+4 16 -10 -4 -10 -8 -4 -8 8 -4 -8 10 -4 -10
+4 16 10 -4 -10 8 -4 -8 8 -4 8 10 -4 10
+1 16 0 -20 0 -8 0 0 0 1 0 0 0 8 4-4ndis.dat
+4 16 -10 -20 10 -8 -20 8 8 -20 8 10 -20 10
+4 16 10 -20 10 8 -20 8 8 -20 -8 10 -20 -10
+4 16 10 -20 -10 8 -20 -8 -8 -20 -8 -10 -20 -10
+4 16 -10 -20 -10 -8 -20 -8 -8 -20 8 -10 -20 10
+1 16 0 -4 0 10 0 0 0 -8 0 0 0 10 box4.dat
+2 24 10 -12 10 10 -20 10
+2 24 -10 -12 10 -10 -20 10
+2 24 10 -12 -10 10 -20 -10
+2 24 -10 -12 -10 -10 -20 -10
+1 16 -30 -16 0 1 0 0 0 -1 0 0 0 1 stud3.dat
+0 BFC INVERTNEXT
+1 16 -30 -12 0 16 0 0 0 -4 0 0 0 6 box5.dat
+4 16 -10 -12 10 -14 -12 6 -46 -12 6 -50 -12 10
+4 16 -50 -12 10 -46 -12 6 -46 -12 -6 -50 -12 -10
+4 16 -50 -12 -10 -46 -12 -6 -14 -12 -6 -10 -12 -10
+4 16 -10 -12 -10 -14 -12 -6 -14 -12 6 -10 -12 10
+1 16 -30 -12 0 0 0 -20 0 -8 0 10 0 0 box4-4a.dat
+1 16 -20 -20 0 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 -40 -20 0 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 0 -16 -30 0 0 -1 0 -1 0 1 0 0 stud3.dat
+0 BFC INVERTNEXT
+1 16 0 -12 -30 0 0 -6 0 -4 0 16 0 0 box5.dat
+4 16 -10 -12 -10 -6 -12 -14 -6 -12 -46 -10 -12 -50
+4 16 -10 -12 -50 -6 -12 -46 6 -12 -46 10 -12 -50
+4 16 10 -12 -50 6 -12 -46 6 -12 -14 10 -12 -10
+4 16 10 -12 -10 6 -12 -14 -6 -12 -14 -10 -12 -10
+1 16 0 -12 -30 -10 0 0 0 -8 0 0 0 -20 box4-4a.dat
+1 16 0 -20 -20 0 0 -1 0 1 0 1 0 0 stud.dat
+1 16 0 -20 -40 0 0 -1 0 1 0 1 0 0 stud.dat
+1 16 30 -16 0 -1 0 0 0 -1 0 0 0 -1 stud3.dat
+0 BFC INVERTNEXT
+1 16 30 -12 0 -16 0 0 0 -4 0 0 0 -6 box5.dat
+4 16 10 -12 -10 14 -12 -6 46 -12 -6 50 -12 -10
+4 16 50 -12 -10 46 -12 -6 46 -12 6 50 -12 10
+4 16 50 -12 10 46 -12 6 14 -12 6 10 -12 10
+4 16 10 -12 10 14 -12 6 14 -12 -6 10 -12 -10
+1 16 30 -12 0 0 0 20 0 -8 0 -10 0 0 box4-4a.dat
+1 16 20 -20 0 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 40 -20 0 1 0 0 0 1 0 0 0 1 stud.dat
+1 16 0 -16 30 0 0 1 0 -1 0 -1 0 0 stud3.dat
+0 BFC INVERTNEXT
+1 16 0 -12 30 0 0 6 0 -4 0 -16 0 0 box5.dat
+4 16 10 -12 10 6 -12 14 6 -12 46 10 -12 50
+4 16 10 -12 50 6 -12 46 -6 -12 46 -10 -12 50
+4 16 -10 -12 50 -6 -12 46 -6 -12 14 -10 -12 10
+4 16 -10 -12 10 -6 -12 14 6 -12 14 10 -12 10
+1 16 0 -12 30 10 0 0 0 -8 0 0 0 20 box4-4a.dat
+1 16 0 -20 20 0 0 -1 0 1 0 1 0 0 stud.dat
+1 16 0 -20 40 0 0 -1 0 1 0 1 0 0 stud.dat
+
+0 FILE 4-4ndis.dat
+0 Disc Negative 1.0
+0 Name: 4-4ndis.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2012-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+3 16 0.9239 0 0.3827 1 0 0 1 0 1
+3 16 0.7071 0 0.7071 0.9239 0 0.3827 1 0 1
+3 16 0.3827 0 0.9239 0.7071 0 0.7071 1 0 1
+3 16 0 0 1 0.3827 0 0.9239 1 0 1
+3 16 -0.3827 0 0.9239 0 0 1 -1 0 1
+3 16 -0.7071 0 0.7071 -0.3827 0 0.9239 -1 0 1
+3 16 -0.9239 0 0.3827 -0.7071 0 0.7071 -1 0 1
+3 16 -1 0 0 -0.9239 0 0.3827 -1 0 1
+3 16 -0.9239 0 -0.3827 -1 0 0 -1 0 -1
+3 16 -0.7071 0 -0.7071 -0.9239 0 -0.3827 -1 0 -1
+3 16 -0.3827 0 -0.9239 -0.7071 0 -0.7071 -1 0 -1
+3 16 0 0 -1 -0.3827 0 -0.9239 -1 0 -1
+3 16 0.3827 0 -0.9239 0 0 -1 1 0 -1
+3 16 0.7071 0 -0.7071 0.3827 0 -0.9239 1 0 -1
+3 16 0.9239 0 -0.3827 0.7071 0 -0.7071 1 0 -1
+3 16 1 0 0 0.9239 0 -0.3827 1 0 -1
+
+0 FILE box4.dat
+0 Box with 4 Faces (2 Parallel Pairs) and All Edges
+0 Name: box4.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2012-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+2 24 1 1 1 -1 1 1
+2 24 -1 1 1 -1 1 -1
+2 24 -1 1 -1 1 1 -1
+2 24 1 1 -1 1 1 1
+2 24 1 0 1 -1 0 1
+2 24 -1 0 1 -1 0 -1
+2 24 -1 0 -1 1 0 -1
+2 24 1 0 -1 1 0 1
+2 24 1 0 1 1 1 1
+2 24 -1 0 1 -1 1 1
+2 24 1 0 -1 1 1 -1
+2 24 -1 0 -1 -1 1 -1
+4 16 -1 1 1 -1 0 1 1 0 1 1 1 1
+4 16 -1 1 -1 -1 0 -1 -1 0 1 -1 1 1
+4 16 1 1 -1 1 0 -1 -1 0 -1 -1 1 -1
+4 16 1 1 1 1 0 1 1 0 -1 1 1 -1
+
+0 FILE 3005.dat
+0 Brick  1 x  1
+0 Name: 3005.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Part UPDATE 2022-05
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3005s01.dat
+4 16 -10 24 -10 10 24 -10 10 0 -10 -10 0 -10
+
+0 FILE parts/s/3005s01.dat
+0 ~Brick  1 x  1 without Front Face
+0 Name: s\3005s01.dat
+0 Author: Willy Tschager [Holly-Wood]
+0 !LDRAW_ORG Subpart UPDATE 2024-04
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 0 0 0 0 1 0 1 0 -1 0 0 stud.dat
+1 16 0 24 0 -10 0 0 0 -24 0 0 0 10 box4t.dat
+0 BFC INVERTNEXT
+1 16 0 24 0 -6 0 0 0 -20 0 0 0 6 box5.dat
+4 16 -6 24 -6 6 24 -6 10 24 -10 -10 24 -10
+4 16 10 24 -10 6 24 -6 6 24 6 10 24 10
+4 16 6 24 6 -6 24 6 -10 24 10 10 24 10
+4 16 -10 24 10 -6 24 6 -6 24 -6 -10 24 -10
+
+0 FILE 3480.dat
+0 Propeller  2 Blade  4 Diameter Helicopter Tail
+0 Name: 3480.dat
+0 Author: Christian M. Angele [cma_1971]
+0 !LDRAW_ORG Part UPDATE 2025-09
+0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+0 BFC INVERTNEXT
+1 16 36 -8 0 0 4 0 8 0 0 0 0 8 4-4cylo.dat
+0 BFC INVERTNEXT
+1 16 40 -8 0 0 8 0 7.5 0 0 0 0 7.5 4-4cylo.dat
+1 16 40 -8 0 0 -1 0 7.5 0 0 0 0 7.5 4-4edge.dat
+0 BFC INVERTNEXT
+1 16 48 -8 0 0 4 0 8 0 0 0 0 8 4-4cylo.dat
+1 16 48 -8 0 0 -1 0 7.5 0 0 0 0 7.5 4-4edge.dat
+1 16 36 -8 0 0 16 0 10 0 0 0 0 10 4-4cylo.dat
+1 16 36 -8 0 0 1 0 2 0 0 0 0 2 4-4ring4.dat
+1 16 52 -8 0 0 -1 0 2 0 0 0 0 2 4-4ring4.dat
+1 16 40 -8 0 0 1 0 0.5 0 0 0 0 0.5 4-4ring15.dat
+1 16 48 -8 0 0 -1 0 0.5 0 0 0 0 0.5 4-4ring15.dat
+1 16 48.74 -9 32 3 -3.48 0 5.22 2 0 0 0 6 2-4cylc.dat
+1 16 45.26 -7 32 3 0 0 5.22 -1 0 0 0 6 2-4disc.dat
+2 24 42.26 -12.22 32 42.26 -12.22 8.9764
+2 24 48.26 -1.78 32 48.26 -1.78 7.6397
+2 24 45.74 -14.22 32 45.74 -14.22 7.6397
+2 24 51.74 -3.78 32 51.74 -3.78 8.9764
+4 16 42.26 -12.22 32 48.26 -1.78 32 48.26 -1.78 10 42.26 -12.22 10
+4 16 42.26 -12.22 32 42.26 -12.22 8.9764 45.74 -14.22 7.6397 45.74 -14.22 32
+4 16 48.26 -1.78 32 51.74 -3.78 32 51.74 -3.78 8.9764 48.26 -1.78 7.6397
+4 16 45.74 -14.22 32 45.74 -14.22 10 51.74 -3.78 10 51.74 -3.78 32
+3 16 48.26 -1.78 10 48.26 -1.78 7.6397 46.8847 -4.173 9.239
+3 16 46.8847 -4.173 9.239 44.6853 -8 10 48.26 -1.78 10
+3 16 42.26 -12.22 10 44.6853 -8 10 42.4859 -11.827 9.239
+3 16 42.26 -12.22 10 42.4859 -11.827 9.239 42.26 -12.22 8.9764
+2 24 48.26 -1.78 7.6397 46.8847 -4.173 9.239
+2 24 44.6853 -8 10 46.8847 -4.173 9.239
+2 24 44.6853 -8 10 42.4859 -11.827 9.239
+2 24 42.4859 -11.827 9.239 42.26 -12.22 8.9764
+3 16 51.5141 -4.173 9.239 51.74 -3.78 8.9764 51.74 -3.78 10
+3 16 49.3147 -8 10 51.5141 -4.173 9.239 51.74 -3.78 10
+3 16 47.1153 -11.827 9.239 49.3147 -8 10 45.74 -14.22 10
+3 16 45.74 -14.22 7.6397 47.1153 -11.827 9.239 45.74 -14.22 10
+2 24 51.74 -3.78 8.9764 51.5141 -4.173 9.239
+2 24 51.5141 -4.173 9.239 49.3147 -8 10
+2 24 49.3147 -8 10 47.1153 -11.827 9.239
+2 24 47.1153 -11.827 9.239 45.74 -14.22 7.6397
+2 24 48.26 -1.78 7.6397 51.74 -3.78 8.9764
+2 24 45.74 -14.22 7.6397 42.26 -12.22 8.9764
+3 16 48.26 -14.22 -10 48.26 -14.22 -7.6397 46.8847 -11.827 -9.239
+3 16 46.8847 -11.827 -9.239 44.6853 -8 -10 48.26 -14.22 -10
+3 16 42.26 -3.78 -10 44.6853 -8 -10 42.4859 -4.173 -9.239
+3 16 42.26 -3.78 -10 42.4859 -4.173 -9.239 42.26 -3.78 -8.9764
+2 24 48.26 -14.22 -7.6397 46.8847 -11.827 -9.239
+2 24 44.6853 -8 -10 46.8847 -11.827 -9.239
+2 24 44.6853 -8 -10 42.4859 -4.173 -9.239
+2 24 42.4859 -4.173 -9.239 42.26 -3.78 -8.9764
+3 16 51.5141 -11.827 -9.239 51.74 -12.22 -8.9764 51.74 -12.22 -10
+3 16 49.3147 -8 -10 51.5141 -11.827 -9.239 51.74 -12.22 -10
+3 16 47.1153 -4.173 -9.239 49.3147 -8 -10 45.74 -1.78 -10
+3 16 45.74 -1.78 -7.6397 47.1153 -4.173 -9.239 45.74 -1.78 -10
+2 24 51.74 -12.22 -8.9764 51.5141 -11.827 -9.239
+2 24 51.5141 -11.827 -9.239 49.3147 -8 -10
+2 24 49.3147 -8 -10 47.1153 -4.173 -9.239
+2 24 47.1153 -4.173 -9.239 45.74 -1.78 -7.6397
+2 24 48.26 -14.22 -7.6397 51.74 -12.22 -8.9764
+2 24 45.74 -1.78 -7.6397 42.26 -3.78 -8.9764
+1 16 45.26 -9 -32 -3 3.48 0 5.22 2 0 0 0 -6 2-4cylc.dat
+1 16 48.74 -7 -32 -3 0 0 5.22 -1 0 0 0 -6 2-4disc.dat
+2 24 51.74 -12.22 -32 51.74 -12.22 -9
+2 24 45.74 -1.78 -32 45.74 -1.78 -7.6397
+2 24 48.26 -14.22 -32 48.26 -14.22 -7.6397
+2 24 42.26 -3.78 -32 42.26 -3.78 -9
+4 16 51.74 -12.22 -32 45.74 -1.78 -32 45.74 -1.78 -10 51.74 -12.22 -10
+4 16 51.74 -12.22 -32 51.74 -12.22 -9 48.26 -14.22 -7.6397 48.26 -14.22 -32
+4 16 45.74 -1.78 -32 42.26 -3.78 -32 42.26 -3.78 -9 45.74 -1.78 -7.6397
+4 16 48.26 -14.22 -32 48.26 -14.22 -10 42.26 -3.78 -10 42.26 -3.78 -32
+
+0 FILE 4-4cylo.dat
+0 Cylinder Open 1.0
+0 Name: 4-4cylo.dat
+0 Author: Mark Kennedy [mkennedy]
+0 !LDRAW_ORG Primitive UPDATE 2010-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 4-4edge.dat
+1 16 0 1 0 1 0 0 0 1 0 0 0 1 4-4edge.dat
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 4-4cyli.dat
+
+0 FILE 4-4ring4.dat
+0 Ring  4 x 1.0
+0 Name: 4-4ring4.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2009-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+4 16 -1.9135 0 4.6195 -1.5308 0 3.6956 0 0 4 0 0 5
+4 16 -3.5355 0 3.5355 -2.8284 0 2.8284 -1.5308 0 3.6956 -1.9135 0 4.6195
+4 16 -4.6195 0 1.9135 -3.6956 0 1.5308 -2.8284 0 2.8284 -3.5355 0 3.5355
+4 16 -5 0 0 -4 0 0 -3.6956 0 1.5308 -4.6195 0 1.9135
+4 16 -4.6195 0 -1.9135 -3.6956 0 -1.5308 -4 0 0 -5 0 0
+4 16 -3.5355 0 -3.5355 -2.8284 0 -2.8284 -3.6956 0 -1.5308 -4.6195 0 -1.9135
+4 16 -1.9135 0 -4.6195 -1.5308 0 -3.6956 -2.8284 0 -2.8284 -3.5355 0 -3.5355
+4 16 0 0 -5 0 0 -4 -1.5308 0 -3.6956 -1.9135 0 -4.6195
+4 16 1.9135 0 -4.6195 1.5308 0 -3.6956 0 0 -4 0 0 -5
+4 16 3.5355 0 -3.5355 2.8284 0 -2.8284 1.5308 0 -3.6956 1.9135 0 -4.6195
+4 16 4.6195 0 -1.9135 3.6956 0 -1.5308 2.8284 0 -2.8284 3.5355 0 -3.5355
+4 16 5 0 0 4 0 0 3.6956 0 -1.5308 4.6195 0 -1.9135
+4 16 4.6195 0 1.9135 3.6956 0 1.5308 4 0 0 5 0 0
+4 16 3.5355 0 3.5355 2.8284 0 2.8284 3.6956 0 1.5308 4.6195 0 1.9135
+4 16 1.9135 0 4.6195 1.5308 0 3.6956 2.8284 0 2.8284 3.5355 0 3.5355
+4 16 0 0 5 0 0 4 1.5308 0 3.6956 1.9135 0 4.6195
+
+0 FILE 2-4cylc.dat
+0 Cylinder Closed 0.5
+0 Name: 2-4cylc.dat
+0 Author: Alex Taylor [anathema]
+0 !LDRAW_ORG Primitive UPDATE 2009-02
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 2-4edge.dat
+1 16 0 1 0 1 0 0 0 1 0 0 0 1 2-4edge.dat
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 2-4disc.dat
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 2-4cyli.dat
+
+0 FILE 2-4disc.dat
+0 Disc 0.5
+0 Name: 2-4disc.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2002-02
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+3 16 0 0 0 1 0 0 0.9239 0 0.3827
+3 16 0 0 0 0.9239 0 0.3827 0.7071 0 0.7071
+3 16 0 0 0 0.7071 0 0.7071 0.3827 0 0.9239
+3 16 0 0 0 0.3827 0 0.9239 0 0 1
+3 16 0 0 0 0 0 1 -0.3827 0 0.9239
+3 16 0 0 0 -0.3827 0 0.9239 -0.7071 0 0.7071
+3 16 0 0 0 -0.7071 0 0.7071 -0.9239 0 0.3827
+3 16 0 0 0 -0.9239 0 0.3827 -1 0 -0
+
+0 FILE 3040b.dat
+0 Slope Brick 45  2 x  1
+0 Name: 3040b.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Part UPDATE 2004-04
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3040s01.dat
+4 16 10 20 -30 10 0 -10 -10 0 -10 -10 20 -30
+
+0 FILE parts/s/3040s01.dat
+0 ~Slope Brick 45  2 x  1 without Front Face
+0 Name: s\3040s01.dat
+0 Author: Orion Pobursky [OrionP]
+0 !LDRAW_ORG Subpart UPDATE 2004-01
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 20 -10 1 0 0 0 -1 0 0 0 1 stud3a.dat
+1 16 0 4 -10 4 0 0 0 4 0 0 0 4 2-4edge.dat
+1 16 0 4 -10 4 0 0 0 99 4 0 0 -4 2-4edge.dat
+1 16 0 8 -10 0 0 4 0 -4 0 -4 0 0 1-4cyls.dat
+1 16 0 8 -10 0 0 -4 0 -4 0 -4 0 0 1-4cyls.dat
+1 16 0 4 -10 4 0 0 0 16 0 0 0 4 2-4cyli.dat
+1 16 0 8 -10 4 0 0 0 12 0 0 0 -4 2-4cyli.dat
+2 24 6 24 6 -6 24 6
+2 24 -6 24 6 -6 24 -26
+2 24 -6 24 -26 6 24 -26
+2 24 6 24 -26 6 24 6
+2 24 10 24 10 -10 24 10
+2 24 -10 24 10 -10 24 -30
+2 24 -10 24 -30 10 24 -30
+2 24 10 24 -30 10 24 10
+2 24 6 24 6 6 4 6
+2 24 -6 24 6 -6 4 6
+2 24 6 24 -26 6 20 -26
+2 24 -6 24 -26 -6 20 -26
+2 24 6 4 6 -6 4 6
+2 24 6 4 -10 -6 4 -10
+2 24 6 20 -26 -6 20 -26
+2 24 6 4 6 6 4 -10
+2 24 -6 4 6 -6 4 -10
+2 24 6 20 -26 6 4 -10
+2 24 -6 20 -26 -6 4 -10
+2 24 10 24 10 10 0 10
+2 24 -10 24 10 -10 0 10
+2 24 10 24 -30 10 20 -30
+2 24 -10 24 -30 -10 20 -30
+2 24 10 0 10 -10 0 10
+2 24 10 0 -10 -10 0 -10
+2 24 10 20 -30 -10 20 -30
+2 24 10 0 10 10 0 -10
+2 24 -10 0 10 -10 0 -10
+2 24 10 20 -30 10 0 -10
+2 24 -10 20 -30 -10 0 -10
+4 16 10 24 10 6 24 6 -6 24 6 -10 24 10
+4 16 -10 24 10 -6 24 6 -6 24 -26 -10 24 -30
+4 16 -10 24 -30 -6 24 -26 6 24 -26 10 24 -30
+4 16 10 24 -30 6 24 -26 6 24 6 10 24 10
+4 16 6 4 6 6 4 -10 -6 4 -10 -6 4 6
+4 16 10 0 -10 10 0 10 -10 0 10 -10 0 -10
+4 16 -10 24 10 -10 0 10 10 0 10 10 24 10
+4 16 6 24 6 6 4 6 -6 4 6 -6 24 6
+4 16 6 20 -26 6 24 -26 -6 24 -26 -6 20 -26
+4 16 10 24 -30 10 20 -30 -10 20 -30 -10 24 -30
+4 16 10 24 10 10 0 10 10 20 -30 10 24 -30
+3 16 10 0 10 10 0 -10 10 20 -30
+4 16 6 20 -26 6 4 6 6 24 6 6 24 -26
+3 16 6 20 -26 6 4 -10 6 4 6
+4 16 -6 24 6 -6 4 6 -6 20 -26 -6 24 -26
+3 16 -6 4 6 -6 4 -10 -6 20 -26
+4 16 -10 20 -30 -10 0 10 -10 24 10 -10 24 -30
+3 16 -10 20 -30 -10 0 -10 -10 0 10
+4 16 -6 4 -10 6 4 -10 6 20 -26 -6 20 -26
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud.dat
+
+0 FILE stud3a.dat
+0 Stud Tube Solid without Base Edges
+0 Name: stud3a.dat
+0 Author: James Jessiman
+0 !LDRAW_ORG Primitive UPDATE 2003-02
+0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+0 BFC CERTIFY CCW
+1 16 0 -4 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
+1 16 0 -4 0 4 0 0 0 1 0 0 0 4 4-4disc.dat
+1 16 0 -4 0 4 0 0 0 4 0 0 0 4 4-4cyli.dat
+

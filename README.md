@@ -27,15 +27,18 @@ In the themed packs, every player's card shows their model in 3D as a see-throug
 | Pack | Card sets |
 |---|---|
 | 🧱 Original Game | The 20 model cards from the 1999 game (Sets 1–5) |
-| 🚀 Space | Classic Space I & II, Futuron & Blacktron, Space Police & M:Tron, Ice Planet & Spyrius, Robots |
-| ⭐ Star Wars Minis | Mini Starfighters, Mini Fleet |
+| 🚀 Space | Classic Space I–III, Futuron & Blacktron I–II, Space Police & M:Tron, Ice Planet & Spyrius, Ice & Rock Explorers, Robots |
+| ⭐ Star Wars Minis | Mini Starfighters, Mini Fleet I–II |
 | 🦖 Dinosaurs & Creatures | Dinosaurs, Creepy Crawlies |
 | 🌴 Jungle & Safari | Safari, Jungle Adventurers |
-| 🏎️ Cars | Tiny Turbos I & II, Drome Racers, Ferrari, Classic Racers |
-| 🚒 Town & Rescue | Town Heroes (1978), Town Helpers (1981), Construction, City (2005–08) |
-| ⛵ Boats & Planes | Speedboats, Big Boats, Up in the Sky, Creator 2001 |
-| 🏰 Knights & Pirates | Knights, Pirates & Wild West |
-| 🎃 Animals & Halloween | Fabuland Friends, Halloween |
+| 🏎️ Cars | Tiny Turbos I–III, Drome Racers, Ferrari, Ferrari Classics, Classic Racers |
+| 🏁 Racers | Power Racers, Speed Racers, Turbo Racers, Street Racers |
+| 🚒 Town & Rescue | Town Heroes (1978), Town Helpers (1981), Emergency (1980s), Construction, Work Trucks, Road Trip, Speedway, City (2005–08) |
+| ⛵ Boats & Planes | Speedboats, Big Boats, Up in the Sky |
+| 🧱 Creator | Creator 2001, Creator Vehicles, Creator Builders |
+| 🏰 Knights & Pirates | Knights, Forestmen & Falcons, Pirates & Wild West |
+| 🐰 Fabuland | Fabuland Friends I–II, Fabuland Town, Fabuland Homes |
+| 🎃 Halloween | Halloween |
 
 Each card set is 4 official LEGO models. The Brickyard holds exactly the pieces those 4 models need, so (like the
 original) every piece belongs to somebody's card. The board's five "Pick (color) Brick" spaces use the set's most
@@ -68,22 +71,37 @@ A card set passes when every game finishes and no model wins more than 40% of 4-
 
 ## Making packs
 
-Packs are built from the [LDraw Official Model Repository](https://library.ldraw.org/omr) (OMR) with
-[`tools/ldraw-pack.mjs`](tools/ldraw-pack.mjs), using the card sets listed in
-[`tools/packs.config.json`](tools/packs.config.json):
+Packs are built from the [LDraw Official Model Repository](https://library.ldraw.org/omr) (OMR) with three tools
+that share one local cache folder (anywhere outside the repo, for example `../ldraw-cache`):
 
-1. Download and unzip the LDraw parts library: <https://library.ldraw.org/library/updates/complete.zip>.
-2. Download each model you want from `https://library.ldraw.org/library/omr/<set>.mpd` into one folder.
-3. Add the card sets (4 models each) to `tools/packs.config.json` and run
+1. **Fetch** the parts library and the models you want to look at:
 
    ```bash
-   node tools/ldraw-pack.mjs path/to/ldraw path/to/omr-folder
+   node tools/ldraw-fetch.mjs ../ldraw-cache --library --themes "Town,Racers" --config
    ```
 
-   This writes `models/<set>.mpd` (each model with all its parts packed into one file), `packs/<pack>.js`
-   and `ldraw/LDConfig.ldr`. Add a `<script>` line for any new pack file in `index.html`.
+   `--library` downloads and unzips LDraw's parts library (about 146 MB, once). `--themes` downloads every OMR
+   model in those themes, using the set list snapshot in `tools/omr-sets.json`. `--config` downloads every model
+   already used in `tools/packs.config.json`.
 
-Small models of about 10–50 pieces play best.
+2. **Find candidates:** models with 10–50 pieces and every part available, by theme, marking the ones already
+   used and re-releases of the same build:
+
+   ```bash
+   node tools/ldraw-candidates.mjs ../ldraw-cache --theme Town
+   ```
+
+3. **Add card sets** (4 models each, piece counts within about 30%) to `tools/packs.config.json` and **build**:
+
+   ```bash
+   node tools/ldraw-pack.mjs ../ldraw-cache
+   ```
+
+   This writes `models/<set>.mpd`, `packs/<pack>.js` and `ldraw/LDConfig.ldr`, and refuses missing parts or two
+   copies of the same build in one card set. Add a `<script>` line for any new pack file in `index.html`.
+
+4. **Check balance** with the simulator (`?sim=1&games=100&sets=<pack>`), and swap models in any card set where
+   one model wins more than 40% of games.
 
 ## Files
 
@@ -100,7 +118,7 @@ js/build3d.js          3D models, piece pictures and build views (three.js)
 packs/*.js             themed packs (generated)
 models/*.mpd           packed 3D models (generated)
 ldraw/LDConfig.ldr     LDraw color definitions
-tools/                 pack builder and local test server
+tools/                 pack tools (fetch, candidates, pack), OMR set list, local test server
 ```
 
 ## Credits

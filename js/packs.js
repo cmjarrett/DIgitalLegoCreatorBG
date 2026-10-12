@@ -9,6 +9,7 @@ const PACKS = [];   // {id, name, emoji, sets}
 const SETS = [];    // every card set from every pack: {id, packId, name, color, colors, models, pickCount}
 
 const MODEL_EMOJI = [
+  [/rabbit/i, '🐰'], [/lamb/i, '🐑'], [/walrus/i, '🦭'], [/cottage|garden|play ground/i, '🏡'], [/ice cream/i, '🍦'], [/ultra light/i, '🪂'],
   [/tie |starfighter|slave i|interceptor|arc-170|cruiser|destroyer/i, '⭐'], [/knight|monarch|jousting|horse/i, '🛡️'],
   [/pirate|treasure/i, '🏴‍☠️'], [/chief|wheelgun|bandit/i, '🤠'], [/pumpkin/i, '🎃'], [/ghost/i, '👻'], [/\bbat\b/i, '🦇'],
   [/wreath/i, '🎄'], [/cow/i, '🐄'], [/hog|pig/i, '🐷'], [/crocodile/i, '🐊'], [/scorpion/i, '🦂'], [/butterfly/i, '🦋'],
@@ -24,13 +25,14 @@ const MODEL_EMOJI = [
   [/ladybird/i, '🐞'], [/fox/i, '🦊'], [/polar bear/i, '🐻‍❄️'], [/penguin/i, '🐧'], [/snowman/i, '⛄'], [/igloo/i, '🧊'], [/santa/i, '🎅'],
   [/witch/i, '🧙'], [/monster/i, '🧟'], [/scarecrow/i, '🎃'], [/robot/i, '🤖'], [/explorer/i, '🧭'],
 ];
-const emojiFor = name => (MODEL_EMOJI.find(([re]) => re.test(name)) || [, '🧱'])[1];
+const emojiFor = (name, fallback = '🧱') => (MODEL_EMOJI.find(([re]) => re.test(name)) || [, fallback])[1];
 
 // Add one card set and work out its board colors and pick size.
 function addSet(pack, set) {
   const count = {};
   for (const m of set.models) for (const k in m.parts) if (PIECES[k].kind === 'brick') count[PIECES[k].color] = (count[PIECES[k].color] || 0) + m.parts[k];
   // The five most common brick colors become this set's "Pick (color) Brick" spaces, unless the set says otherwise.
+  // (Tried: preferring colors several models share. The simulator showed it made card sets less fair.)
   set.colors = set.colors || Object.keys(count).sort((a, b) => count[b] - count[a]).slice(0, 5);
   set.color = set.color || COL[set.colors.find(c => c !== 'white')] || '#d01012';
   // Big models make long games, so Pick spaces hand out more pieces at once (about 17 pieces per pick-size, like the original).
@@ -66,7 +68,7 @@ function registerLDrawPack({id, name, emoji, colors, parts, sets}) {
     const models = s.models.map(m => {
       const counts = {};
       for (const [k, q] of m.p) counts[k] = (counts[k] || 0) + q;
-      return {name: m.name.toLowerCase(), emoji: emojiFor(m.name), parts: counts, no: m.no, file: m.file, figs: m.figs, ldraw: true,
+      return {name: m.name.toLowerCase(), emoji: emojiFor(m.name, emoji), parts: counts, no: m.no, file: m.file, figs: m.figs, ldraw: true,
         tag: m.no.replace(/-1$/, ''), img: `https://img.bricklink.com/ItemImage/SN/0/${m.no}.png`};
     });
     addSet(pack, {id: s.id, name: s.name, models, ldraw: true});
