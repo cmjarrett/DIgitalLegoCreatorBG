@@ -1,3 +1,4 @@
 # Generated LDraw files keep LF line endings on every platform
 *.mpd text eol=lf
 *.ldr text eol=lf
+packs/*.js text eol=lf
