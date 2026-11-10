@@ -6,3 +6,6 @@ LEGO-Creator-Instructions.pdf
 Thumbs.db
 desktop.ini
 .vscode/
+
+# Claude Code per-machine settings (may hold keys such as LAB_GATEWAY_KEY); never committed
+.claude/settings.local.json
